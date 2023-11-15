@@ -1,1 +1,6 @@
 /* css styles */
+
+.subtitle {
+    font-size: 13pt !important;
+    line-height: 0.7em !important;
+}

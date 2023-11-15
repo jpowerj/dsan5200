@@ -1,16 +1,30 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "About this site"
+    "text": "Welcome to DSAN 5200: Advanced Data Visualization (Section 03)!"
+  },
+  {
+    "objectID": "syllabus.html#course-description",
+    "href": "syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nPresenting quantitative information in visual form is an essential communication skill for data professionals. This course introduces representation methods and visualization techniques for complex data, drawing on insights from cognitive science and graphic design. Students will obtain an overview of the human visual system, learn to use models for data and for images, and acquire good design practices, such as those using the “grammar of graphics.” Students will use common statistical design tools such as graphic methods in Python3, interactive graphic methods such as Bokeh, Leaflet, and NetworkD3, the R package ggplot2, and Tableau. Prerequisites: DSAN 5000. 3 credits."
+  },
+  {
+    "objectID": "syllabus.html#course-staff",
+    "href": "syllabus.html#course-staff",
+    "title": "Syllabus",
+    "section": "Course Staff",
+    "text": "Course Staff\n\nProf. Jeff (jj1088@georgetown.edu)\n\nOffice Hours: TBD"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "dsan5200",
+    "title": "DSAN 5200: Advanced Data Visualization",
     "section": "",
-    "text": "DSAN 5200: Advanced Data Visualization, Georgetown University, Spring 2024. Tuesday, 12:30pm-3:00pm, Car Barn 309."
+    "text": "DSAN 5200: Advanced Data Visualization, Georgetown University, Spring 2024. Tuesday, 12:30pm-3:00pm, Car Barn 309.\nCourse Description:\nPresenting quantitative information in visual form is an essential communication skill for data professionals. This course introduces representation methods and visualization techniques for complex data, drawing on insights from cognitive science and graphic design. Students will obtain an overview of the human visual system, learn to use models for data and for images, and acquire good design practices, such as those using the “grammar of graphics.” Students will use common statistical design tools such as graphic methods in Python3, interactive graphic methods such as Bokeh, Leaflet, and NetworkD3, the R package ggplot2, and Tableau. Prerequisites: DSAN 5000. 3 credits."
   }
 ]
