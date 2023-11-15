@@ -2,6 +2,4 @@
 title: "dsan5200"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+DSAN 5200: Advanced Data Visualization, Georgetown University, Spring 2024. Tuesday, 12:30pm-3:00pm, Car Barn 309.
