@@ -1,9 +1,11 @@
 ---
 title: "DSAN 5200: Advanced Data Visualization"
-subtitle: "Tuesdays, 12:30-3pm, Car Barn 309"
+subtitle: "Section 03, Tuesdays, 12:30-3pm, Car Barn 309"
 author: "Jeff Jacobs, <a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
 institute: "Georgetown University, Spring 2024"
 ---
+
+{{< include _draft-notice.qmd >}}
 
 DSAN 5200: Advanced Data Visualization, Georgetown University, Spring 2024. Tuesday, 12:30pm-3:00pm, Car Barn 309.
 

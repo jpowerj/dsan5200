@@ -5,7 +5,7 @@ project:
 website:
   title: ""
   sidebar:
-    title: "DSAN 5200-03<br><span class='subtitle'>(Tues 12:30-3pm, Car Barn 309)</span>"
+    title: "DSAN 5200-03"
     contents:
       - href: index.qmd
         text: "<i class='bi bi-house pe-1'></i> Home"
@@ -20,6 +20,6 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-
+    include-in-header:
+      text: "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous' referrerpolicy='no-referrer'></script><script src='/jjcustom.js'></script>"
+ 
