@@ -11,6 +11,9 @@ website:
         text: "<i class='bi bi-house pe-1'></i> Home"
       - href: syllabus.qmd
         text: "Syllabus"
+      - "---"
+      - text: "Week 1: Jan 16"
+        href: "w01/index.qmd"
 
 format:
   html:

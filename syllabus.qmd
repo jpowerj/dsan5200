@@ -4,6 +4,94 @@ title: "Syllabus"
 
 **Welcome to DSAN 5200: Advanced Data Visualization (Section 03)!**
 
+{{< include _draft-notice.qmd >}}
+
+## Calendar
+
+```{=html}
+<table class='sticky-table'>
+<thead>
+<tr class='sticky-head'>
+  <td>Week</td>
+  <td>Date</td>
+  <td>Topic</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td></td>
+  <td>Data Visualization Toolbox</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td></td>
+  <td>Data Wrangling for Visualization</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td></td>
+  <td>Designing for an Audience</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td></td>
+  <td>Choosing the Right Visualization</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td></td>
+  <td>Exploratory Data Analysis</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td></td>
+  <td>Visual Narratives and Storytelling</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td></td>
+  <td>Dynamic Visualizations</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td></td>
+  <td>Intro to D3.js</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td></td>
+  <td>Visualizing Big Data</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td></td>
+  <td>Spatial and Geographic Data</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td></td>
+  <td>Graphs and Networks</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td></td>
+  <td>Time Series and Text Data</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td></td>
+  <td>Visualization for Machine Learning</td>
+</tr>
+<tr>
+  <td>14</td>
+  <td></td>
+  <td>Bringing It All Together!</td>
+</tr>
+</tbody>
+</table>
+```
+
 ## Course Description
 
 Presenting quantitative information in visual form is an essential communication skill for data professionals. This course introduces representation methods and visualization techniques for complex data, drawing on insights from cognitive science and graphic design. Students will obtain an overview of the human visual system, learn to use models for data and for images, and acquire good design practices, such as those using the “grammar of graphics.” Students will use common statistical design tools such as graphic methods in Python3, interactive graphic methods such as Bokeh, Leaflet, and NetworkD3, the R package ggplot2, and Tableau. *Prerequisites: DSAN 5000. 3 credits.*
