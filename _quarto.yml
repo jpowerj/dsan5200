@@ -5,15 +5,20 @@ project:
 website:
   title: ""
   sidebar:
-    title: "DSAN 5200-03"
+    title: "DSAN 5200-03 Slides"
     contents:
       - href: index.qmd
         text: "<i class='bi bi-house pe-1'></i> Home"
-      - href: syllabus.qmd
-        text: "Syllabus"
       - "---"
       - text: "Week 1: Jan 16"
         href: "w01/index.qmd"
+      - text: "Week 2: Jan 23"
+        href: "w02/index.qmd"
+      - "---"
+      - href: "https://gu-dsan.github.io/5200-spring-2024/"
+        text: "Main Course Page <i class='bi bi-box-arrow-up-right ps-1'></i>"
+      - href: "https://georgetown.instructure.com/courses/182993"
+        text: "Canvas <i class='bi bi-box-arrow-up-right ps-1'></i>"
 
 format:
   html:

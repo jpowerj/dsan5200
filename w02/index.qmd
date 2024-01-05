@@ -1,9 +1,9 @@
 ---
-title: "Week 1: Course Intro and Data Science Toolbox"
+title: "Week 2: Design Thinking"
 subtitle: "*DSAN 5200: Advanced Data Visualization*<br>Section 03 (Tues 12:30-3pm)"
 author: "Jeff Jacobs"
 institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
-date: 2024-01-16
+date: 2024-01-23
 date-format: full
 categories:
   - "Class Sessions"
@@ -12,7 +12,7 @@ format:
     df-print: kable
     output-file: slides.html
     theme: ["../_jjslides.scss"]
-    footer: "DSAN 5200-03 Week 1: Course Intro and Toolbox"
+    footer: "DSAN 5200-03 Week 2: Design Thinking"
     echo: true
     code-fold: show
     scrollable: true
@@ -80,30 +80,3 @@ format:
 </tbody>
 </table>
 ```
-
-# Course Intro {data-stack-name="Course Intro"}
-
-## Objectives
-
-* **Think critically** about data and its visual representations
-* Distinguish between visualization for data **exploration** vs. **presentation**
-* Manipulate/arrange/transform different kinds of data into forms conducive to visualization
-* Evaluate **purposes** and **audiences** for your visualizations
-* Explore how viz **fits into** larger rubric of data science
-* Develop both **static** and **dynamic** visualizations
-* Become comfortable with **tools** enabling all of the above
-
-# Your Data Science Toolbox {data-stack-name="Toolbox"}
-
-## Key Tools
-
-* Git
-* GitHub
-* R and `ggplot2`
-* Python
-* D3.js
-
-# Data Visualization Lab {data-stack-name="Lab"}
-
-## Our First Visualization Adventure!
-

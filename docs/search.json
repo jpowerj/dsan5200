@@ -1,38 +1,24 @@
 [
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Welcome to DSAN 5200: Advanced Data Visualization (Section 03)!"
+    "objectID": "w01/slides.html#objectives",
+    "href": "w01/slides.html#objectives",
+    "title": "Week 1: Course Intro and Data Science Toolbox",
+    "section": "Objectives",
+    "text": "Objectives\n\nThink critically about data and its visual representations\nDistinguish between visualization for data exploration vs. presentation\nManipulate/arrange/transform different kinds of data into forms conducive to visualization\nEvaluate purposes and audiences for your visualizations\nExplore how viz fits into larger rubric of data science\nDevelop both static and dynamic visualizations\nBecome comfortable with tools enabling all of the above"
   },
   {
-    "objectID": "syllabus.html#calendar",
-    "href": "syllabus.html#calendar",
-    "title": "Syllabus",
-    "section": "Calendar",
-    "text": "Calendar\n\n\n\nWeek\nDate\nTopic\n\n\n\n\n1\n\nData Visualization Toolbox\n\n\n2\n\nData Wrangling for Visualization\n\n\n3\n\nDesigning for an Audience\n\n\n4\n\nChoosing the Right Visualization\n\n\n5\n\nExploratory Data Analysis\n\n\n6\n\nVisual Narratives and Storytelling\n\n\n7\n\nDynamic Visualizations\n\n\n8\n\nIntro to D3.js\n\n\n9\n\nVisualizing Big Data\n\n\n10\n\nSpatial and Geographic Data\n\n\n11\n\nGraphs and Networks\n\n\n12\n\nTime Series and Text Data\n\n\n13\n\nVisualization for Machine Learning\n\n\n14\n\nBringing It All Together!"
+    "objectID": "w01/slides.html#key-tools",
+    "href": "w01/slides.html#key-tools",
+    "title": "Week 1: Course Intro and Data Science Toolbox",
+    "section": "Key Tools",
+    "text": "Key Tools\n\nGit\nGitHub\nR and ggplot2\nPython\nD3.js"
   },
   {
-    "objectID": "syllabus.html#course-description",
-    "href": "syllabus.html#course-description",
-    "title": "Syllabus",
-    "section": "Course Description",
-    "text": "Course Description\nPresenting quantitative information in visual form is an essential communication skill for data professionals. This course introduces representation methods and visualization techniques for complex data, drawing on insights from cognitive science and graphic design. Students will obtain an overview of the human visual system, learn to use models for data and for images, and acquire good design practices, such as those using the “grammar of graphics.” Students will use common statistical design tools such as graphic methods in Python3, interactive graphic methods such as Bokeh, Leaflet, and NetworkD3, the R package ggplot2, and Tableau. Prerequisites: DSAN 5000. 3 credits."
-  },
-  {
-    "objectID": "syllabus.html#course-staff",
-    "href": "syllabus.html#course-staff",
-    "title": "Syllabus",
-    "section": "Course Staff",
-    "text": "Course Staff\n\nProf. Jeff (jj1088@georgetown.edu)\n\nOffice Hours: TBD"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DSAN 5200: Advanced Data Visualization",
-    "section": "",
-    "text": "Note\n\n\n\nYou are viewing a draft version of the DSAN 5200-03 webpage for Spring 2024 – materials here are subject to change, before being finalized at the start of the Spring 2024 semester!\n\n\nDSAN 5200: Advanced Data Visualization, Georgetown University, Spring 2024. Tuesday, 12:30pm-3:00pm, Car Barn 309.\nCourse Description:\nPresenting quantitative information in visual form is an essential communication skill for data professionals. This course introduces representation methods and visualization techniques for complex data, drawing on insights from cognitive science and graphic design. Students will obtain an overview of the human visual system, learn to use models for data and for images, and acquire good design practices, such as those using the “grammar of graphics.” Students will use common statistical design tools such as graphic methods in Python3, interactive graphic methods such as Bokeh, Leaflet, and NetworkD3, the R package ggplot2, and Tableau. Prerequisites: DSAN 5000. 3 credits."
+    "objectID": "w01/slides.html#our-first-visualization-adventure",
+    "href": "w01/slides.html#our-first-visualization-adventure",
+    "title": "Week 1: Course Intro and Data Science Toolbox",
+    "section": "Our First Visualization Adventure!",
+    "text": "Our First Visualization Adventure!\n\n\nDSAN 5200-03 Week 1: Course Intro and Toolbox"
   },
   {
     "objectID": "w01/index.html",
@@ -63,24 +49,17 @@
     "text": "Our First Visualization Adventure!"
   },
   {
-    "objectID": "w01/slides.html#objectives",
-    "href": "w01/slides.html#objectives",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Objectives",
-    "text": "Objectives\n\nThink critically about data and its visual representations\nDistinguish between visualization for data exploration vs. presentation\nManipulate/arrange/transform different kinds of data into forms conducive to visualization\nEvaluate purposes and audiences for your visualizations\nExplore how viz fits into larger rubric of data science\nDevelop both static and dynamic visualizations\nBecome comfortable with tools enabling all of the above"
+    "objectID": "w02/index.html",
+    "href": "w02/index.html",
+    "title": "Week 2: Design Thinking",
+    "section": "",
+    "text": "Note\n\n\n\nYou are viewing a draft version of the DSAN 5200-03 webpage for Spring 2024 – materials here are subject to change, before being finalized at the start of the Spring 2024 semester!\n\n\n\nOpen slides in new window →\n\n\nSchedule\n\n\n\nStart\nEnd\nTopic\n\n\n\n\n12:30pm\n1:00pm\nCourse Intro →\n\n\n1:00pm\n2:00pm\nData Science Toolbox →\n\n\n2:00pm\n2:10pm\nBreak!\n\n\n2:10pm\n3:00pm\nData Viz Lab →"
   },
   {
-    "objectID": "w01/slides.html#key-tools",
-    "href": "w01/slides.html#key-tools",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Key Tools",
-    "text": "Key Tools\n\nGit\nGitHub\nR and ggplot2\nPython\nD3.js"
-  },
-  {
-    "objectID": "w01/slides.html#our-first-visualization-adventure",
-    "href": "w01/slides.html#our-first-visualization-adventure",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Our First Visualization Adventure!",
-    "text": "Our First Visualization Adventure!\n\n\nDSAN 5200-03 Week 1: Course Intro and Toolbox"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DSAN 5200: Advanced Data Visualization",
+    "section": "",
+    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nWeek 2: Design Thinking\n\n\nJanuary 23\n\n\n\n\nWeek 1: Course Intro and Data Science Toolbox\n\n\nJanuary 16\n\n\n\n\n\n\nNo matching items"
   }
 ]
