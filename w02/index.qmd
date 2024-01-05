@@ -5,6 +5,7 @@ author: "Jeff Jacobs"
 institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
 date: 2024-01-23
 date-format: full
+lecnum: 2
 categories:
   - "Class Sessions"
 format:
