@@ -1,52 +1,10 @@
 [
   {
-    "objectID": "w01/slides.html#objectives",
-    "href": "w01/slides.html#objectives",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Objectives",
-    "text": "Objectives\n\nThink critically about data and its visual representations\nDistinguish between visualization for data exploration vs. presentation\nManipulate/arrange/transform different kinds of data into forms conducive to visualization\nEvaluate purposes and audiences for your visualizations\nExplore how viz fits into larger rubric of data science\nDevelop both static and dynamic visualizations\nBecome comfortable with tools enabling all of the above"
-  },
-  {
-    "objectID": "w01/slides.html#key-tools",
-    "href": "w01/slides.html#key-tools",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Key Tools",
-    "text": "Key Tools\n\nGit\nGitHub\nR and ggplot2\nPython\nD3.js"
-  },
-  {
-    "objectID": "w01/slides.html#our-first-visualization-adventure",
-    "href": "w01/slides.html#our-first-visualization-adventure",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Our First Visualization Adventure!",
-    "text": "Our First Visualization Adventure!\n\n\nDSAN 5200-03 Week 1: Course Intro and Toolbox"
-  },
-  {
     "objectID": "w01/index.html",
     "href": "w01/index.html",
     "title": "Week 1: Course Intro and Data Science Toolbox",
     "section": "",
-    "text": "Note\n\n\n\nYou are viewing a draft version of the DSAN 5200-03 webpage for Spring 2024 – materials here are subject to change, before being finalized at the start of the Spring 2024 semester!"
-  },
-  {
-    "objectID": "w01/index.html#objectives",
-    "href": "w01/index.html#objectives",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Objectives",
-    "text": "Objectives\n\nThink critically about data and its visual representations\nDistinguish between visualization for data exploration vs. presentation\nManipulate/arrange/transform different kinds of data into forms conducive to visualization\nEvaluate purposes and audiences for your visualizations\nExplore how viz fits into larger rubric of data science\nDevelop both static and dynamic visualizations\nBecome comfortable with tools enabling all of the above"
-  },
-  {
-    "objectID": "w01/index.html#key-tools",
-    "href": "w01/index.html#key-tools",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Key Tools",
-    "text": "Key Tools\n\nGit\nGitHub\nR and ggplot2\nPython\nD3.js"
-  },
-  {
-    "objectID": "w01/index.html#our-first-visualization-adventure",
-    "href": "w01/index.html#our-first-visualization-adventure",
-    "title": "Week 1: Course Intro and Data Science Toolbox",
-    "section": "Our First Visualization Adventure!",
-    "text": "Our First Visualization Adventure!"
+    "text": "Week 1 was a combined meeting of all four sections of the course."
   },
   {
     "objectID": "w02/slides.html#key-point-data-viz-neq-data-analysis",
@@ -844,6 +802,6 @@
     "href": "index.html",
     "title": "DSAN 5200: Advanced Data Visualization",
     "section": "",
-    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nWeek 1: Course Intro and Data Science Toolbox\n\n\nJanuary 16\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 23\n\n\n\n\n\n\nNo matching items"
+    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nWeek 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\n\n\nNo matching items"
   }
 ]

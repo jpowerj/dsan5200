@@ -11,7 +11,7 @@ institute:
   - "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088`</a>"
   - "<a href='mailto:aem303@georgetown.edu' target='_blank'>`aem303`</a>"
   - "<a href='mailto:marck.vaisman@georgetown.edu' target='_blank'>`marck.vaisman`</a>"
-date: 2024-01-23
+date: 2024-01-16
 date-format: full
 lecnum: 2
 categories:

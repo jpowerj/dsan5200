@@ -1,0 +1,73 @@
+
+::: {.content-visible unless-format="revealjs"}
+
+{{< include ../_draft-notice.qmd >}}
+
+<center>
+<a class="h2" href="./slides.html" target="_blank">Open slides in new window &rarr;</a>
+</center>
+
+:::
+
+# Schedule {data-name="Schedule"}
+
+```{=html}
+<table>
+<thead>
+<tr>
+    <th>Start</th>
+    <th>End</th>
+    <th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>12:30pm</td>
+    <td>1:00pm</td>
+    <td><a href='#course-intro'>Course Intro &rarr;</span></a></td>
+</tr>
+<tr>
+    <td>1:00pm</td>
+    <td>2:00pm</td>
+    <td><a href='#your-data-science-toolbox'>Data Science Toolbox &rarr;</a></td>
+</tr>
+<tr>
+    <td>2:00pm</td>
+    <td>2:10pm</td>
+    <td>Break!</td>
+</tr>
+<tr>
+    <td>2:10pm</td>
+    <td>3:00pm</td>
+    <td><a href='#data-visualization-lab'>Data Viz Lab &rarr;</a></td>
+</tr>
+</tbody>
+</table>
+```
+
+# Course Intro {data-stack-name="Course Intro"}
+
+## Objectives
+
+* **Think critically** about data and its visual representations
+* Distinguish between visualization for data **exploration** vs. **presentation**
+* Manipulate/arrange/transform different kinds of data into forms conducive to visualization
+* Evaluate **purposes** and **audiences** for your visualizations
+* Explore how viz **fits into** larger rubric of data science
+* Develop both **static** and **dynamic** visualizations
+* Become comfortable with **tools** enabling all of the above
+
+# Your Data Science Toolbox {data-stack-name="Toolbox"}
+
+## Key Tools
+
+* Git
+* GitHub
+* R and `ggplot2`
+* Python
+* D3.js
+
+# Data Visualization Lab {data-stack-name="Lab"}
+
+## Our First Visualization Adventure!
+
