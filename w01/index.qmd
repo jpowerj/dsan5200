@@ -1,8 +1,16 @@
 ---
 title: "Week 1: Course Intro and Data Science Toolbox"
 subtitle: "*DSAN 5200: Advanced Data Visualization*<br>Section 03 (Tues 12:30-3pm)"
-author: "Jeff Jacobs"
-institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+author:
+  - "Abhijit Dasgupta"
+  - "Jeff Jacobs"
+  - "Anderson Monken"
+  - "Marck Vaisman"
+institute:
+  - "<a href='mailto:abhijit.dasgupta@georgetown.edu' target='_blank'>`abhijit.dasgupta`</a>"
+  - "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088`</a>"
+  - "<a href='mailto:aem303@georgetown.edu' target='_blank'>`aem303`</a>"
+  - "<a href='mailto:marck.vaisman@georgetown.edu' target='_blank'>`marck.vaisman`</a>"
 date: 2024-01-11
 date-format: full
 lecnum: 1

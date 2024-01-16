@@ -47,8 +47,6 @@ format:
 
 ::: {.content-visible unless-format="revealjs"}
 
-{{< include ../_draft-notice.qmd >}}
-
 <center>
 <a class="h2" href="./slides.html" target="_blank">Open slides in new window &rarr;</a>
 </center>
