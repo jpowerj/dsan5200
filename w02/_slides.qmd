@@ -1,0 +1,502 @@
+# Some foundational research
+
+##
+
+::: {.ba .bw2 .br3 .ph4 .mt4 .b--dark-blue .bg-washed-blue}
+**Pre-attentive processing:** the ability of the low-level human visual system to effortlessly identify certain basic visual properties.
+:::
+
+:::{.fragment}
+Example: let's help our friend Homer find a donut that looks different!
+:::
+
+:::{.fragment}
+![](img/homer-preattentive.png){fig-align="center" height="300"}
+
+[What stands out? This is pre-attentive processing in action!]{.small}
+:::
+
+## Tamara Munzner
+
+Computer scientist, information visualization expert, and professor at University of British Columbia.
+
+:::{layout-ncol="2"}
+![](https://www.cs.ubc.ca/~tmm/tmmpix/2023-04-11-headshot-webpage.jpg)
+
+![](img/munzner-book.png)
+:::
+
+## Tamara proposed a nested model analysis framework for visualization {.smaller}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+### Domain
+- Characterize the problems and data of a particular domain
+- Who are the target users?
+:::
+
+::: {.column width="50%"}
+![](img/domain.png)
+:::
+::::
+
+## Tamara proposed a nested model analysis framework for visualization {.smaller}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+### Domain
+
+- Characterize the problems and data of a particular domain
+- Who are the target users?
+
+### Abstraction
+- Translate from the domain specifics to the visualization vocabulary
+  - [What]{.red} is shown? {{< fa solid arrow-right >}} data abstraction
+  - [Why]{.yellow} is the user looking at it? {{< fa solid arrow-right >}} task abstraction
+:::
+
+::: {.column width="50%"}
+![](img/abstraction.png)
+:::
+::::
+
+## Tamara proposed a nested model analysis framework for visualization {.smaller}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+### Domain
+- Characterize the problems and data of a particular domain
+- Who are the target users?
+
+### Abstraction
+- Translate from the domain specifics to the visualization vocabulary
+  - [What]{.red} is shown? {{< fa solid arrow-right >}} data abstraction
+  - [Why]{.yellow} is the user looking at it? {{< solid arrow-right >}} task abstraction
+
+### Idiom
+- [How]{.green} is it shown?
+  - Visual encoding idiom {{< fa solid arrow-right >}} how to draw
+  - Interaction idiom {{< fa solid arrow-right >}} how to manipulate
+:::
+
+::: {.column width="50%"}
+![](img/idiom.png)
+:::
+::::
+
+## Tamara proposed a nested model analysis framework for visualization {.smaller}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+### Domain
+- Characterize the problems and data of a particular domain
+- Who are the target users?
+
+### Abstraction
+- Translate from the domain specifics to the visualization vocabulary
+  - [What]{.red} is shown? {{< fa solid arrow-right >}} data abstraction
+  - [Why]{.yellow} is the user looking at it? {{< fa solid arrow-right >}} task abstraction
+
+### Idiom
+- [How]{.green} is it shown?
+  - Visual encoding idiom {{< fa solid arrow-right >}} how to draw
+  - Interaction idiom {{< fa solid arrow-right >}} how to manipulate
+
+### Algorithm
+- Efficient computation
+:::
+
+::: {.column width="50%"}
+![](img/algo.png)
+:::
+::::
+
+## The [What]{.red}: Abstracting the Data
+
+![](img/what_sheet.png){fig-align="center"}
+
+##
+
+:::: {.columns}
+::: {.column width="50%"}
+### Why abstract the data?
+- Different attribute types {{< fa solid arrow-right >}} different representations
+- Different dataset types {{< fa solid arrow-right >}} different idioms available
+
+:::
+
+::: {.column width="50%"}
+### What do you need to abstract?
+- **Dataset type:** (e.g. table, network, temporal, etc.)
+- **Attribute types:** (e.g. categorical, ordinal, quantitative)
+- **Ordering direction:** (e.g. sequential, diverging, cyclical)
+- **Data availability:** (e.g. dynamic, static)
+:::
+::::
+
+## Types of datasets
+
+::: {.center}
+![](img/dataset_types.png)
+
+[{{< fa regular square-plus >}} temporal!]{.center}
+:::
+
+## Tables
+
+- Typically a flat **Tidy Data** table (by analysis unit)
+- Observations are rows, one item per row
+- Attributes are columns
+- May or may not have an identifier
+
+
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/85520b8f-4629-4763-8a2a-9ceff27458bf_rw_1920.jpg?h=21007b20ac00cf37318dca645c215453){.center height="400"}
+
+
+## Types of attributes {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/data_attribute_types.png){height=500}
+:::
+
+::: {.column width="50%"}
+### Categorical
+- No order
+- Example: names, countries, types
+- Must be represented with visual channels that **don't** convey order
+
+### Ordered
+
+#### Ordinal
+- Has implicit order
+- But, you **can't** do arithmetic
+- Can be numerical (but should be treated as categorical)
+- Example: t-shirt sizes, grade in school, rankings
+
+#### Quantitative
+- Also ordered
+- You **can** do arithmetic
+- Can be _divergent_ or _sequential_
+- Example: age, temperature, earnings
+
+:::
+::::
+
+## Types of attributes {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/data_ordering_types.png){height=500}
+:::
+
+::: {.column width="50%"}
+### Sequential
+- There is an infinite range with a clear minimum
+- You **can** perform arithmetic
+- Example: age, number of goals, price
+- Must be represented with visual channels that **don't** convey order
+
+### Diverging
+- There is a middle point
+- And two opposite directions
+- Many times the middle point **is not zero**
+- Example: temperature, earnings, political affiliation index
+
+### Cyclic
+- There is a cycle in the values
+- Starting point may or may not be obvious
+- Can be repsented with cyclical channels
+- Example: days of the week, hours in the day
+
+:::
+::::
+
+## The [Why?]{.yellow} (more on that next week)
+
+![](img/why_sheet.png){.center}
+
+## The [How?:]{.green}
+
+![](img/how_sheet.png){.center}
+
+## Marks and Channels 
+
+### Marks are geometric primitives
+
+![](img/munzner-5-2-primitives.png){.center}
+
+### Channels (encodings) control the appearance of marks
+
+![](img/munzner-5-3-visual-channels.png){.center}
+
+
+
+## Channel (encoding) Types
+
+![](img/munzner-5-1-channel-effectiveness.png){.center}
+
+# Mark and Channel Examples
+
+## Points
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/points-ex.png){height="500"}
+:::
+
+::: {.column width="50%"}
+- Zero-dimensional
+- Convey position only
+- Additionally, can be **size** and **shape** coded
+:::
+::::
+
+
+## Lines
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/lines-ex.png){height="500"}
+:::
+::: {.column width="50%"}
+- One-dimensional
+- Convey position and length
+- Can only be **width** coded
+:::
+::::
+
+## Areas
+
+:::: {.columns}
+::: {.column width="50%"}
+![](img/areas-ex.png){height="500"}
+:::
+
+::: {.column width="50%"}
+- Two dimensional
+- Are fully constrained
+:::
+::::
+
+
+
+
+
+
+## Mackinlay '86
+
+::: {layout-ncol="2"}
+![](img/mackinlay-fig14.png)
+
+![](img/mackinlay-fig15.png)
+:::
+
+
+## Another encoding guide (Noah Illinsky)
+
+Although encoding is often undertaken without much intention or deeper consideration, it has significant impact on the ability of the visualization to communicate knowledge accurately and efficiently.
+
+![](img/illinksy.gif){fig-align="center" height=450}
+
+
+# Examples of Visual and Integrity Issues with encodings
+
+## Position (example 1)
+
+_Position_ allows you to compare values based on where they are placed with reference to a coordinate system.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Considerations
+
+Be aware of the scales you are using (linear vs logarithmic)
+
+- The scale changes the interpretation of distance
+- It can also change the perceived patterns
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+library(tidyverse)
+set.seed(140)
+d <-  data.frame(x = rgamma(15,1)) %>% mutate(y = 3 + 2*x + 5*I(x^2) + rnorm(15,3,3))
+plt <- ggplot(d, aes(x, y))+
+	geom_point(size=6) + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text = element_blank(), 
+		  axis.ticks=element_blank())
+plt + annotate('text', x=0.5, y=60,label = "Linear scales", hjust=0, size=8 )
+
+plt + scale_y_log10() + scale_x_log10() +
+	annotate('text', x = 0.1, y = 50, label = "Logarithmic scales", hjust=0, size=8)
+```
+
+:::
+::::
+
+## Position (example 2)
+
+_Position_ allows you to compare values based on where they are placed with reference to a coordinate system.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Considerations
+
+* Avoid overplotting since many points can occupy the same space and obscure one another
+
+### Solutions
+
+- **Use transparency** so that overlapping points make darker areas
+- **jitter** (add noise so points no longer are on top of each other)
+- **Use binning** to show aggregate data per pixel
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+library(patchwork)
+d <- data.frame(x = rnorm(10000, 0, 1)) %>% mutate(y = x+rnorm(10000, 0,2))
+mytheme <- theme_bw()+
+	theme(axis.title=element_blank(),
+		  axis.text = element_blank(),
+		  axis.ticks=element_blank())
+p <- ggplot(d, aes(x ,y))
+p1 <- p+geom_point() + mytheme
+p2 <- p + geom_point(alpha=0.01) + mytheme
+p3 <- p + stat_density2d(geom='tile', aes(fill=..density..), contour=F, show.legend=F) + mytheme
+
+d <- d %>% mutate(z = sample(c(1,2,3), 10000, replace=T)) %>% slice_sample(prop=0.05)
+p4 <- ggplot(d , aes(x, z))+geom_point() + coord_flip()+ mytheme
+p5 <- ggplot(d, aes(x, z))+geom_jitter(height=0.1) + coord_flip()+mytheme
+
+p1/(p2+p3)
+	
+p4+p5
+```
+
+:::
+::::
+
+## Length
+
+_Length_ is most commonly used in the context of bar charts. The longer a bar is, the greater the value. 
+**Don't truncate bar charts, use length in its entirety!**
+
+::: {layout-ncol="2"}
+![](https://flowingdata.com/wp-content/uploads/2012/08/Bush-cuts.png)
+
+![](https://flowingdata.com/wp-content/uploads/2012/08/Fox-chart-corrected.png)
+:::
+
+
+## Angle
+
+_Angles_ range from 0 to 360 degrees in a circle.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Considerations
+
+* Angles are most associated with _pie charts_. Pie chart is made up of parts that make up a whole. 
+* Don't use too many categories (bar chart is better)
+* **The sum of all percentages should equal 100%!**
+:::
+
+::: {.column width="50%"}
+![](https://flowingdata.com/wp-content/uploads/2009/11/Fox-News-pie-chart.png)
+:::
+::::
+
+## Don't even think about this!
+
+![](https://flowingdata.com/wp-content/uploads/2020/03/2b-angles-unclear-750x521.jpg){.center}
+
+## Slope
+
+_Slope_ is similar to _angle_. Line charts are the most common use of slope to encode data. 
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Considerations
+
+* Slope magnitude: steeper = greater change, flatter = lesser change
+* The aspect ratio 
+* Visual change should match the context of the change
+
+
+**Cleveland, McGIll & McGill (1988)** suggested that the average slope in a line chart should be $45^o$, in order to make neutral comparisons between lines
+
+This is still a good rule of thumb
+
+:::
+
+::: {.column width="50%"}
+![](https://flowingdata.com/wp-content/uploads/2020/03/slope-scope-750x248.png)
+:::
+::::
+
+## Area
+
+Like _length_, _area_ can be used to represent data with size, but with two dimensions instead of one.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Considerations
+* While the encoding might not be as precise from a visual perception perspective, area can provide a more intuitive, less abstract view for some types of data
+* Make sure you scale by area, not edge (remember, area gets squared per unit increase)
+	- This means you should encode the length of a side as $\sqrt{x}$
+
+:::
+::: {.column width="50%"}
+
+![](https://flowingdata.com/wp-content/uploads/2020/03/area-incorrect-750x427.png)
+:::
+::::
+
+## Volume
+
+_Volume_ can used in the same way as _area_ but has one more dimension.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Considerations
+* Make sure you scale by volume, not edge (remember, volume gets cubed per unit increase)
+	- This means you would encode the side of a "box" as $x^{1/3}$
+
+For 3-D encodings, you need to take the volume as proportional to the data
+
+:::
+::: {.column width="50%"}
+
+![](https://flowingdata.com/wp-content/uploads/2020/03/volume-incorrect-750x399.png)
+
+:::
+::::
+
+
+## Links
+
+- [Perception in visualization, Christopher G. Healy](https://www.csc2.ncsu.edu/faculty/healey/PP/index.html)
+- [39 Studies about human perception in 30 minutes](https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73)
+- [Gestalt Principles for Data Visualization](https://medium.com/@Elijah_Meeks/gestalt-principles-for-data-visualization-59f18f20bd40)
+- [Learn how the brain works for kick-ass visualizations](https://datascience.aero/brain-data-visualization/)
+- [Real chart rules to follow](https://flowingdata.com/2015/08/11/real-chart-rules-to-follow/)

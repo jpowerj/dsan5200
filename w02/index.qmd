@@ -1,19 +1,28 @@
 ---
-title: "Week 2: Design Thinking"
-subtitle: "*DSAN 5200: Advanced Data Visualization*<br>Section 03 (Tues 12:30-3pm)"
-author: "Jeff Jacobs"
-institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088@georgetown.edu`</a>"
+title: "Lecture 2: Visual Encodings, Integrity, Color Theory"
+subtitle: "*DSAN 5200-03: Advanced Data Visualization*"
+author:
+  - "Abhijit Dasgupta"
+  - "Jeff Jacobs"
+  - "Anderson Monken"
+  - "Marck Vaisman"
+institute:
+  - "<a href='mailto:abhijit.dasgupta@georgetown.edu' target='_blank'>`abhijit.dasgupta`</a>"
+  - "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088`</a>"
+  - "<a href='mailto:aem303@georgetown.edu' target='_blank'>`aem303`</a>"
+  - "<a href='mailto:marck.vaisman@georgetown.edu' target='_blank'>`marck.vaisman`</a>"
 date: 2024-01-23
 date-format: full
 lecnum: 2
 categories:
   - "Class Sessions"
+bibliography: "../_DSAN5200.bib"
 format:
   revealjs:
     df-print: kable
     output-file: slides.html
     theme: ["../_jjslides.scss"]
-    footer: "DSAN 5200-03 Week 2: Design Thinking"
+    footer: "DSAN 5200-03 Week 2: Visual Encodings, Integrity, Colors"
     echo: true
     code-fold: show
     scrollable: true
@@ -46,7 +55,7 @@ format:
 
 :::
 
-# Schedule {data-name="Schedule"}
+# Planned Schedule {data-name="Schedule"}
 
 ```{=html}
 <table>
@@ -61,12 +70,17 @@ format:
 <tr>
     <td>12:30pm</td>
     <td>1:00pm</td>
-    <td><a href='#course-intro'>Course Intro &rarr;</span></a></td>
+    <td><a href='#encodings'>Encodings &rarr;</span></a></td>
 </tr>
 <tr>
     <td>1:00pm</td>
+    <td>1:30pm</td>
+    <td><a href='#integrity'>Visualization Integrity &rarr;</a></td>
+</tr>
+<tr>
+    <td>1:30pm</td>
     <td>2:00pm</td>
-    <td><a href='#your-data-science-toolbox'>Data Science Toolbox &rarr;</a></td>
+    <td><a href='#color'>Color Theory &rarr;</a></td>
 </tr>
 <tr>
     <td>2:00pm</td>
@@ -76,8 +90,665 @@ format:
 <tr>
     <td>2:10pm</td>
     <td>3:00pm</td>
-    <td><a href='#data-visualization-lab'>Data Viz Lab &rarr;</a></td>
+    <td><a href='#lab'>Lab &rarr;</a></td>
 </tr>
 </tbody>
 </table>
 ```
+
+# Encodings {data-stack-name="Encodings"}
+
+## Key Point: Data Viz $\neq$ Data Analysis
+
+* Readers haven't gone through the process of *developing* and *answering questions* that you went through in developing the viz
+* Your audience wants to know the *story*, *result*, and/or *conclusions*
+* They (usually) don't want the messy details you trudged through when analyzing the data; that's your job!
+
+## Different Approaches for Different Audiences! {.smaller .crunch-title .title-12 .crunch-quarto-layout-panel}
+
+::: {layout="[1,1]"}
+
+::: {#audiences-left}
+::: {#viz-for-analysis-text}
+<center>
+**Visualization for *Analysis***:
+</center>
+
+* "Internal" audience: You and your team (**shared context**)
+* Efficient understanding and iteration to develop insights
+* *Rough drafts*: Can make changes/"polish" later
+
+:::
+::: {#viz-for-presentation-text}
+<center>
+**Visualization for *Presentation***:
+</center>
+
+* "External" audience: Content is likely **new** to them; audience has no context
+* Different info is **useful to them** vs. useful to your teammates
+* Takes significantly more time to get to *publication ready*
+
+:::
+:::
+::: {#audiences-right}
+
+![From <a href='https://pitchfork.com/features/overtones/9727-chaos-theory-the-glorious-unpredictability-of-young-thug/' target='_blank'>*Chaos Theory: The Glorious Unpredictability of Young Thug*</a>, Jayson Greene, *Pitchfork*, 28 September 2015](images/young_thug.jpeg){width="360"}
+
+:::
+:::
+
+## What Does "Designing For An Audience" Look Like?
+
+* Explain the encodings
+* Provide context
+* Focus on readability
+* Develop aesthetics
+
+* @yau_data_2013, Ch. 6: <a href='https://ebookcentral-proquest-com.proxy.library.georgetown.edu/lib/georgetown/detail.action?docID=1158630' target='_blank'>"Designing For An Audience" <i class='bi bi-box-arrow-up-right ps-1'></i></a> (Georgtown Library Proxy Link)
+
+## Explaining Encodings {.smaller .crunch-title .crunch-quarto-layout-panel}
+
+* What scale are you using? What does that color represent? Is this normal?
+
+* Better to err on the side of too much explanation than too little
+* *Too much*? People can gloss over details (if designed well 😉)
+* *Too little*? People unfamiliar with the visual encodings will get stuck
+
+::: {#fig-atlas layout="[1,1]" layout-valign="center"}
+
+![](images/populous-cities.png)
+
+![](images/populous-cities-annotation.png)
+
+The Statistical Atlas of the United States, produced in the late 1800s by the Census Bureau, explained all of the encodings. For example, look at this bump chart from the 1880 atlas. It ranks cities by population.
+:::
+
+## Explaining Things You Forgot You Need To Explain {.title-12}
+
+* *When you work with a dataset for a while, it's easy to forget that others aren't as familiar [...] When you know all the intimate details, it's hard to step back and remember what it was like when you first opened up a file or database---just a bunch of numbers* [@yau_data_2013, p. 209]
+
+## Explaining Things You Forgot You Need To Explain {.smaller .title-11 .crunch-title .crunch-iframe}
+
+* *(If you know this video, don't say anything!!)*
+
+{{< video https://www.youtube.com/watch?v=vJG698U2Mvo width="100%" height="550" >}}
+
+## Provide Context
+
+* When readers can decode the shapes, colors and geometries on your chart, you are more than half way there to producing an awesome chart.
+
+* However, readers also need to understand the **context** of the data.
+
+## But How Much Context Do I Need To Provide? {.smaller .title-10 .crunch-title .crunch-iframe}
+
+* An aside from the humanities [@gadamer_truth_1960]
+
+{{< video https://www.youtube.com/watch?v=CJ7MlTdC_aQ  width="100%" height="550">}}
+
+## Readability {.crunch-title}
+
+* Charts should read like text! It should be obvious what the chart is about, how to interpret it
+
+::: {layout="[1,1]"}
+
+![](images/flat_fig.png){fig-align="center"}
+
+![](images/organized_fig.png){fig-align="center"}
+
+:::
+
+## Aesthetics
+
+* Default settings in viz tools are generic and designed specifically to work with as many datasets and visualization types as possible
+* This $\neq$ best for **your** use cases!
+* You can (and should) develop aesthetics to make your charts less ugly
+* *(Note: In this context, aesthetics means a visual style. Do not confuse this with the aes() call in ggplot2.)*
+
+## Aesthetics: Broad Umbrella Term {.smaller .crunch-title}
+
+* Something like... the *gestalt* sum of visual design choices
+
+![From Georgetown's official <a href='https://www.georgetown.edu/color-guide/' target='_blank'>color guide</a> *(but remember: color is only one of many factors that makes up an "aesthetic")*](images/color_guide.jpeg){fig-align="center"}
+
+## Aesthetics: Broad Umbrella Term
+
+![From Nicholas Felton's <a href='http://feltron.com/index.html' target='_blank'>2014 Annual Report</a>](images/feltron_report.jpg){fig-align="center"}
+
+## Guidelines, Not Rules! {.smaller}
+
+* They're more continuous than absolute. Your charts may need more or less explanations, more or less context, etc.
+* Depends on your **audience** and the **purpose** behind your chart:
+  * If your audience is a small group who has the same background as you, then you might not need to provide as much context for the data you show.
+  * If your audience is already excited about a dataset, then you probably don’t need to make it too flashy.
+  * If you make charts for a research paper, there are probably publisher guidelines that you need to follow, which limits what you can do (sometimes a good thing).
+
+* Think of the above adjustments as continuous knobs that you can turn up or down. The more charts you make, the better you’ll get at deciding how much to turn.
+
+# Cognitive-Perceptual Foundations
+
+## Pre-Attentive Processing {.smaller .crunch-title .crunch-iframe}
+
+* The ability of the visual system to effortlessly identify certain basic visual properties.
+
+{{< video https://www.youtube.com/watch?v=AiD6etOB6qI&t=543s width="100%" height="540" >}}
+
+## Tamara Munzner {.crunch-quarto-layout-panel .crunch-title}
+
+::: {layout="[1,1]"}
+::: {#munzner-left}
+
+* Computer scientist, info viz expert, and professor at University of British Columbia
+
+![](images/tamara_munzner_headshot.jpg){fig-align="center"}
+:::
+::: {#munzner-right}
+
+![](images/munzner-book.png){fig-align="center" width="450"}
+
+:::
+:::
+
+## Nested Model Analysis Framework (Munzner) {.title-11 .smaller .crunch-li-3 .crunch-title .shift-ul}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+* **Domain**: Characterize the problems and data of a particular domain
+  * Who are the target users?
+:::
+
+::: {.column width="50%"}
+![](images/domain.png)
+:::
+::::
+
+## Nested Model Analysis Framework (Munzner) {.title-11 .smaller .crunch-li-3 .crunch-title .shift-ul}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+* **Domain**: Characterize the problems and data of a particular domain
+  * Who are the target users?
+* **Abstraction**: Translate from the domain specifics to the visualization vocabulary
+  * [What]{.red} is shown? &rarr; data abstraction
+  * [Why]{.yellow} is the user looking at it? &rarr; task abstraction
+:::
+
+::: {.column width="50%"}
+![](images/abstraction.png)
+:::
+::::
+
+## Nested Model Analysis Framework (Munzner) {.title-11 .smaller .crunch-li-3 .crunch-title .shift-ul}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+* **Domain**: Characterize the problems and data of a particular domain
+  - Who are the target users?
+* **Abstraction**: Translate from the domain specifics to the visualization vocabulary
+  - [What]{.red} is shown? &rarr; data abstraction
+  - [Why]{.yellow} is the user looking at it? &rarr; task abstraction
+
+* **Idiom**: [How]{.green} is it shown?
+  - Visual encoding idiom &rarr; how to draw
+  - Interaction idiom &rarr; how to manipulate
+:::
+
+::: {.column width="50%"}
+![](images/idiom.png)
+:::
+::::
+
+## Nested Model Analysis Framework (Munzner) {.title-11 .smaller .crunch-li-3 .crunch-title .shift-ul}
+
+Four levels, three questions:
+
+:::: columns
+::: {.column width="50%"}
+* **Domain**: Characterize the problems and data of a particular domain
+  * Who are the target users?
+* **Abstraction**: Translate from the domain specifics to the visualization vocabulary
+  - [What]{.red} is shown? &rarr; data abstraction
+  - [Why]{.yellow} is the user looking at it? &rarr; task abstraction
+* **Idiom**: [How]{.green} is it shown?
+  - Visual encoding idiom &rarr; how to draw
+  - Interaction idiom &rarr; how to manipulate
+* **Algorithm**: Efficient computation
+:::
+
+::: {.column width="50%"}
+![](images/algo.png)
+:::
+::::
+
+## The *What*: Abstracting the Data
+
+![](images/abstracting.png){fig-align="center"}
+
+## Abstracting the Data
+
+* Why abstract the data?
+  * Different attribute types different representations
+  * Different dataset types different idioms available
+* What do you need to abstract?
+  * Dataset type: (e.g. table, network, temporal, etc.)
+  * Attribute types: (e.g. categorical, ordinal, quantitative)
+  * Ordering direction: (e.g. sequential, diverging, cyclical)
+  * Data availability: (e.g. dynamic, static)
+
+## Types of Datasets
+
+![](images/dataset_types.png){fig-align="center"}
+
+* (Also **temporal**!)
+
+## Tables
+
+![From <a href='https://openscapes.org/blog/2020-10-12-tidy-data/' target='_blank'>*Tidy data for efficiency, reproducibility, and collaboration*</a>, Julie Lowndes and Allison Horst, 12 October 2020](images/tidy_data.jpg){fig-align="center"}
+
+## Types of Attributes {.smaller .crunch-title .shift-ul .crunch-li .crunch-quarto-layout-panel}
+
+::: {layout="[1,1]"}
+::: {#attributes-left}
+
+![](images/data_attribute_types.png){fig-align="center"}
+
+:::
+::: {#attributes-right}
+
+* **Categorical**: No order
+  * Example: names, countries, types
+  * Must be represented with visual channels that don't convey order
+* **Ordered**
+  * *Ordinal*: Has implicit order, but you can't do arithmetic
+    * Can be numerical (but should be treated as categorical)
+    * Example: t-shirt sizes, grade in school, rankings
+  * *Quantitative*: Ordered, and you **can** do arithmetic
+    * Can be divergent or sequential
+    * Example: age, temperature, earnings
+
+:::
+:::
+
+## Ordering {.smaller .crunch-title .shift-ul .crunch-li .crunch-quarto-layout-panel}
+
+::: {layout="[1,1]"}
+::: {#ordering-left}
+
+![](images/data_ordering_types.png){fig-align="center" width="400"}
+
+:::
+::: {#ordering-right}
+
+* **Sequential**: Infinite range with clear minimum
+  * You can perform arithmetic
+  * Example: age, number of goals, price
+  * Must be represented with visual channels that don’t convey order
+* **Diverging**: Middle point + two opposite directions
+  * Middle point not always zero
+  * Example: temperature, earnings, political affiliation index
+* **Cyclic**: Cycle in the values
+  * Starting point may not be obvious
+  * Can be repsented w/*cyclical channels*
+  * Ex: days of the week, hours in the day
+
+:::
+:::
+
+## The Why? {.smaller .crunch-title}
+
+*(More on this next week!)*
+
+![](images/why_sheet.png){fig-align="center"}
+
+## The How?
+
+![](images/how_sheet.png){fig-align="center"}
+
+## Marks and Channels {.smaller .crunch-title}
+
+* **Marks** are geometric primitives:
+
+![](images/munzner-5-2-primitives.png){fig-align="center" width="500"}
+
+* **Channels** (encodings) control the appearance of marks
+
+![](images/munzner-5-3-visual-channels.png){fig-align="center" width="500"}
+
+## Channel (Encoding) Types
+
+![](images/munzner-5-1-channel-effectiveness.png){fig-align="center" width="600"}
+
+# Marks and Channels: Examples
+
+## Points
+
+::: {layout="[1,1]"}
+::: {#points-left}
+
+![](images/points-ex.png){fig-align="center"}
+
+:::
+::: {#points-right}
+
+* Zero-dimensional
+* Convey position only
+* Additionally, can be size and shape coded
+
+:::
+:::
+
+## Lines
+
+::: {layout="[1,1]"}
+::: {#lines-left}
+
+![](images/lines-ex.png){fig-align="center"}
+
+:::
+::: {#lines-right}
+
+* One-dimensional
+* Convey position and length
+* Can only be width coded
+
+:::
+:::
+
+
+## Areas
+
+::: {layout="[1,1]"}
+::: {#areas-left}
+
+![](images/areas-ex.png){fig-align="center"}
+
+:::
+::: {#areas-right}
+
+* Two dimensional
+* Fully constrained
+
+:::
+:::
+
+## Graphical Presentations of Relational Information {.smaller}
+
+::: {#fig-mackinlay layout="[1,1]"}
+
+![](images/mackinlay-fig14.png){fig-align="center"}
+
+![](images/mackinlay-fig15.png){fig-align="center"}
+
+Figures 14 and 15 in @mackinlay_automating_1986
+:::
+
+* Although encoding is often undertaken without much intention or deeper consideration, it has significant impact on the ability of the visualization to communicate knowledge accurately and efficiently.
+
+## Another Guide (Illinsky)
+
+![](images/illinksy.gif){fig-align="center"}
+
+# Examples of Visual and Integrity Issues {data-stack-name="Integrity"}
+
+## Position: Example 1 {.smaller}
+
+*Position* allows you to compare values based on where they are placed with reference to a coordinate system.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+* **Considerations**:
+  * Be aware of the scales you are using (linear vs logarithmic)
+  * The scale changes the interpretation of distance
+  * It can also change the perceived patterns
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: true
+#| code-fold: true
+library(tidyverse)
+set.seed(140)
+d <-  data.frame(x = rgamma(15,1)) %>% mutate(y = 3 + 2*x + 5*I(x^2) + rnorm(15,3,3))
+plt <- ggplot(d, aes(x, y))+
+	geom_point(size=6) + 
+	theme_bw() + 
+	theme(axis.title=element_blank(), axis.text = element_blank(), 
+		  axis.ticks=element_blank())
+plt + annotate('text', x=0.5, y=60,label = "Linear scales", hjust=0, size=8 )
+
+plt + scale_y_log10() + scale_x_log10() +
+	annotate('text', x = 0.1, y = 50, label = "Logarithmic scales", hjust=0, size=8)
+```
+
+:::
+::::
+
+## Position: Example 2 {.smaller .crunch-title}
+
+*Position* allows you to compare values based on where they are placed with reference to a coordinate system.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Considerations
+
+* Avoid overplotting since many points can occupy the same space and obscure one another
+
+### Solutions
+
+- **Use transparency** so that overlapping points make darker areas
+- **jitter** (add noise so points no longer are on top of each other)
+- **Use binning** to show aggregate data per pixel
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: false
+library(patchwork)
+d <- data.frame(x = rnorm(10000, 0, 1)) %>% mutate(y = x+rnorm(10000, 0,2))
+mytheme <- theme_bw()+
+	theme(axis.title=element_blank(),
+		  axis.text = element_blank(),
+		  axis.ticks=element_blank())
+p <- ggplot(d, aes(x ,y))
+p1 <- p+geom_point() + mytheme
+p2 <- p + geom_point(alpha=0.01) + mytheme
+p3 <- p + stat_density2d(geom='tile', aes(fill=..density..), contour=F, show.legend=F) + mytheme
+
+d <- d %>% mutate(z = sample(c(1,2,3), 10000, replace=T)) %>% slice_sample(prop=0.05)
+p4 <- ggplot(d , aes(x, z))+geom_point() + coord_flip()+ mytheme
+p5 <- ggplot(d, aes(x, z))+geom_jitter(height=0.1) + coord_flip()+mytheme
+
+p1/(p2+p3)
+	
+p4+p5
+```
+
+:::
+::::
+
+## Length {.crunch-title .crunch-ul .crunch-quarto-layout-panel}
+
+* *Length* is most commonly used in the context of bar charts. The longer a bar is, the greater the value.
+* **Don't truncate bar charts, use length in its entirety!**
+
+::: {layout="[1,1]"}
+![](https://flowingdata.com/wp-content/uploads/2012/08/Bush-cuts.png){fig-align="center"}
+
+![](https://flowingdata.com/wp-content/uploads/2012/08/Fox-chart-corrected.png){fig-align="center"}
+:::
+
+## Angle {.smaller}
+
+* *Angles* range from 0 to 360 degrees in a circle.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+* **Considerations**:
+  * Angles are most associated with _pie charts_. Pie chart is made up of parts that make up a whole. 
+  * Don't use too many categories (bar chart is better)
+  * **The sum of all percentages should equal 100%!**
+:::
+
+::: {.column width="50%"}
+![](https://flowingdata.com/wp-content/uploads/2009/11/Fox-News-pie-chart.png){fig-align="center"}
+:::
+::::
+
+## Pls Don't
+
+![](images/emoji_angles.jpg){fig-align="center"}
+
+## Slope
+
+* Slope is similar to angle. Line charts are the most common use of slope to encode data.
+* **Considerations**:
+  * Slope magnitude: steeper = greater change, flatter = lesser change
+  * Aspect ratio
+  * Visual change should match the context of the change
+* Cleveland, McGIll & McGill (1988) suggested that the average slope in a line chart should be 45&deg;, in order to make neutral comparisons between lines *(still a good rule of thumb)*
+
+## Area {.smaller .crunch-title}
+
+::: {layout="[1,1]"}
+::: {#area-left}
+* Like length, area can be used to represent data with size, but with two dimensions instead of one.
+* **Considerations**: 
+  * While the encoding might not be as precise from a visual perception perspective, area can provide a more intuitive, less abstract view for some types of data
+  * Make sure you scale by area, not edge (remember, area gets squared per unit increase): This means you should encode the length of a side as $\sqrt{x}$
+
+:::
+::: {#area-right}
+
+![](images/area-incorrect-750x427.png){fig-align="center"}
+
+:::
+:::
+
+## Volume {.smaller .crunch-title}
+
+::: {layout="[1,1]"}
+::: {#volume-left}
+
+* Volume can used in the same way as area (one more dimension)
+* **Considerations**:
+  * Make sure you scale by volume, not edge (remember, volume gets cubed per unit increase)
+  * This means you would encode the side of a “box” as $x^{1/3} = \sqrt[3]{x}$
+* For 3-D encodings, you need to take volume as proportional to the data
+
+:::
+::: {#volume-right}
+
+![](images/volume-incorrect-750x399.png){fig-align="center"}
+
+:::
+:::
+
+<!-- Links
+
+    Perception in visualization, Christopher G. Healy
+    39 Studies about human perception in 30 minutes
+    Gestalt Principles for Data Visualization
+    Learn how the brain works for kick-ass visualizations
+    Real chart rules to follow -->
+
+# Color 🌈 {data-stack-name="Color"}
+
+## Color + Society = Meaning
+
+* Color is not "sortable" in the traditional sense
+* However, color can convey **implicit meaning**!
+
+![](images/color-has-meaning.png){fig-align="center"}
+
+## Common color pitfalls
+
+* Encoding too much information or irrelevant information
+* Using nonmonotonic colors for data values
+* Failure to design for color vision deficiency
+* Not creating associations with color
+* Not using contrasting colors to contrast information
+* Not making the important information stand out
+* Using too many colors
+
+## Color {.smaller .crunch-title}
+
+* Color as a visual encoding can be split into two categories: **hue** and **saturation**.
+* **Hue**: what most people refer to as color (red, green, blue, etc.)
+* **Saturation**: **amount of hue** in a color.
+* **Qualitative**: every color represents a distinct attribute (category)
+* **Sequential**: color represents a range (saturation) from low to high (or vice-versa)
+* **Diverging**: multiple hues represent a point of inflection of the data
+
+![](images/brewer-scales.png){fig-align="center"}
+
+## Sequential Scale: Example 1
+
+![](images/jeopardy.png){fig-align="center"}
+
+## Sequential Scale: Example 2
+
+![](images/3-d-population-1090x419.png){fig-align="center"}
+
+## Divergent Scale: Example
+
+![](images/Tax-change-720x334.png){fig-align="center"}
+
+## Common Palettes {.smaller}
+
+![](images/colormaps.png.001.jpeg){fig-align="center"}
+
+* Most of these palettes are available to both ggplot2 and matplotlib. For R, you may have to load packages like RColorBrewer or viridis.
+
+## Colorblindness
+
+![](images/colorblind-750x281.png){fig-align="center"}
+
+## 1 in 8 People!
+
+![](images/colorblindness.png){fig-align="center"}
+
+## Digital Screens vs. Physical Printing
+
+![](images/printing.png){fig-align="center"}
+
+## Color as Context
+
+![](images/Christmas-trees-750x542.png){fig-align="center"}
+
+## Looking Forward: The Grammar of Graphics (GG) {.smaller .crunch-title .title-10}
+
+* @cleveland_elements_1985 lists the "basic elements of graph construction" as: scales, captions, plotting symbols, reference lines, keys, labels, panels, and tick marks.
+* @wilkinson_grammar_2006 built on @bertin_semiology_1967, formally defining components of a graphic:
+
+| Statement | Description |
+| - | - |
+| DATA | A set of data operations that create variables from datasets |
+| TRANS | Variable transformation (e.g. rank) |
+| SCALE | Scale transformations (e.g. log) |
+| COORD | Coordinate system (e.g. polar) |
+| ELEMENT | Graphs (e.g. points) and their aesthetic attributes (e.g. color) |
+| GUIDE | Axes, legends, etc. |
+
+* Hadley Wickham implemented Wilkinson's grammar in R via `ggplot2` (<a href='https://slides.com/karlho/datavisualization_grammarofgraphics#/6/0/4' target='_blank'>more info</a>)
+
+# Lab Time! {data-stack-name="Lab"}
+
+## Making Your Own Theme 😎
+
+* On <a href='https://github.com/gu-dsan5200/lab-themes' target='_blank'>GitHub <i class='bi bi-box-arrow-up-right ps-1'></i></a>
+
+## References
+
+::: {#refs}
+:::

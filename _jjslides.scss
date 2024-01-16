@@ -104,9 +104,20 @@ figcaption {
     margin: 0px !important;
 }
 
+// iframe
+.crunch-iframe iframe {
+    margin-bottom: 0px !important;
+  }
+
 // images
 .crunch-images img {
     margin: 0px !important;
+}
+
+// lists
+.crunch-li li {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
 }
 
 // lists
@@ -154,6 +165,10 @@ figcaption {
 .not-title-slide {
     display: block !important;
     top: 0px !important;
+}
+
+.shift-ul ul {
+    padding-left: 0;
 }
 
 .split-table {

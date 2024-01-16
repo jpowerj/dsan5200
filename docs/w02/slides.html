@@ -10,8 +10,11 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
+  <meta name="author" content="Abhijit Dasgupta">
   <meta name="author" content="Jeff Jacobs">
-  <title>Week 2: Design Thinking</title>
+  <meta name="author" content="Anderson Monken">
+  <meta name="author" content="Marck Vaisman">
+  <title>Lecture 2: Visual Encodings, Integrity, Color Theory</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,7 +32,91 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -328,24 +415,48 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 2: Design Thinking</h1>
-  <p class="subtitle"><em>DSAN 5200: Advanced Data Visualization</em><br>Section 03 (Tues 12:30-3pm)</p>
+  <h1 class="title">Lecture 2: Visual Encodings, Integrity, Color Theory</h1>
+  <p class="subtitle"><em>DSAN 5200-03: Advanced Data Visualization</em></p>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Abhijit Dasgupta 
+</div>
+        <p class="quarto-title-affiliation">
+            <a href="mailto:abhijit.dasgupta@georgetown.edu" target="_blank"><code>abhijit.dasgupta</code></a>
+          </p>
+    </div>
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
 Jeff Jacobs 
 </div>
         <p class="quarto-title-affiliation">
-            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088@georgetown.edu</code></a>
+            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088</code></a>
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Anderson Monken 
+</div>
+        <p class="quarto-title-affiliation">
+            <a href="mailto:aem303@georgetown.edu" target="_blank"><code>aem303</code></a>
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Marck Vaisman 
+</div>
+        <p class="quarto-title-affiliation">
+            <a href="mailto:marck.vaisman@georgetown.edu" target="_blank"><code>marck.vaisman</code></a>
           </p>
     </div>
 </div>
 
   <p class="date">Tuesday, January 23, 2024</p>
 </section>
-<section id="schedule" class="title-slide slide level1 center" data-name="Schedule">
-<h1>Schedule</h1>
+<section id="planned-schedule" class="title-slide slide level1 center" data-name="Schedule">
+<h1>Planned Schedule</h1>
 <table data-quarto-postprocess="true">
 <thead>
 <tr class="header">
@@ -358,30 +469,911 @@ Jeff Jacobs
 <tr class="odd">
 <td>12:30pm</td>
 <td>1:00pm</td>
-<td><a href="#/course-intro">Course Intro →</a></td>
+<td><a href="#/encodings">Encodings →</a></td>
 </tr>
 <tr class="even">
 <td>1:00pm</td>
-<td>2:00pm</td>
-<td><a href="#/your-data-science-toolbox">Data Science Toolbox →</a></td>
+<td>1:30pm</td>
+<td><a href="#/integrity">Visualization Integrity →</a></td>
 </tr>
 <tr class="odd">
+<td>1:30pm</td>
+<td>2:00pm</td>
+<td><a href="#/color">Color Theory →</a></td>
+</tr>
+<tr class="even">
 <td>2:00pm</td>
 <td>2:10pm</td>
 <td>Break!</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>2:10pm</td>
 <td>3:00pm</td>
-<td><a href="#/data-visualization-lab">Data Viz Lab →</a></td>
+<td><a href="#/lab">Lab →</a></td>
 </tr>
 </tbody>
 </table>
+</section>
 
-<div class="footer footer-default">
-<p>DSAN 5200-03 Week 2: Design Thinking</p>
+<section>
+<section id="encodings" class="title-slide slide level1 center" data-stack-name="Encodings">
+<h1>Encodings</h1>
+
+</section>
+<section id="key-point-data-viz-neq-data-analysis" class="slide level2">
+<h2>Key Point: Data Viz <span class="math inline">\(\neq\)</span> Data Analysis</h2>
+<ul>
+<li>Readers haven’t gone through the process of <em>developing</em> and <em>answering questions</em> that you went through in developing the viz</li>
+<li>Your audience wants to know the <em>story</em>, <em>result</em>, and/or <em>conclusions</em></li>
+<li>They (usually) don’t want the messy details you trudged through when analyzing the data; that’s your job!</li>
+</ul>
+</section>
+<section id="different-approaches-for-different-audiences" class="slide level2 smaller crunch-title title-12 crunch-quarto-layout-panel">
+<h2>Different Approaches for Different Audiences!</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="audiences-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="viz-for-analysis-text">
+<center>
+<strong>Visualization for <em>Analysis</em></strong>:
+</center>
+<ul>
+<li>“Internal” audience: You and your team (<strong>shared context</strong>)</li>
+<li>Efficient understanding and iteration to develop insights</li>
+<li><em>Rough drafts</em>: Can make changes/“polish” later</li>
+</ul>
+</div>
+<div id="viz-for-presentation-text">
+<center>
+<strong>Visualization for <em>Presentation</em></strong>:
+</center>
+<ul>
+<li>“External” audience: Content is likely <strong>new</strong> to them; audience has no context</li>
+<li>Different info is <strong>useful to them</strong> vs.&nbsp;useful to your teammates</li>
+<li>Takes significantly more time to get to <em>publication ready</em></li>
+</ul>
+</div>
+</div>
+<div id="audiences-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/young_thug.jpeg" width="360"></p>
+<figcaption>From <a href="https://pitchfork.com/features/overtones/9727-chaos-theory-the-glorious-unpredictability-of-young-thug/" target="_blank"><em>Chaos Theory: The Glorious Unpredictability of Young Thug</em></a>, Jayson Greene, <em>Pitchfork</em>, 28 September 2015</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </section>
+<section id="what-does-designing-for-an-audience-look-like" class="slide level2">
+<h2>What Does “Designing For An Audience” Look Like?</h2>
+<ul>
+<li><p>Explain the encodings</p></li>
+<li><p>Provide context</p></li>
+<li><p>Focus on readability</p></li>
+<li><p>Develop aesthetics</p></li>
+<li><p><span class="citation" data-cites="yau_data_2013">Yau (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span>, Ch. 6: <a href="https://ebookcentral-proquest-com.proxy.library.georgetown.edu/lib/georgetown/detail.action?docID=1158630" target="_blank">“Designing For An Audience” <i class="bi bi-box-arrow-up-right ps-1"></i></a> (Georgtown Library Proxy Link)</p></li>
+</ul>
+</section>
+<section id="explaining-encodings" class="slide level2 smaller crunch-title crunch-quarto-layout-panel">
+<h2>Explaining Encodings</h2>
+<ul>
+<li><p>What scale are you using? What does that color represent? Is this normal?</p></li>
+<li><p>Better to err on the side of too much explanation than too little</p></li>
+<li><p><em>Too much</em>? People can gloss over details (if designed well 😉)</p></li>
+<li><p><em>Too little</em>? People unfamiliar with the visual encodings will get stuck</p></li>
+</ul>
+<div id="fig-atlas" class="quarto-layout-panel">
+<figure>
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/populous-cities.png"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/populous-cities-annotation.png"></p>
+</div>
+</div>
+<p></p><figcaption>Figure&nbsp;1: The Statistical Atlas of the United States, produced in the late 1800s by the Census Bureau, explained all of the encodings. For example, look at this bump chart from the 1880 atlas. It ranks cities by population.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="explaining-things-you-forgot-you-need-to-explain" class="slide level2 title-12">
+<h2>Explaining Things You Forgot You Need To Explain</h2>
+<ul>
+<li><em>When you work with a dataset for a while, it’s easy to forget that others aren’t as familiar […] When you know all the intimate details, it’s hard to step back and remember what it was like when you first opened up a file or database—just a bunch of numbers</em> <span class="citation" data-cites="yau_data_2013">(<a href="#/references" role="doc-biblioref" onclick="">Yau 2013, 209</a>)</span></li>
+</ul>
+</section>
+<section id="explaining-things-you-forgot-you-need-to-explain-1" class="slide level2 smaller title-11 crunch-title crunch-iframe">
+<h2>Explaining Things You Forgot You Need To Explain</h2>
+<ul>
+<li><em>(If you know this video, don’t say anything!!)</em></li>
+</ul>
+<iframe data-external="1" src="https://www.youtube.com/embed/vJG698U2Mvo" width="100%" height="550" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section>
+<section id="provide-context" class="slide level2">
+<h2>Provide Context</h2>
+<ul>
+<li><p>When readers can decode the shapes, colors and geometries on your chart, you are more than half way there to producing an awesome chart.</p></li>
+<li><p>However, readers also need to understand the <strong>context</strong> of the data.</p></li>
+</ul>
+</section>
+<section id="but-how-much-context-do-i-need-to-provide" class="slide level2 smaller title-10 crunch-title crunch-iframe">
+<h2>But How Much Context Do I Need To Provide?</h2>
+<ul>
+<li>An aside from the humanities <span class="citation" data-cites="gadamer_truth_1960">(<a href="#/references" role="doc-biblioref" onclick="">Gadamer 1960</a>)</span></li>
+</ul>
+<iframe data-external="1" src="https://www.youtube.com/embed/CJ7MlTdC_aQ" width="100%" height="550" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section>
+<section id="readability" class="slide level2 crunch-title">
+<h2>Readability</h2>
+<ul>
+<li>Charts should read like text! It should be obvious what the chart is about, how to interpret it</li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/flat_fig.png"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/organized_fig.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="aesthetics" class="slide level2">
+<h2>Aesthetics</h2>
+<ul>
+<li>Default settings in viz tools are generic and designed specifically to work with as many datasets and visualization types as possible</li>
+<li>This <span class="math inline">\(\neq\)</span> best for <strong>your</strong> use cases!</li>
+<li>You can (and should) develop aesthetics to make your charts less ugly</li>
+<li><em>(Note: In this context, aesthetics means a visual style. Do not confuse this with the aes() call in ggplot2.)</em></li>
+</ul>
+</section>
+<section id="aesthetics-broad-umbrella-term" class="slide level2 smaller crunch-title">
+<h2>Aesthetics: Broad Umbrella Term</h2>
+<ul>
+<li>Something like… the <em>gestalt</em> sum of visual design choices</li>
+</ul>
+
+<img data-src="images/color_guide.jpeg" class="r-stretch quarto-figure-center"><p class="caption">From Georgetown’s official <a href="https://www.georgetown.edu/color-guide/" target="_blank">color guide</a> <em>(but remember: color is only one of many factors that makes up an “aesthetic”)</em></p></section>
+<section id="aesthetics-broad-umbrella-term-1" class="slide level2">
+<h2>Aesthetics: Broad Umbrella Term</h2>
+
+<img data-src="images/feltron_report.jpg" class="r-stretch quarto-figure-center"><p class="caption">From Nicholas Felton’s <a href="http://feltron.com/index.html" target="_blank">2014 Annual Report</a></p></section>
+<section id="guidelines-not-rules" class="slide level2 smaller">
+<h2>Guidelines, Not Rules!</h2>
+<ul>
+<li>They’re more continuous than absolute. Your charts may need more or less explanations, more or less context, etc.</li>
+<li>Depends on your <strong>audience</strong> and the <strong>purpose</strong> behind your chart:
+<ul>
+<li>If your audience is a small group who has the same background as you, then you might not need to provide as much context for the data you show.</li>
+<li>If your audience is already excited about a dataset, then you probably don’t need to make it too flashy.</li>
+<li>If you make charts for a research paper, there are probably publisher guidelines that you need to follow, which limits what you can do (sometimes a good thing).</li>
+</ul></li>
+<li>Think of the above adjustments as continuous knobs that you can turn up or down. The more charts you make, the better you’ll get at deciding how much to turn.</li>
+</ul>
+</section></section>
+<section>
+<section id="cognitive-perceptual-foundations" class="title-slide slide level1 center">
+<h1>Cognitive-Perceptual Foundations</h1>
+
+</section>
+<section id="pre-attentive-processing" class="slide level2 smaller crunch-title crunch-iframe">
+<h2>Pre-Attentive Processing</h2>
+<ul>
+<li>The ability of the visual system to effortlessly identify certain basic visual properties.</li>
+</ul>
+<iframe data-external="1" src="https://www.youtube.com/embed/AiD6etOB6qI" width="100%" height="540" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section>
+<section id="tamara-munzner" class="slide level2 crunch-quarto-layout-panel crunch-title">
+<h2>Tamara Munzner</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="munzner-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li>Computer scientist, info viz expert, and professor at University of British Columbia</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/tamara_munzner_headshot.jpg"></p>
+</figure>
+</div>
+</div>
+<div id="munzner-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/munzner-book.png" width="450"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="nested-model-analysis-framework-munzner" class="slide level2 title-11 smaller crunch-li-3 crunch-title shift-ul">
+<h2>Nested Model Analysis Framework (Munzner)</h2>
+<p>Four levels, three questions:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Domain</strong>: Characterize the problems and data of a particular domain
+<ul>
+<li>Who are the target users?</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/domain.png"></p>
+</div>
+</div>
+</section>
+<section id="nested-model-analysis-framework-munzner-1" class="slide level2 title-11 smaller crunch-li-3 crunch-title shift-ul">
+<h2>Nested Model Analysis Framework (Munzner)</h2>
+<p>Four levels, three questions:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Domain</strong>: Characterize the problems and data of a particular domain
+<ul>
+<li>Who are the target users?</li>
+</ul></li>
+<li><strong>Abstraction</strong>: Translate from the domain specifics to the visualization vocabulary
+<ul>
+<li><span class="red">What</span> is shown? → data abstraction</li>
+<li><span class="yellow">Why</span> is the user looking at it? → task abstraction</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/abstraction.png"></p>
+</div>
+</div>
+</section>
+<section id="nested-model-analysis-framework-munzner-2" class="slide level2 title-11 smaller crunch-li-3 crunch-title shift-ul">
+<h2>Nested Model Analysis Framework (Munzner)</h2>
+<p>Four levels, three questions:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Domain</strong>: Characterize the problems and data of a particular domain
+<ul>
+<li>Who are the target users?</li>
+</ul></li>
+<li><strong>Abstraction</strong>: Translate from the domain specifics to the visualization vocabulary
+<ul>
+<li><span class="red">What</span> is shown? → data abstraction</li>
+<li><span class="yellow">Why</span> is the user looking at it? → task abstraction</li>
+</ul></li>
+<li><strong>Idiom</strong>: <span class="green">How</span> is it shown?
+<ul>
+<li>Visual encoding idiom → how to draw</li>
+<li>Interaction idiom → how to manipulate</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/idiom.png"></p>
+</div>
+</div>
+</section>
+<section id="nested-model-analysis-framework-munzner-3" class="slide level2 title-11 smaller crunch-li-3 crunch-title shift-ul">
+<h2>Nested Model Analysis Framework (Munzner)</h2>
+<p>Four levels, three questions:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Domain</strong>: Characterize the problems and data of a particular domain
+<ul>
+<li>Who are the target users?</li>
+</ul></li>
+<li><strong>Abstraction</strong>: Translate from the domain specifics to the visualization vocabulary
+<ul>
+<li><span class="red">What</span> is shown? → data abstraction</li>
+<li><span class="yellow">Why</span> is the user looking at it? → task abstraction</li>
+</ul></li>
+<li><strong>Idiom</strong>: <span class="green">How</span> is it shown?
+<ul>
+<li>Visual encoding idiom → how to draw</li>
+<li>Interaction idiom → how to manipulate</li>
+</ul></li>
+<li><strong>Algorithm</strong>: Efficient computation</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/algo.png"></p>
+</div>
+</div>
+</section>
+<section id="the-what-abstracting-the-data" class="slide level2">
+<h2>The <em>What</em>: Abstracting the Data</h2>
+
+<img data-src="images/abstracting.png" class="r-stretch quarto-figure-center"></section>
+<section id="abstracting-the-data" class="slide level2">
+<h2>Abstracting the Data</h2>
+<ul>
+<li>Why abstract the data?
+<ul>
+<li>Different attribute types different representations</li>
+<li>Different dataset types different idioms available</li>
+</ul></li>
+<li>What do you need to abstract?
+<ul>
+<li>Dataset type: (e.g.&nbsp;table, network, temporal, etc.)</li>
+<li>Attribute types: (e.g.&nbsp;categorical, ordinal, quantitative)</li>
+<li>Ordering direction: (e.g.&nbsp;sequential, diverging, cyclical)</li>
+<li>Data availability: (e.g.&nbsp;dynamic, static)</li>
+</ul></li>
+</ul>
+</section>
+<section id="types-of-datasets" class="slide level2">
+<h2>Types of Datasets</h2>
+
+<img data-src="images/dataset_types.png" class="r-stretch quarto-figure-center"><ul>
+<li>(Also <strong>temporal</strong>!)</li>
+</ul>
+</section>
+<section id="tables" class="slide level2">
+<h2>Tables</h2>
+
+<img data-src="images/tidy_data.jpg" class="r-stretch quarto-figure-center"><p class="caption">From <a href="https://openscapes.org/blog/2020-10-12-tidy-data/" target="_blank"><em>Tidy data for efficiency, reproducibility, and collaboration</em></a>, Julie Lowndes and Allison Horst, 12 October 2020</p></section>
+<section id="types-of-attributes" class="slide level2 smaller crunch-title shift-ul crunch-li crunch-quarto-layout-panel">
+<h2>Types of Attributes</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="attributes-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data_attribute_types.png"></p>
+</figure>
+</div>
+</div>
+<div id="attributes-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li><strong>Categorical</strong>: No order
+<ul>
+<li>Example: names, countries, types</li>
+<li>Must be represented with visual channels that don’t convey order</li>
+</ul></li>
+<li><strong>Ordered</strong>
+<ul>
+<li><em>Ordinal</em>: Has implicit order, but you can’t do arithmetic
+<ul>
+<li>Can be numerical (but should be treated as categorical)</li>
+<li>Example: t-shirt sizes, grade in school, rankings</li>
+</ul></li>
+<li><em>Quantitative</em>: Ordered, and you <strong>can</strong> do arithmetic
+<ul>
+<li>Can be divergent or sequential</li>
+<li>Example: age, temperature, earnings</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="ordering" class="slide level2 smaller crunch-title shift-ul crunch-li crunch-quarto-layout-panel">
+<h2>Ordering</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="ordering-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data_ordering_types.png" width="400"></p>
+</figure>
+</div>
+</div>
+<div id="ordering-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li><strong>Sequential</strong>: Infinite range with clear minimum
+<ul>
+<li>You can perform arithmetic</li>
+<li>Example: age, number of goals, price</li>
+<li>Must be represented with visual channels that don’t convey order</li>
+</ul></li>
+<li><strong>Diverging</strong>: Middle point + two opposite directions
+<ul>
+<li>Middle point not always zero</li>
+<li>Example: temperature, earnings, political affiliation index</li>
+</ul></li>
+<li><strong>Cyclic</strong>: Cycle in the values
+<ul>
+<li>Starting point may not be obvious</li>
+<li>Can be repsented w/<em>cyclical channels</em></li>
+<li>Ex: days of the week, hours in the day</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="the-why" class="slide level2 smaller crunch-title">
+<h2>The Why?</h2>
+<p><em>(More on this next week!)</em></p>
+
+<img data-src="images/why_sheet.png" class="r-stretch quarto-figure-center"></section>
+<section id="the-how" class="slide level2">
+<h2>The How?</h2>
+
+<img data-src="images/how_sheet.png" class="r-stretch quarto-figure-center"></section>
+<section id="marks-and-channels" class="slide level2 smaller crunch-title">
+<h2>Marks and Channels</h2>
+<ul>
+<li><strong>Marks</strong> are geometric primitives:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/munzner-5-2-primitives.png" width="500"></p>
+</figure>
+</div>
+<ul>
+<li><strong>Channels</strong> (encodings) control the appearance of marks</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/munzner-5-3-visual-channels.png" width="500"></p>
+</figure>
+</div>
+</section>
+<section id="channel-encoding-types" class="slide level2">
+<h2>Channel (Encoding) Types</h2>
+
+<img data-src="images/munzner-5-1-channel-effectiveness.png" width="600" class="r-stretch quarto-figure-center"></section></section>
+<section>
+<section id="marks-and-channels-examples" class="title-slide slide level1 center">
+<h1>Marks and Channels: Examples</h1>
+
+</section>
+<section id="points" class="slide level2">
+<h2>Points</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="points-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/points-ex.png"></p>
+</figure>
+</div>
+</div>
+<div id="points-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li>Zero-dimensional</li>
+<li>Convey position only</li>
+<li>Additionally, can be size and shape coded</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="lines" class="slide level2">
+<h2>Lines</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="lines-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/lines-ex.png"></p>
+</figure>
+</div>
+</div>
+<div id="lines-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li>One-dimensional</li>
+<li>Convey position and length</li>
+<li>Can only be width coded</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="areas" class="slide level2">
+<h2>Areas</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="areas-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/areas-ex.png"></p>
+</figure>
+</div>
+</div>
+<div id="areas-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li>Two dimensional</li>
+<li>Fully constrained</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="graphical-presentations-of-relational-information" class="slide level2 smaller">
+<h2>Graphical Presentations of Relational Information</h2>
+<div id="fig-mackinlay" class="quarto-layout-panel">
+<figure>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/mackinlay-fig14.png"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/mackinlay-fig15.png"></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption>Figure&nbsp;2: Figures 14 and 15 in <span class="citation" data-cites="mackinlay_automating_1986">Mackinlay (<a href="#/references" role="doc-biblioref" onclick="">1986</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>Although encoding is often undertaken without much intention or deeper consideration, it has significant impact on the ability of the visualization to communicate knowledge accurately and efficiently.</li>
+</ul>
+</section>
+<section id="another-guide-illinsky" class="slide level2">
+<h2>Another Guide (Illinsky)</h2>
+
+<img data-src="images/illinksy.gif" class="r-stretch quarto-figure-center"></section></section>
+<section>
+<section id="examples-of-visual-and-integrity-issues" class="title-slide slide level1 center" data-stack-name="Integrity">
+<h1>Examples of Visual and Integrity Issues</h1>
+
+</section>
+<section id="position-example-1" class="slide level2 smaller">
+<h2>Position: Example 1</h2>
+<p><em>Position</em> allows you to compare values based on where they are placed with reference to a coordinate system.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Considerations</strong>:
+<ul>
+<li>Be aware of the scales you are using (linear vs logarithmic)</li>
+<li>The scale changes the interpretation of distance</li>
+<li>It can also change the perceived patterns</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">set.seed</span>(<span class="dv">140</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>d <span class="ot">&lt;-</span>  <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">rgamma</span>(<span class="dv">15</span>,<span class="dv">1</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">y =</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">5</span><span class="sc">*</span><span class="fu">I</span>(x<span class="sc">^</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">15</span>,<span class="dv">3</span>,<span class="dv">3</span>))</span>
+<span id="cb1-4"><a href="#cb1-4"></a>plt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(d, <span class="fu">aes</span>(x, y))<span class="sc">+</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">6</span>) <span class="sc">+</span> </span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="fu">theme</span>(<span class="at">axis.title=</span><span class="fu">element_blank</span>(), <span class="at">axis.text =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb1-8"><a href="#cb1-8"></a>          <span class="at">axis.ticks=</span><span class="fu">element_blank</span>())</span>
+<span id="cb1-9"><a href="#cb1-9"></a>plt <span class="sc">+</span> <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x=</span><span class="fl">0.5</span>, <span class="at">y=</span><span class="dv">60</span>,<span class="at">label =</span> <span class="st">"Linear scales"</span>, <span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">8</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>plt <span class="sc">+</span> <span class="fu">scale_y_log10</span>() <span class="sc">+</span> <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>    <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x =</span> <span class="fl">0.1</span>, <span class="at">y =</span> <span class="dv">50</span>, <span class="at">label =</span> <span class="st">"Logarithmic scales"</span>, <span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-2.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="position-example-2" class="slide level2 smaller crunch-title">
+<h2>Position: Example 2</h2>
+<p><em>Position</em> allows you to compare values based on where they are placed with reference to a coordinate system.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="considerations">Considerations</h3>
+<ul>
+<li>Avoid overplotting since many points can occupy the same space and obscure one another</li>
+</ul>
+<h3 id="solutions">Solutions</h3>
+<ul>
+<li><strong>Use transparency</strong> so that overlapping points make darker areas</li>
+<li><strong>jitter</strong> (add noise so points no longer are on top of each other)</li>
+<li><strong>Use binning</strong> to show aggregate data per pixel</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</div>
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-2.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="length" class="slide level2 crunch-title crunch-ul crunch-quarto-layout-panel">
+<h2>Length</h2>
+<ul>
+<li><em>Length</em> is most commonly used in the context of bar charts. The longer a bar is, the greater the value.</li>
+<li><strong>Don’t truncate bar charts, use length in its entirety!</strong></li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://flowingdata.com/wp-content/uploads/2012/08/Bush-cuts.png"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://flowingdata.com/wp-content/uploads/2012/08/Fox-chart-corrected.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="angle" class="slide level2 smaller">
+<h2>Angle</h2>
+<ul>
+<li><em>Angles</em> range from 0 to 360 degrees in a circle.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Considerations</strong>:
+<ul>
+<li>Angles are most associated with <em>pie charts</em>. Pie chart is made up of parts that make up a whole.</li>
+<li>Don’t use too many categories (bar chart is better)</li>
+<li><strong>The sum of all percentages should equal 100%!</strong></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://flowingdata.com/wp-content/uploads/2009/11/Fox-News-pie-chart.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="pls-dont" class="slide level2">
+<h2>Pls Don’t</h2>
+
+<img data-src="images/emoji_angles.jpg" class="r-stretch quarto-figure-center"></section>
+<section id="slope" class="slide level2">
+<h2>Slope</h2>
+<ul>
+<li>Slope is similar to angle. Line charts are the most common use of slope to encode data.</li>
+<li><strong>Considerations</strong>:
+<ul>
+<li>Slope magnitude: steeper = greater change, flatter = lesser change</li>
+<li>Aspect ratio</li>
+<li>Visual change should match the context of the change</li>
+</ul></li>
+<li>Cleveland, McGIll &amp; McGill (1988) suggested that the average slope in a line chart should be 45°, in order to make neutral comparisons between lines <em>(still a good rule of thumb)</em></li>
+</ul>
+</section>
+<section id="area" class="slide level2 smaller crunch-title">
+<h2>Area</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="area-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li>Like length, area can be used to represent data with size, but with two dimensions instead of one.</li>
+<li><strong>Considerations</strong>:
+<ul>
+<li>While the encoding might not be as precise from a visual perception perspective, area can provide a more intuitive, less abstract view for some types of data</li>
+<li>Make sure you scale by area, not edge (remember, area gets squared per unit increase): This means you should encode the length of a side as <span class="math inline">\(\sqrt{x}\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div id="area-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/area-incorrect-750x427.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="volume" class="slide level2 smaller crunch-title">
+<h2>Volume</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="volume-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<ul>
+<li>Volume can used in the same way as area (one more dimension)</li>
+<li><strong>Considerations</strong>:
+<ul>
+<li>Make sure you scale by volume, not edge (remember, volume gets cubed per unit increase)</li>
+<li>This means you would encode the side of a “box” as <span class="math inline">\(x^{1/3} = \sqrt[3]{x}\)</span></li>
+</ul></li>
+<li>For 3-D encodings, you need to take volume as proportional to the data</li>
+</ul>
+</div>
+<div id="volume-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/volume-incorrect-750x399.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<!-- Links
+
+    Perception in visualization, Christopher G. Healy
+    39 Studies about human perception in 30 minutes
+    Gestalt Principles for Data Visualization
+    Learn how the brain works for kick-ass visualizations
+    Real chart rules to follow -->
+</section></section>
+<section>
+<section id="color" class="title-slide slide level1 center" data-stack-name="Color">
+<h1>Color 🌈</h1>
+
+</section>
+<section id="color-society-meaning" class="slide level2">
+<h2>Color + Society = Meaning</h2>
+<ul>
+<li>Color is not “sortable” in the traditional sense</li>
+<li>However, color can convey <strong>implicit meaning</strong>!</li>
+</ul>
+
+<img data-src="images/color-has-meaning.png" class="r-stretch quarto-figure-center"></section>
+<section id="common-color-pitfalls" class="slide level2">
+<h2>Common color pitfalls</h2>
+<ul>
+<li>Encoding too much information or irrelevant information</li>
+<li>Using nonmonotonic colors for data values</li>
+<li>Failure to design for color vision deficiency</li>
+<li>Not creating associations with color</li>
+<li>Not using contrasting colors to contrast information</li>
+<li>Not making the important information stand out</li>
+<li>Using too many colors</li>
+</ul>
+</section>
+<section id="color-1" class="slide level2 smaller crunch-title">
+<h2>Color</h2>
+<ul>
+<li>Color as a visual encoding can be split into two categories: <strong>hue</strong> and <strong>saturation</strong>.</li>
+<li><strong>Hue</strong>: what most people refer to as color (red, green, blue, etc.)</li>
+<li><strong>Saturation</strong>: <strong>amount of hue</strong> in a color.</li>
+<li><strong>Qualitative</strong>: every color represents a distinct attribute (category)</li>
+<li><strong>Sequential</strong>: color represents a range (saturation) from low to high (or vice-versa)</li>
+<li><strong>Diverging</strong>: multiple hues represent a point of inflection of the data</li>
+</ul>
+
+<img data-src="images/brewer-scales.png" class="r-stretch quarto-figure-center"></section>
+<section id="sequential-scale-example-1" class="slide level2">
+<h2>Sequential Scale: Example 1</h2>
+
+<img data-src="images/jeopardy.png" class="r-stretch quarto-figure-center"></section>
+<section id="sequential-scale-example-2" class="slide level2">
+<h2>Sequential Scale: Example 2</h2>
+
+<img data-src="images/3-d-population-1090x419.png" class="r-stretch quarto-figure-center"></section>
+<section id="divergent-scale-example" class="slide level2">
+<h2>Divergent Scale: Example</h2>
+
+<img data-src="images/Tax-change-720x334.png" class="r-stretch quarto-figure-center"></section>
+<section id="common-palettes" class="slide level2 smaller">
+<h2>Common Palettes</h2>
+
+<img data-src="images/colormaps.png.001.jpeg" class="r-stretch quarto-figure-center"><ul>
+<li>Most of these palettes are available to both ggplot2 and matplotlib. For R, you may have to load packages like RColorBrewer or viridis.</li>
+</ul>
+</section>
+<section id="colorblindness" class="slide level2">
+<h2>Colorblindness</h2>
+
+<img data-src="images/colorblind-750x281.png" class="r-stretch quarto-figure-center"></section>
+<section id="in-8-people" class="slide level2">
+<h2>1 in 8 People!</h2>
+
+<img data-src="images/colorblindness.png" class="r-stretch quarto-figure-center"></section>
+<section id="digital-screens-vs.-physical-printing" class="slide level2">
+<h2>Digital Screens vs.&nbsp;Physical Printing</h2>
+
+<img data-src="images/printing.png" class="r-stretch quarto-figure-center"></section>
+<section id="color-as-context" class="slide level2">
+<h2>Color as Context</h2>
+
+<img data-src="images/Christmas-trees-750x542.png" class="r-stretch quarto-figure-center"></section>
+<section id="looking-forward-the-grammar-of-graphics-gg" class="slide level2 smaller crunch-title title-10">
+<h2>Looking Forward: The Grammar of Graphics (GG)</h2>
+<ul>
+<li><span class="citation" data-cites="cleveland_elements_1985">Cleveland (<a href="#/references" role="doc-biblioref" onclick="">1985</a>)</span> lists the “basic elements of graph construction” as: scales, captions, plotting symbols, reference lines, keys, labels, panels, and tick marks.</li>
+<li><span class="citation" data-cites="wilkinson_grammar_2006">Wilkinson (<a href="#/references" role="doc-biblioref" onclick="">2006</a>)</span> built on <span class="citation" data-cites="bertin_semiology_1967">Bertin (<a href="#/references" role="doc-biblioref" onclick="">1967</a>)</span>, formally defining components of a graphic:</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Statement</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DATA</td>
+<td>A set of data operations that create variables from datasets</td>
+</tr>
+<tr class="even">
+<td>TRANS</td>
+<td>Variable transformation (e.g.&nbsp;rank)</td>
+</tr>
+<tr class="odd">
+<td>SCALE</td>
+<td>Scale transformations (e.g.&nbsp;log)</td>
+</tr>
+<tr class="even">
+<td>COORD</td>
+<td>Coordinate system (e.g.&nbsp;polar)</td>
+</tr>
+<tr class="odd">
+<td>ELEMENT</td>
+<td>Graphs (e.g.&nbsp;points) and their aesthetic attributes (e.g.&nbsp;color)</td>
+</tr>
+<tr class="even">
+<td>GUIDE</td>
+<td>Axes, legends, etc.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Hadley Wickham implemented Wilkinson’s grammar in R via <code>ggplot2</code> (<a href="https://slides.com/karlho/datavisualization_grammarofgraphics#/6/0/4" target="_blank">more info</a>)</li>
+</ul>
+</section></section>
+<section>
+<section id="lab-time" class="title-slide slide level1 center" data-stack-name="Lab">
+<h1>Lab Time!</h1>
+
+</section>
+<section id="making-your-own-theme" class="slide level2">
+<h2>Making Your Own Theme 😎</h2>
+<ul>
+<li>On <a href="https://github.com/gu-dsan5200/lab-themes" target="_blank">GitHub <i class="bi bi-box-arrow-up-right ps-1"></i></a></li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bertin_semiology_1967" class="csl-entry" role="listitem">
+Bertin, Jacques. 1967. <em>Semiology of <span>Graphics</span>: <span>Diagrams</span>, <span>Networks</span>, <span>Maps</span></em>. <span>ESRI Press</span>.
+</div>
+<div id="ref-cleveland_elements_1985" class="csl-entry" role="listitem">
+Cleveland, William S. 1985. <em>The <span>Elements</span> of <span>Graphing Data</span></em>. <span>CRC Press</span>.
+</div>
+<div id="ref-gadamer_truth_1960" class="csl-entry" role="listitem">
+Gadamer, Hans-Georg. 1960. <em>Truth and <span>Method</span></em>. <span>New York</span>: <span>Crossroad</span>.
+</div>
+<div id="ref-mackinlay_automating_1986" class="csl-entry" role="listitem">
+Mackinlay, Jock. 1986. <span>“Automating the Design of Graphical Presentations of Relational Information.”</span> <em>ACM Transactions on Graphics</em> 5 (2): 110–41. <a href="https://doi.org/10.1145/22949.22950">https://doi.org/10.1145/22949.22950</a>.
+</div>
+<div id="ref-wilkinson_grammar_2006" class="csl-entry" role="listitem">
+Wilkinson, Leland. 2006. <em>The <span>Grammar</span> of <span>Graphics</span></em>. <span>Springer Science &amp; Business Media</span>.
+</div>
+<div id="ref-yau_data_2013" class="csl-entry" role="listitem">
+Yau, Nathan. 2013. <em>Data <span>Points</span>: <span>Visualization That Means Something</span></em>. <span>John Wiley &amp; Sons</span>.
+</div>
+</div>
+
+<div class="footer footer-default">
+<p>DSAN 5200-03 Week 2: Visual Encodings, Integrity, Colors</p>
+</div>
+</section></section>
     </div>
   </div>
 
@@ -595,6 +1587,44 @@ Jeff Jacobs
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
