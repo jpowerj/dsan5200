@@ -1,5 +1,5 @@
 ---
-title: "Week 1: Course Intro and Data Science Toolbox"
+title: "Lecture 1: Course Intro and Data Science Toolbox"
 subtitle: "*DSAN 5200: Advanced Data Visualization*<br>Section 03 (Tues 12:30-3pm)"
 author:
   - "Abhijit Dasgupta"
