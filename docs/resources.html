@@ -6,12 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Abhijit Dasgupta">
-<meta name="author" content="Jeff Jacobs">
-<meta name="author" content="Anderson Monken">
-<meta name="author" content="Marck Vaisman">
 
-<title>Lecture 1: Course Intro and Data Science Toolbox</title>
+<title>Resources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +20,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -63,10 +78,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="../jjcustom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="./jjcustom.js"></script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -78,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../w01/index.html">Week 1: Jan 11</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./resources.html">Resources</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -93,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">DSAN 5200-03 Slides</a> 
+      <a href="./">DSAN 5200-03 Slides</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -105,32 +120,32 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><i class="bi bi-house pe-1"></i> Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../recordings/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./recordings/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Videos</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../resources.html" class="sidebar-item-text sidebar-link">
+  <a href="./resources.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../w01/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./w01/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 1: Jan 11</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../w02/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./w02/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 2: Jan 16</span></a>
   </div>
 </li>
@@ -153,68 +168,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#wilkinson-the-grammar-of-graphics-2006" id="toc-wilkinson-the-grammar-of-graphics-2006" class="nav-link active" data-scroll-target="#wilkinson-the-grammar-of-graphics-2006">Wilkinson, <em>The Grammar of Graphics</em> (2006)</a></li>
+  <li><a href="#nathan-yau-visualize-this-2011-and-data-points-2013" id="toc-nathan-yau-visualize-this-2011-and-data-points-2013" class="nav-link" data-scroll-target="#nathan-yau-visualize-this-2011-and-data-points-2013">Nathan Yau, <em>Visualize This!</em> (2011) and <em>Data Points</em> (2013)</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 1: Course Intro and Data Science Toolbox</h1>
-<p class="subtitle lead"><em>DSAN 5200: Advanced Data Visualization</em><br>Section 03 (Tues 12:30-3pm)</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Class Sessions</div>
-  </div>
-  </div>
+<h1 class="title">Resources</h1>
+</div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Abhijit Dasgupta </p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="mailto:abhijit.dasgupta@georgetown.edu" target="_blank"><code>abhijit.dasgupta</code></a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Jeff Jacobs </p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088</code></a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Anderson Monken </p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="mailto:aem303@georgetown.edu" target="_blank"><code>aem303</code></a>
-          </p>
-      </div>
-      <div class="quarto-title-meta-contents">
-    <p class="author">Marck Vaisman </p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="mailto:marck.vaisman@georgetown.edu" target="_blank"><code>marck.vaisman</code></a>
-          </p>
-      </div>
-    </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">Thursday, January 11, 2024</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -222,11 +197,33 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Week 1 was a combined meeting of all four sections of the course.</p>
+<section id="wilkinson-the-grammar-of-graphics-2006" class="level2">
+<h2 class="anchored" data-anchor-id="wilkinson-the-grammar-of-graphics-2006">Wilkinson, <em>The Grammar of Graphics</em> (2006)</h2>
+<p>A key resource for the course, in terms of weaving many of the seemingly-disparate “strands” of the course together, is Leland Wilkinson’s book <em>The Grammar of Graphics</em> <span class="citation" data-cites="wilkinson_grammar_2006">(<a href="#ref-wilkinson_grammar_2006" role="doc-biblioref">Wilkinson 2006</a>)</span>. Since it’s extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a <a href="https://www.dropbox.com/scl/fi/5y1kyvbikedswxy3vgywp/Leland-Wilkinson-D.-Wills-D.-Rope-A.-Norton-R.-Dubbs-The-Grammar-of-Graphics.pdf?rlkey=wu63xjp4thninub8k17v5fk41&amp;dl=1" target="_blank">PDF of the book using this link</a>.</p>
+</section>
+<section id="nathan-yau-visualize-this-2011-and-data-points-2013" class="level2">
+<h2 class="anchored" data-anchor-id="nathan-yau-visualize-this-2011-and-data-points-2013">Nathan Yau, <em>Visualize This!</em> (2011) and <em>Data Points</em> (2013)</h2>
+<p>Another pair of resources that we’ll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online… But if your situation is anything like mine was when I was a grad student, and you’re living off approx. $0 per month of disposable income, here are EPUB copies of both books <em>(which I am <a href="" target="_blank">ethically justifying</a> by reference to grad-student-Jeff’s experience of professors assigning 5 books/week without a sole PDF or EPUB in sight 😵, along with the fact that all 4 profs for the course are paid subscribers to Yau’s blog!)</em></p>
+<ul>
+<li><span class="citation" data-cites="yau_visualize_2011">Yau (<a href="#ref-yau_visualize_2011" role="doc-biblioref">2011</a>)</span>: <a href="https://www.dropbox.com/scl/fi/mm900nxq8kahg3xv8n6ty/yau-nathan-visualize-this.pdf?rlkey=8u4xe6nt74t8vi6r97m5i7rq8&amp;dl=1" target="_blank">PDF</a>, <a href="https://www.dropbox.com/scl/fi/5sfzzz7uv7d08oi17qg7p/yau-nathan-visualize-this.epub?rlkey=b353utpjp5fdvd1ijix5dh20s&amp;dl=1" target="_blank">EPUB</a></li>
+<li><span class="citation" data-cites="yau_data_2013">Yau (<a href="#ref-yau_data_2013" role="doc-biblioref">2013</a>)</span>: <a href="https://www.dropbox.com/scl/fi/veayaek4wqrprkuwrxqye/yau-nathan-data-points.pdf?rlkey=ps2lvbsach1opkkeo95lq5tuw&amp;dl=1" target="_blank">PDF</a>, <a href="https://www.dropbox.com/scl/fi/ueetu4ebmi3t88xxhsps4/yau-nathan-data-points.epub?rlkey=dh6m1bj9qb4ep34f7cika2clu&amp;dl=1" target="_blank">EPUB</a></li>
+</ul>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-wilkinson_grammar_2006" class="csl-entry" role="listitem">
+Wilkinson, Leland. 2006. <em>The <span>Grammar</span> of <span>Graphics</span></em>. <span>Springer Science &amp; Business Media</span>.
+</div>
+<div id="ref-yau_visualize_2011" class="csl-entry" role="listitem">
+Yau, Nathan. 2011. <em>Visualize <span>This</span>: <span>The FlowingData Guide</span> to <span>Design</span>, <span>Visualization</span>, and <span>Statistics</span></em>. <span>John Wiley &amp; Sons</span>.
+</div>
+<div id="ref-yau_data_2013" class="csl-entry" role="listitem">
+———. 2013. <em>Data <span>Points</span>: <span>Visualization That Means Something</span></em>. <span>John Wiley &amp; Sons</span>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

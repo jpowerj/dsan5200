@@ -1,0 +1,18 @@
+---
+title: "Resources"
+bibliography: "./_DSAN5200.bib"
+format:
+  html:
+    df-print: kable
+---
+
+## Wilkinson, *The Grammar of Graphics* (2006)
+
+A key resource for the course, in terms of weaving many of the seemingly-disparate "strands" of the course together, is Leland Wilkinson's book *The Grammar of Graphics* [@wilkinson_grammar_2006]. Since it's extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a <a href='https://www.dropbox.com/scl/fi/5y1kyvbikedswxy3vgywp/Leland-Wilkinson-D.-Wills-D.-Rope-A.-Norton-R.-Dubbs-The-Grammar-of-Graphics.pdf?rlkey=wu63xjp4thninub8k17v5fk41&dl=1' target='_blank'>PDF of the book using this link</a>.
+
+## Nathan Yau, *Visualize This!* (2011) and *Data Points* (2013)
+
+Another pair of resources that we'll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online... But if your situation is anything like mine was when I was a grad student, and you're living off approx. $0 per month of disposable income, here are EPUB copies of both books *(which I am <a href='' target='_blank'>ethically justifying</a> by reference to grad-student-Jeff's experience of professors assigning 5 books/week without a sole PDF or EPUB in sight 😵, along with the fact that all 4 profs for the course are paid subscribers to Yau's blog!)*
+
+* @yau_visualize_2011: <a href='https://www.dropbox.com/scl/fi/mm900nxq8kahg3xv8n6ty/yau-nathan-visualize-this.pdf?rlkey=8u4xe6nt74t8vi6r97m5i7rq8&dl=1' target='_blank'>PDF</a>, <a href='https://www.dropbox.com/scl/fi/5sfzzz7uv7d08oi17qg7p/yau-nathan-visualize-this.epub?rlkey=b353utpjp5fdvd1ijix5dh20s&dl=1' target='_blank'>EPUB</a>
+* @yau_data_2013: <a href='https://www.dropbox.com/scl/fi/veayaek4wqrprkuwrxqye/yau-nathan-data-points.pdf?rlkey=ps2lvbsach1opkkeo95lq5tuw&dl=1' target='_blank'>PDF</a>, <a href='https://www.dropbox.com/scl/fi/ueetu4ebmi3t88xxhsps4/yau-nathan-data-points.epub?rlkey=dh6m1bj9qb4ep34f7cika2clu&dl=1' target='_blank'>EPUB</a>
