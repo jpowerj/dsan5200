@@ -19,6 +19,6 @@ Another pair of resources that we'll be drawing on a lot throughout the semester
 
 ## Edward Tufte, *The Visual Display of Quantitative Information* (1983)
 
-This one is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a <a href='https://www.dropbox.com/scl/fi/i130zosev7xr0lkwqh9xz/Edward-R.-Tufte-The-Visual-Display-of-Quantitative-Information.pdf?rlkey=ldbvvoel1vwdsgz216cjcy2ac&dl=1' target='_blank'>PDF of this one as well</a>.
+@tufte_visual_1983 is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a <a href='https://www.dropbox.com/scl/fi/i130zosev7xr0lkwqh9xz/Edward-R.-Tufte-The-Visual-Display-of-Quantitative-Information.pdf?rlkey=ldbvvoel1vwdsgz216cjcy2ac&dl=1' target='_blank'>PDF of this one as well</a>.
 
 *(Tufte also has more books than the previous two authors, and any of them are interesting and informative, so if you like this one you can go out and buy/obtain the others as well!)*
