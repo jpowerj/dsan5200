@@ -46,11 +46,12 @@ format:
 
 :::
 
-## Motivation
+## Motivation {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
-### General workplace skills 
+**General workplace skills**
+
   - Empathy 
   - Creativity 
   - Problem-solving 
@@ -59,9 +60,13 @@ format:
   - Leadership 
   - Negotiation 
   - Technology
+
+<sup>[source](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh=57934db852ad)<sup>
 :::
 ::: {.column width="50%"}
-### Data science skill
+
+**Data science skill**
+
 1. Fundamentals of Data Science
 2. Statistics
 3. Programming and software engineering
@@ -75,7 +80,6 @@ format:
 11. **Storytelling Skills**   
 :::
 :::: 
-<sup>[source](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh=57934db852ad)<sup>
 
 
 ## Humans are wired for stories
@@ -104,8 +108,10 @@ Stories are a survival mechanism across generations
 :::
 
 <!-- ## {background-image="https://venngage-wordpress.s3.amazonaws.com/uploads/2021/02/datastorytelling.jpeg" background-size="contain"} -->
-## What is data story telling?
-![](img/2023-02-13-11-55-59.png)
+
+## What is data storytelling?
+
+![](img/2023-02-13-11-55-59.png){fig-align="center"}
 
 ::: {.notes}
 https://venngage.com/blog/data-storytelling/
@@ -138,7 +144,7 @@ intentional design choices based on your understanding of the data, the story an
 
 :::
 
-## Telling your data story
+## Telling your data story {.smaller}
 
 - Know what you want to focus on
 - Don't ignore data that contradicts your story
@@ -147,11 +153,11 @@ intentional design choices based on your understanding of the data, the story an
 
 :::{.fragment}
 
-### Story components
+**Story components**
 
 To tell a story you have to define a story
 
->A story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result
+> A story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result
 
 1. Plot: how the story unfolds
 2. Protagonist: the main character
@@ -167,11 +173,11 @@ To tell a story you have to define a story
 ### Every story has a beginning, middle and end
 
 ::: {.r-stack}
-![](img/story1.png){.fragment}
+![](img/story1.png){.fragment fig-align="center"}
 
-![](img/story2.png){.fragment}
+![](img/story2.png){.fragment fig-align="center"}
 
-![](img/story3.png){.fragment}
+![](img/story3.png){.fragment fig-align="center"}
 :::
 
 ::: {.notes}
@@ -182,42 +188,51 @@ Stories have pacing, which creates tension and interest, and makes the storytell
 :::
 
 ## Traditional vs data stories
-![](img/2023-02-13-12-08-06.png){width=500}      
+
+![](img/2023-02-13-12-08-06.png){fig-align="center" width=500}      
 
 <sup><sup>[source](https://bluemoondigital.co/our-blog/5-elements-storytelling-data/)</sup></sup>
 
 <!-- ## {background-image="img/storytelling.png" background-size="contain"} -->
 
 ## Common visual narrative Genres
-![](img/2023-02-13-12-23-04.png)
+
+![](img/2023-02-13-12-23-04.png){fig-align="center"}
 
 <!-- ## {background-image="img/visual-genres.png" background-size="contain"} -->
 
-## Standard Info-graphics
+## Standard Infographics
 
 * An infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.   
-![](img/2023-02-13-12-24-29.png){width=800}
+![](img/2023-02-13-12-24-29.png){fig-align="center" width=800}
 
 <!-- ## {background-image="img/std-infograph.png" background-size="contain"} -->
 
-## Data Info-graphics
-* Data infographic are info-graphics that relies entirely or mostly on numbers to tell the story. This often includes data visualization, such as charts and graphs, but not always.    
-![](img/2023-02-13-12-26-29.png){width=820}
+## Data Infographics {.smaller}
+
+* Data infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.    
+![](img/2023-02-13-12-26-29.png){fig-align="center" width=820}
 
 <!-- ## {background-image="img/data-infograph.png" background-size="contain"} -->
 
-## Research posters 
-* Even research poster construction requires a narrative flow!! 
-![](img/2023-02-13-12-40-29.png){width=700}
+## Research posters {.smaller}
+
+* Even research poster construction requires a narrative flow!
+
+![](img/2023-02-13-12-40-29.png){fig-align="center" width=700}
+
 <!-- ## {background-image="img/posters.png" background-size="contain"} -->
 
 ## Scientific papers structure
-![](img/2023-02-13-12-30-52.png)
+
+![](img/2023-02-13-12-30-52.png){fig-align="center"}
 
 <!-- ## {background-image="img/papers.png" background-size="contain"} -->
 
 ## Developing knowledge content
-![](img/2023-02-13-12-42-28.png)
+
+![](img/2023-02-13-12-42-28.png){fig-align="center"}
+
 <!-- ## {background-image="img/shander.png" background-size="contain"} -->
 
 ::: {.notes}
@@ -226,26 +241,35 @@ Bill Shander talks about different levels of content engagement. We'll describe 
 
 :::
 
-## Primary communication tools 
-![](img/2023-02-13-12-47-23.png){width=850}
+## Primary communication tools
+
+![](img/2023-02-13-12-47-23.png){fig-align="center" width=850}
 <!-- ## {background-image="img/communication-tools.png" background-size="contain"} -->
 
 
-## Engagement levels-1 
-![](img/2023-02-13-12-35-29.png){width=900}
+## Engagement levels-1
+
+![](img/2023-02-13-12-35-29.png){fig-align="center" width=900}
+
 <!-- ## {background-image="img/engagement1.png" background-size="contain"} -->
 
 ## Engagement levels-2
+
 <!-- ## {background-image="img/engagement2.png" background-size="contain"} -->
-![](img/2023-02-13-12-35-52.png)
+
+![](img/2023-02-13-12-35-52.png){fig-align="center"}
 
 <!-- ## {background-image="img/tips.png" background-size="contain"} -->
+
 ## Storytelling tips
-![](img/2023-02-13-12-36-51.png)
+
+![](img/2023-02-13-12-36-51.png){fig-align="center"}
 
 
 ## Author vs reader driven
-![](img/2023-02-13-12-38-42.png)
+
+![](img/2023-02-13-12-38-42.png){fig-align="center"}
+
 <!-- ## {background-image="img/driven.png" background-size="contain"} -->
 
 ## Repetition and Redundancy
@@ -267,7 +291,7 @@ The old adage on how to present anything:
 - [Financial Times](https://www.ft.com/visual-and-data-journalism)
 - [The Pudding](https://pudding.cool/)
 
-## The Pudding's process:
+## The Pudding's process: {.smaller}
 
 ### By Ilia Blinderman
 1. Storytelling is complicated
@@ -312,5 +336,7 @@ The old adage on how to present anything:
 <https://distill.pub/2020/communicating-with-interactive-articles/>
 
 # Break
-Lets take a 10 minute break before moving onto the lab.  
-![](img/2023-01-11-15-32-08.png){width=600}
+
+Let's take a 10 minute break before moving onto the lab.
+
+![](img/2023-01-11-15-32-08.png){fig-align="center" width=600}

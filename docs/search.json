@@ -1026,7 +1026,7 @@
     "href": "w04/index.html#motivation",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Motivation",
-    "text": "Motivation\n\n\n\nGeneral workplace skills\n\nEmpathy\nCreativity\nProblem-solving\nVerbal communication\nWritten communication\nLeadership\nNegotiation\nTechnology\n\n\n\n\nData science skill\n\nFundamentals of Data Science\nStatistics\nProgramming and software engineering\nData Manipulation and Analysis\nData Visualization\nMachine Learning\nDeep Learning\nBig Data\nModel Deployment\nCommunication skills\nStorytelling Skills\n\n\n\n\n\nsource",
+    "text": "Motivation\n\n\nGeneral workplace skills\n\nEmpathy\nCreativity\nProblem-solving\nVerbal communication\nWritten communication\nLeadership\nNegotiation\nTechnology\n\nsource\n\nData science skill\n\nFundamentals of Data Science\nStatistics\nProgramming and software engineering\nData Manipulation and Analysis\nData Visualization\nMachine Learning\nDeep Learning\nBig Data\nModel Deployment\nCommunication skills\nStorytelling Skills",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1052,11 +1052,11 @@
     ]
   },
   {
-    "objectID": "w04/index.html#what-is-data-story-telling",
-    "href": "w04/index.html#what-is-data-story-telling",
+    "objectID": "w04/index.html#what-is-data-storytelling",
+    "href": "w04/index.html#what-is-data-storytelling",
     "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "What is data story telling?",
-    "text": "What is data story telling?\n\n\nhttps://venngage.com/blog/data-storytelling/",
+    "section": "What is data storytelling?",
+    "text": "What is data storytelling?\n\n\n\n\n\n\nhttps://venngage.com/blog/data-storytelling/",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1086,7 +1086,7 @@
     "href": "w04/index.html#telling-your-data-story",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Telling your data story",
-    "text": "Telling your data story\n\nKnow what you want to focus on\nDon’t ignore data that contradicts your story\nInvestigate the data\nDiscover what stories are in your data\n\n\n\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result",
+    "text": "Telling your data story\n\nKnow what you want to focus on\nDon’t ignore data that contradicts your story\nInvestigate the data\nDiscover what stories are in your data\n\n\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1096,7 +1096,7 @@
     "href": "w04/index.html#story-linearity",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Story linearity",
-    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\n\n\nEvery story has a beginning, middle and end\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling.",
+    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\n\n\nEvery story has a beginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling.",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1106,7 +1106,7 @@
     "href": "w04/index.html#traditional-vs-data-stories",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Traditional vs data stories",
-    "text": "Traditional vs data stories\n\nsource",
+    "text": "Traditional vs data stories\n\n\n\n\n\nsource",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1122,21 +1122,21 @@
     ]
   },
   {
-    "objectID": "w04/index.html#standard-info-graphics",
-    "href": "w04/index.html#standard-info-graphics",
+    "objectID": "w04/index.html#standard-infographics",
+    "href": "w04/index.html#standard-infographics",
     "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Standard Info-graphics",
-    "text": "Standard Info-graphics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.",
+    "section": "Standard Infographics",
+    "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.",
     "crumbs": [
       "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w04/index.html#data-info-graphics",
-    "href": "w04/index.html#data-info-graphics",
+    "objectID": "w04/index.html#data-infographics",
+    "href": "w04/index.html#data-infographics",
     "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Data Info-graphics",
-    "text": "Data Info-graphics\n\nData infographic are info-graphics that relies entirely or mostly on numbers to tell the story. This often includes data visualization, such as charts and graphs, but not always.",
+    "section": "Data Infographics",
+    "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1146,7 +1146,7 @@
     "href": "w04/index.html#research-posters",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Research posters",
-    "text": "Research posters\n\nEven research poster construction requires a narrative flow!!",
+    "text": "Research posters\n\nEven research poster construction requires a narrative flow!",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1166,7 +1166,7 @@
     "href": "w04/index.html#developing-knowledge-content",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Developing knowledge content",
-    "text": "Developing knowledge content\n \n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides",
+    "text": "Developing knowledge content\n\n\n\n\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1276,7 +1276,7 @@
     "href": "w04/slides.html#motivation",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Motivation",
-    "text": "Motivation\n\n\nGeneral workplace skills\n\nEmpathy\nCreativity\nProblem-solving\nVerbal communication\nWritten communication\nLeadership\nNegotiation\nTechnology\n\n\nData science skill\n\nFundamentals of Data Science\nStatistics\nProgramming and software engineering\nData Manipulation and Analysis\nData Visualization\nMachine Learning\nDeep Learning\nBig Data\nModel Deployment\nCommunication skills\nStorytelling Skills\n\n\n\n\nsource"
+    "text": "Motivation\n\n\nGeneral workplace skills\n\nEmpathy\nCreativity\nProblem-solving\nVerbal communication\nWritten communication\nLeadership\nNegotiation\nTechnology\n\nsource\n\nData science skill\n\nFundamentals of Data Science\nStatistics\nProgramming and software engineering\nData Manipulation and Analysis\nData Visualization\nMachine Learning\nDeep Learning\nBig Data\nModel Deployment\nCommunication skills\nStorytelling Skills"
   },
   {
     "objectID": "w04/slides.html#humans-are-wired-for-stories",
@@ -1293,11 +1293,11 @@
     "text": "Data storytelling is essential\n\nOften, your jobs as a data-scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\nStories are up to 22 times more memorable than facts alone\nWhen in doubt, tell stories\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative."
   },
   {
-    "objectID": "w04/slides.html#what-is-data-story-telling",
-    "href": "w04/slides.html#what-is-data-story-telling",
+    "objectID": "w04/slides.html#what-is-data-storytelling",
+    "href": "w04/slides.html#what-is-data-storytelling",
     "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "What is data story telling?",
-    "text": "What is data story telling?\n\n\nhttps://venngage.com/blog/data-storytelling/"
+    "section": "What is data storytelling?",
+    "text": "What is data storytelling?\n\n\nhttps://venngage.com/blog/data-storytelling/"
   },
   {
     "objectID": "w04/slides.html#components-of-a-data-story",
@@ -1318,14 +1318,14 @@
     "href": "w04/slides.html#telling-your-data-story",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Telling your data story",
-    "text": "Telling your data story\n\nKnow what you want to focus on\nDon’t ignore data that contradicts your story\nInvestigate the data\nDiscover what stories are in your data\n\n\n\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result"
+    "text": "Telling your data story\n\nKnow what you want to focus on\nDon’t ignore data that contradicts your story\nInvestigate the data\nDiscover what stories are in your data\n\n\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result"
   },
   {
     "objectID": "w04/slides.html#story-linearity",
     "href": "w04/slides.html#story-linearity",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Story linearity",
-    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\n\nEvery story has a beginning, middle and end\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling."
+    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\n\nEvery story has a beginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling."
   },
   {
     "objectID": "w04/slides.html#traditional-vs-data-stories",
@@ -1342,25 +1342,25 @@
     "text": "Common visual narrative Genres"
   },
   {
-    "objectID": "w04/slides.html#standard-info-graphics",
-    "href": "w04/slides.html#standard-info-graphics",
+    "objectID": "w04/slides.html#standard-infographics",
+    "href": "w04/slides.html#standard-infographics",
     "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Standard Info-graphics",
-    "text": "Standard Info-graphics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic."
+    "section": "Standard Infographics",
+    "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic."
   },
   {
-    "objectID": "w04/slides.html#data-info-graphics",
-    "href": "w04/slides.html#data-info-graphics",
+    "objectID": "w04/slides.html#data-infographics",
+    "href": "w04/slides.html#data-infographics",
     "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Data Info-graphics",
-    "text": "Data Info-graphics\n\nData infographic are info-graphics that relies entirely or mostly on numbers to tell the story. This often includes data visualization, such as charts and graphs, but not always."
+    "section": "Data Infographics",
+    "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always."
   },
   {
     "objectID": "w04/slides.html#research-posters",
     "href": "w04/slides.html#research-posters",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Research posters",
-    "text": "Research posters\n\nEven research poster construction requires a narrative flow!!"
+    "text": "Research posters\n\nEven research poster construction requires a narrative flow!"
   },
   {
     "objectID": "w04/slides.html#scientific-papers-structure",
@@ -1374,7 +1374,7 @@
     "href": "w04/slides.html#developing-knowledge-content",
     "title": "Week 4: Storytelling and Visual Narratives",
     "section": "Developing knowledge content",
-    "text": "Developing knowledge content\n \n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides"
+    "text": "Developing knowledge content\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides"
   },
   {
     "objectID": "w04/slides.html#primary-communication-tools",
