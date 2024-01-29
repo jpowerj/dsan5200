@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.4">
 
   <meta name="author" content="Abhijit Dasgupta">
   <meta name="author" content="Jeff Jacobs">
@@ -35,7 +35,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -102,6 +102,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -245,7 +246,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -511,9 +513,9 @@ Marck Vaisman
 </section>
 <section id="different-approaches-for-different-audiences" class="slide level2 smaller crunch-title title-12 crunch-quarto-layout-panel">
 <h2>Different Approaches for Different Audiences!</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="audiences-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
+<div id="audiences-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div id="viz-for-analysis-text">
 <center>
 <strong>Visualization for <em>Analysis</em></strong>:
@@ -535,7 +537,7 @@ Marck Vaisman
 </ul>
 </div>
 </div>
-<div id="audiences-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="audiences-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/young_thug.jpeg" width="360"></p>
@@ -565,7 +567,8 @@ Marck Vaisman
 <li><p><em>Too little</em>? People unfamiliar with the visual encodings will get stuck</p></li>
 </ul>
 <div id="fig-atlas" class="quarto-layout-panel">
-<figure>
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-atlas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row quarto-layout-valign-center">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img data-src="images/populous-cities.png"></p>
@@ -574,7 +577,10 @@ Marck Vaisman
 <p><img data-src="images/populous-cities-annotation.png"></p>
 </div>
 </div>
-<p></p><figcaption>Figure&nbsp;1: The Statistical Atlas of the United States, produced in the late 1800s by the Census Bureau, explained all of the encodings. For example, look at this bump chart from the 1880 atlas. It ranks cities by population.</figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-atlas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The Statistical Atlas of the United States, produced in the late 1800s by the Census Bureau, explained all of the encodings. For example, look at this bump chart from the 1880 atlas. It ranks cities by population.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -610,19 +616,19 @@ Marck Vaisman
 <ul>
 <li>Charts should read like text! It should be obvious what the chart is about, how to interpret it</li>
 </ul>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/flat_fig.png"></p>
+<p><img data-src="images/flat_fig.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/organized_fig.png"></p>
+<p><img data-src="images/organized_fig.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -644,11 +650,11 @@ Marck Vaisman
 <li>Something like… the <em>gestalt</em> sum of visual design choices</li>
 </ul>
 
-<img data-src="images/color_guide.jpeg" class="r-stretch quarto-figure-center"><p class="caption">From Georgetown’s official <a href="https://www.georgetown.edu/color-guide/" target="_blank">color guide</a> <em>(but remember: color is only one of many factors that makes up an “aesthetic”)</em></p></section>
+<img data-src="images/color_guide.jpeg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">From Georgetown’s official <a href="https://www.georgetown.edu/color-guide/" target="_blank">color guide</a> <em>(but remember: color is only one of many factors that makes up an “aesthetic”)</em></p></section>
 <section id="aesthetics-broad-umbrella-term-1" class="slide level2">
 <h2>Aesthetics: Broad Umbrella Term</h2>
 
-<img data-src="images/feltron_report.jpg" class="r-stretch quarto-figure-center"><p class="caption">From Nicholas Felton’s <a href="http://feltron.com/index.html" target="_blank">2014 Annual Report</a></p></section>
+<img data-src="images/feltron_report.jpg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">From Nicholas Felton’s <a href="http://feltron.com/index.html" target="_blank">2014 Annual Report</a></p></section>
 <section id="guidelines-not-rules" class="slide level2 smaller">
 <h2>Guidelines, Not Rules!</h2>
 <ul>
@@ -676,22 +682,22 @@ Marck Vaisman
 </section>
 <section id="tamara-munzner" class="slide level2 crunch-quarto-layout-panel crunch-title">
 <h2>Tamara Munzner</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div id="munzner-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <ul>
 <li>Computer scientist, info viz expert, and professor at University of British Columbia</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/tamara_munzner_headshot.jpg"></p>
+<p><img data-src="images/tamara_munzner_headshot.jpg" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
 <div id="munzner-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/munzner-book.png" width="450"></p>
+<p><img data-src="images/munzner-book.png" class="quarto-figure quarto-figure-center" width="450"></p>
 </figure>
 </div>
 </div>
@@ -791,7 +797,7 @@ Marck Vaisman
 <section id="the-what-abstracting-the-data" class="slide level2">
 <h2>The <em>What</em>: Abstracting the Data</h2>
 
-<img data-src="images/abstracting.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/abstracting.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="abstracting-the-data" class="slide level2">
 <h2>Abstracting the Data</h2>
 <ul>
@@ -812,26 +818,26 @@ Marck Vaisman
 <section id="types-of-datasets" class="slide level2">
 <h2>Types of Datasets</h2>
 
-<img data-src="images/dataset_types.png" class="r-stretch quarto-figure-center"><ul>
+<img data-src="images/dataset_types.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
 <li>(Also <strong>temporal</strong>!)</li>
 </ul>
 </section>
 <section id="tables" class="slide level2">
 <h2>Tables</h2>
 
-<img data-src="images/tidy_data.jpg" class="r-stretch quarto-figure-center"><p class="caption">From <a href="https://openscapes.org/blog/2020-10-12-tidy-data/" target="_blank"><em>Tidy data for efficiency, reproducibility, and collaboration</em></a>, Julie Lowndes and Allison Horst, 12 October 2020</p></section>
+<img data-src="images/tidy_data.jpg" class="quarto-figure quarto-figure-center r-stretch"><p class="caption">From <a href="https://openscapes.org/blog/2020-10-12-tidy-data/" target="_blank"><em>Tidy data for efficiency, reproducibility, and collaboration</em></a>, Julie Lowndes and Allison Horst, 12 October 2020</p></section>
 <section id="types-of-attributes" class="slide level2 smaller crunch-title shift-ul crunch-li crunch-quarto-layout-panel">
 <h2>Types of Attributes</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div id="attributes-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/data_attribute_types.png"></p>
+<p><img data-src="images/data_attribute_types.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
-<div id="attributes-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="attributes-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li><strong>Categorical</strong>: No order
 <ul>
@@ -858,16 +864,16 @@ Marck Vaisman
 </section>
 <section id="ordering" class="slide level2 smaller crunch-title shift-ul crunch-li crunch-quarto-layout-panel">
 <h2>Ordering</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div id="ordering-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/data_ordering_types.png" width="400"></p>
+<p><img data-src="images/data_ordering_types.png" class="quarto-figure quarto-figure-center" width="400"></p>
 </figure>
 </div>
 </div>
-<div id="ordering-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="ordering-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li><strong>Sequential</strong>: Infinite range with clear minimum
 <ul>
@@ -895,11 +901,11 @@ Marck Vaisman
 <h2>The Why?</h2>
 <p><em>(More on this next week!)</em></p>
 
-<img data-src="images/why_sheet.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/why_sheet.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="the-how" class="slide level2">
 <h2>The How?</h2>
 
-<img data-src="images/how_sheet.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/how_sheet.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="marks-and-channels" class="slide level2 smaller crunch-title">
 <h2>Marks and Channels</h2>
 <ul>
@@ -907,7 +913,7 @@ Marck Vaisman
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/munzner-5-2-primitives.png" width="500"></p>
+<p><img data-src="images/munzner-5-2-primitives.png" class="quarto-figure quarto-figure-center" width="500"></p>
 </figure>
 </div>
 <ul>
@@ -915,14 +921,14 @@ Marck Vaisman
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/munzner-5-3-visual-channels.png" width="500"></p>
+<p><img data-src="images/munzner-5-3-visual-channels.png" class="quarto-figure quarto-figure-center" width="500"></p>
 </figure>
 </div>
 </section>
 <section id="channel-encoding-types" class="slide level2">
 <h2>Channel (Encoding) Types</h2>
 
-<img data-src="images/munzner-5-1-channel-effectiveness.png" width="600" class="r-stretch quarto-figure-center"></section></section>
+<img data-src="images/munzner-5-1-channel-effectiveness.png" class="quarto-figure quarto-figure-center r-stretch" width="600"></section></section>
 <section>
 <section id="marks-and-channels-examples" class="title-slide slide level1 center">
 <h1>Marks and Channels: Examples</h1>
@@ -930,16 +936,16 @@ Marck Vaisman
 </section>
 <section id="points" class="slide level2">
 <h2>Points</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div id="points-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/points-ex.png"></p>
+<p><img data-src="images/points-ex.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
-<div id="points-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="points-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li>Zero-dimensional</li>
 <li>Convey position only</li>
@@ -951,16 +957,16 @@ Marck Vaisman
 </section>
 <section id="lines" class="slide level2">
 <h2>Lines</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div id="lines-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/lines-ex.png"></p>
+<p><img data-src="images/lines-ex.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
-<div id="lines-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="lines-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li>One-dimensional</li>
 <li>Convey position and length</li>
@@ -972,16 +978,16 @@ Marck Vaisman
 </section>
 <section id="areas" class="slide level2">
 <h2>Areas</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div id="areas-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/areas-ex.png"></p>
+<p><img data-src="images/areas-ex.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
-<div id="areas-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="areas-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li>Two dimensional</li>
 <li>Fully constrained</li>
@@ -993,24 +999,28 @@ Marck Vaisman
 <section id="graphical-presentations-of-relational-information" class="slide level2 smaller">
 <h2>Graphical Presentations of Relational Information</h2>
 <div id="fig-mackinlay" class="quarto-layout-panel">
-<figure>
-<div class="quarto-layout-row quarto-layout-valign-top">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-mackinlay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/mackinlay-fig14.png"></p>
+<p><img data-src="images/mackinlay-fig14.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/mackinlay-fig15.png"></p>
+<p><img data-src="images/mackinlay-fig15.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption>Figure&nbsp;2: Figures 14 and 15 in <span class="citation" data-cites="mackinlay_automating_1986">Mackinlay (<a href="#/references" role="doc-biblioref" onclick="">1986</a>)</span></figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mackinlay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Figures 14 and 15 in <span class="citation" data-cites="mackinlay_automating_1986">Mackinlay (<a href="#/references" role="doc-biblioref" onclick="">1986</a>)</span>
+</figcaption>
 </figure>
 </div>
 <ul>
@@ -1020,7 +1030,7 @@ Marck Vaisman
 <section id="another-guide-illinsky" class="slide level2">
 <h2>Another Guide (Illinsky)</h2>
 
-<img data-src="images/illinksy.gif" class="r-stretch quarto-figure-center"></section></section>
+<img data-src="images/illinksy.gif" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
 <section id="examples-of-visual-and-integrity-issues" class="title-slide slide level1 center" data-stack-name="Integrity">
 <h1>Examples of Visual and Integrity Issues</h1>
@@ -1041,28 +1051,36 @@ Marck Vaisman
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">set.seed</span>(<span class="dv">140</span>)</span>
-<span id="cb1-3"><a href="#cb1-3"></a>d <span class="ot">&lt;-</span>  <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">rgamma</span>(<span class="dv">15</span>,<span class="dv">1</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">y =</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">5</span><span class="sc">*</span><span class="fu">I</span>(x<span class="sc">^</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">15</span>,<span class="dv">3</span>,<span class="dv">3</span>))</span>
-<span id="cb1-4"><a href="#cb1-4"></a>plt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(d, <span class="fu">aes</span>(x, y))<span class="sc">+</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a>    <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">6</span>) <span class="sc">+</span> </span>
-<span id="cb1-6"><a href="#cb1-6"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
-<span id="cb1-7"><a href="#cb1-7"></a>    <span class="fu">theme</span>(<span class="at">axis.title=</span><span class="fu">element_blank</span>(), <span class="at">axis.text =</span> <span class="fu">element_blank</span>(), </span>
-<span id="cb1-8"><a href="#cb1-8"></a>          <span class="at">axis.ticks=</span><span class="fu">element_blank</span>())</span>
-<span id="cb1-9"><a href="#cb1-9"></a>plt <span class="sc">+</span> <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x=</span><span class="fl">0.5</span>, <span class="at">y=</span><span class="dv">60</span>,<span class="at">label =</span> <span class="st">"Linear scales"</span>, <span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">8</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a><span class="fu">set.seed</span>(<span class="dv">140</span>)</span>
+<span id="cb1-3"><a></a>d <span class="ot">&lt;-</span>  <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">rgamma</span>(<span class="dv">15</span>,<span class="dv">1</span>)) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">y =</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">5</span><span class="sc">*</span><span class="fu">I</span>(x<span class="sc">^</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">15</span>,<span class="dv">3</span>,<span class="dv">3</span>))</span>
+<span id="cb1-4"><a></a>plt <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(d, <span class="fu">aes</span>(x, y))<span class="sc">+</span></span>
+<span id="cb1-5"><a></a>    <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">6</span>) <span class="sc">+</span> </span>
+<span id="cb1-6"><a></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
+<span id="cb1-7"><a></a>    <span class="fu">theme</span>(<span class="at">axis.title=</span><span class="fu">element_blank</span>(), <span class="at">axis.text =</span> <span class="fu">element_blank</span>(), </span>
+<span id="cb1-8"><a></a>          <span class="at">axis.ticks=</span><span class="fu">element_blank</span>())</span>
+<span id="cb1-9"><a></a>plt <span class="sc">+</span> <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x=</span><span class="fl">0.5</span>, <span class="at">y=</span><span class="dv">60</span>,<span class="at">label =</span> <span class="st">"Linear scales"</span>, <span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">8</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</figure>
 </div>
-<details>
+</div>
+<details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>plt <span class="sc">+</span> <span class="fu">scale_y_log10</span>() <span class="sc">+</span> <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>    <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x =</span> <span class="fl">0.1</span>, <span class="at">y =</span> <span class="dv">50</span>, <span class="at">label =</span> <span class="st">"Logarithmic scales"</span>, <span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>plt <span class="sc">+</span> <span class="fu">scale_y_log10</span>() <span class="sc">+</span> <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb2-2"><a></a>    <span class="fu">annotate</span>(<span class="st">'text'</span>, <span class="at">x =</span> <span class="fl">0.1</span>, <span class="at">y =</span> <span class="dv">50</span>, <span class="at">label =</span> <span class="st">"Logarithmic scales"</span>, <span class="at">hjust=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-2.png" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -1086,10 +1104,18 @@ Marck Vaisman
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</figure>
+</div>
 </div>
 <div class="cell-output-display">
+<div>
+<figure>
 <p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-2.png" width="960"></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -1101,19 +1127,19 @@ Marck Vaisman
 <li><em>Length</em> is most commonly used in the context of bar charts. The longer a bar is, the greater the value.</li>
 <li><strong>Don’t truncate bar charts, use length in its entirety!</strong></li>
 </ul>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://flowingdata.com/wp-content/uploads/2012/08/Bush-cuts.png"></p>
+<p><img data-src="https://flowingdata.com/wp-content/uploads/2012/08/Bush-cuts.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://flowingdata.com/wp-content/uploads/2012/08/Fox-chart-corrected.png"></p>
+<p><img data-src="https://flowingdata.com/wp-content/uploads/2012/08/Fox-chart-corrected.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -1138,7 +1164,7 @@ Marck Vaisman
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://flowingdata.com/wp-content/uploads/2009/11/Fox-News-pie-chart.png"></p>
+<p><img data-src="https://flowingdata.com/wp-content/uploads/2009/11/Fox-News-pie-chart.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -1147,7 +1173,7 @@ Marck Vaisman
 <section id="pls-dont" class="slide level2">
 <h2>Pls Don’t</h2>
 
-<img data-src="images/emoji_angles.jpg" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/emoji_angles.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="slope" class="slide level2">
 <h2>Slope</h2>
 <ul>
@@ -1163,9 +1189,9 @@ Marck Vaisman
 </section>
 <section id="area" class="slide level2 smaller crunch-title">
 <h2>Area</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="area-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
+<div id="area-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li>Like length, area can be used to represent data with size, but with two dimensions instead of one.</li>
 <li><strong>Considerations</strong>:
@@ -1178,7 +1204,7 @@ Marck Vaisman
 <div id="area-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/area-incorrect-750x427.png"></p>
+<p><img data-src="images/area-incorrect-750x427.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -1187,9 +1213,9 @@ Marck Vaisman
 </section>
 <section id="volume" class="slide level2 smaller crunch-title">
 <h2>Volume</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div id="volume-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-panel" data-layout="[1,1]">
+<div class="quarto-layout-row">
+<div id="volume-left" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <ul>
 <li>Volume can used in the same way as area (one more dimension)</li>
 <li><strong>Considerations</strong>:
@@ -1203,7 +1229,7 @@ Marck Vaisman
 <div id="volume-right" class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/volume-incorrect-750x399.png"></p>
+<p><img data-src="images/volume-incorrect-750x399.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 </div>
@@ -1229,7 +1255,7 @@ Marck Vaisman
 <li>However, color can convey <strong>implicit meaning</strong>!</li>
 </ul>
 
-<img data-src="images/color-has-meaning.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/color-has-meaning.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="common-color-pitfalls" class="slide level2">
 <h2>Common color pitfalls</h2>
 <ul>
@@ -1253,42 +1279,42 @@ Marck Vaisman
 <li><strong>Diverging</strong>: multiple hues represent a point of inflection of the data</li>
 </ul>
 
-<img data-src="images/brewer-scales.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/brewer-scales.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="sequential-scale-example-1" class="slide level2">
 <h2>Sequential Scale: Example 1</h2>
 
-<img data-src="images/jeopardy.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/jeopardy.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="sequential-scale-example-2" class="slide level2">
 <h2>Sequential Scale: Example 2</h2>
 
-<img data-src="images/3-d-population-1090x419.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/3-d-population-1090x419.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="divergent-scale-example" class="slide level2">
 <h2>Divergent Scale: Example</h2>
 
-<img data-src="images/Tax-change-720x334.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/Tax-change-720x334.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="common-palettes" class="slide level2 smaller">
 <h2>Common Palettes</h2>
 
-<img data-src="images/colormaps.png.001.jpeg" class="r-stretch quarto-figure-center"><ul>
+<img data-src="images/colormaps.png.001.jpeg" class="quarto-figure quarto-figure-center r-stretch"><ul>
 <li>Most of these palettes are available to both ggplot2 and matplotlib. For R, you may have to load packages like RColorBrewer or viridis.</li>
 </ul>
 </section>
 <section id="colorblindness" class="slide level2">
 <h2>Colorblindness</h2>
 
-<img data-src="images/colorblind-750x281.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/colorblind-750x281.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="in-8-people" class="slide level2">
 <h2>1 in 8 People!</h2>
 
-<img data-src="images/colorblindness.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/colorblindness.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="digital-screens-vs.-physical-printing" class="slide level2">
 <h2>Digital Screens vs.&nbsp;Physical Printing</h2>
 
-<img data-src="images/printing.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/printing.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="color-as-context" class="slide level2">
 <h2>Color as Context</h2>
 
-<img data-src="images/Christmas-trees-750x542.png" class="r-stretch quarto-figure-center"></section>
+<img data-src="images/Christmas-trees-750x542.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="looking-forward-the-grammar-of-graphics-gg" class="slide level2 smaller crunch-title title-10">
 <h2>Looking Forward: The Grammar of Graphics (GG)</h2>
 <ul>
@@ -1350,7 +1376,7 @@ Marck Vaisman
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-bertin_semiology_1967" class="csl-entry" role="listitem">
 Bertin, Jacques. 1967. <em>Semiology of <span>Graphics</span>: <span>Diagrams</span>, <span>Networks</span>, <span>Maps</span></em>. <span>ESRI Press</span>.
 </div>
@@ -1371,8 +1397,10 @@ Yau, Nathan. 2013. <em>Data <span>Points</span>: <span>Visualization That Means 
 </div>
 </div>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>DSAN 5200-03 Week 2: Visual Encodings, Integrity, Colors</p>
+</div>
 </div>
 </section></section>
     </div>
@@ -1402,7 +1430,6 @@ Yau, Nathan. 2013. <em>Data <span>Points</span>: <span>Visualization That Means 
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1702,10 +1729,9 @@ Yau, Nathan. 2013. <em>Data <span>Points</span>: <span>Visualization That Means 
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1715,8 +1741,17 @@ Yau, Nathan. 2013. <em>Data <span>Points</span>: <span>Visualization That Means 
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
