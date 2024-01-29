@@ -38,6 +38,14 @@ format:
     html-math-method: mathjax
 ---
 
+::: {.content-visible unless-format="revealjs"}
+
+<center>
+<a class="h2" href="./slides.html" target="_blank">Open slides in new window &rarr;</a>
+</center>
+
+:::
+
 ## Motivation
 
 :::: {.columns}
