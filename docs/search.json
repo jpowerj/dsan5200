@@ -44,7 +44,7 @@
     "href": "index.html",
     "title": "DSAN 5200: Advanced Data Visualization",
     "section": "",
-    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\nWeek 4: Storytelling and Visual Narratives\n\n\nJanuary 30\n\n\n\n\n\nNo matching items",
+    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\nLecture 4: Storytelling and Visual Narratives\n\n\nJanuary 30\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "<i class='bi bi-house pe-1'></i> Home"
     ]
@@ -1014,7 +1014,7 @@
   {
     "objectID": "w04/index.html",
     "href": "w04/index.html",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "",
     "text": "Open slides in new window →",
     "crumbs": [
@@ -1022,31 +1022,11 @@
     ]
   },
   {
-    "objectID": "w04/index.html#motivation",
-    "href": "w04/index.html#motivation",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Motivation",
-    "text": "Motivation\n\n\nGeneral workplace skills\n\nEmpathy\nCreativity\nProblem-solving\nVerbal communication\nWritten communication\nLeadership\nNegotiation\nTechnology\n\nsource\n\nData science skill\n\nFundamentals of Data Science\nStatistics\nProgramming and software engineering\nData Manipulation and Analysis\nData Visualization\nMachine Learning\nDeep Learning\nBig Data\nModel Deployment\nCommunication skills\nStorytelling Skills",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
-  },
-  {
-    "objectID": "w04/index.html#humans-are-wired-for-stories",
-    "href": "w04/index.html#humans-are-wired-for-stories",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Humans are wired for stories",
-    "text": "Humans are wired for stories\n\n\n\n\n\n\nStories are a survival mechanism across generations",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
-  },
-  {
-    "objectID": "w04/index.html#data-storytelling-is-essential",
-    "href": "w04/index.html#data-storytelling-is-essential",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Data storytelling is essential",
-    "text": "Data storytelling is essential\n\nOften, your jobs as a data-scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\nStories are up to 22 times more memorable than facts alone\nWhen in doubt, tell stories\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative.",
+    "objectID": "w04/index.html#storytelling-with-data",
+    "href": "w04/index.html#storytelling-with-data",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling with Data",
+    "text": "Storytelling with Data\n\nOften, your jobs as a data scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative.",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1054,9 +1034,9 @@
   {
     "objectID": "w04/index.html#what-is-data-storytelling",
     "href": "w04/index.html#what-is-data-storytelling",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "What is data storytelling?",
-    "text": "What is data storytelling?\n\n\n\n\n\n\nhttps://venngage.com/blog/data-storytelling/",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "What is Data Storytelling?",
+    "text": "What is Data Storytelling?\n\n\n\n\n\n\nhttps://venngage.com/blog/data-storytelling/",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1064,7 +1044,7 @@
   {
     "objectID": "w04/index.html#components-of-a-data-story",
     "href": "w04/index.html#components-of-a-data-story",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Components of a data story",
     "text": "Components of a data story",
     "crumbs": [
@@ -1074,7 +1054,7 @@
   {
     "objectID": "w04/index.html#storytelling-is-abstract",
     "href": "w04/index.html#storytelling-is-abstract",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Storytelling is abstract",
     "text": "Storytelling is abstract\nIt is not merely:\n\na technical matter of creating an image\ndesigning the right chart\n\n\nRather it is:\n\nthe broader considerations that impact nearly every decision you make in the way you frame and present a project\n\n\n\nThe story is the culmination of distilling the information and insights gathered through the analytic process\nIt is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience",
     "crumbs": [
@@ -1084,9 +1064,9 @@
   {
     "objectID": "w04/index.html#telling-your-data-story",
     "href": "w04/index.html#telling-your-data-story",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Telling your data story",
-    "text": "Telling your data story\n\nKnow what you want to focus on\nDon’t ignore data that contradicts your story\nInvestigate the data\nDiscover what stories are in your data\n\n\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Telling Your Data Story",
+    "text": "Telling Your Data Story\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1094,19 +1074,29 @@
   {
     "objectID": "w04/index.html#story-linearity",
     "href": "w04/index.html#story-linearity",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Story linearity",
-    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\n\n\nEvery story has a beginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling.",
+    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\nBeginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling.",
     "crumbs": [
       "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w04/index.html#traditional-vs-data-stories",
-    "href": "w04/index.html#traditional-vs-data-stories",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Traditional vs data stories",
-    "text": "Traditional vs data stories\n\n\n\n\n\nsource",
+    "objectID": "w04/index.html#traditional-vs.-data-stories",
+    "href": "w04/index.html#traditional-vs.-data-stories",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Traditional vs. Data Stories",
+    "text": "Traditional vs. Data Stories\n\n\n\n\n\nsource",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
+  },
+  {
+    "objectID": "w04/index.html#aristotle-vs.-brecht",
+    "href": "w04/index.html#aristotle-vs.-brecht",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Aristotle vs. Brecht",
+    "text": "Aristotle vs. Brecht\n\nSometimes you don’t want to “resolve” the tension!\nAristotelian drama: audience goes home “satisfied”\n\nThe story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)\n\nBrechtian drama: audience is left with discomfort, ambiguity, unresolved tension\n\nSounds like something you wouldn’t want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!",
     "crumbs": [
       "Week 4: Jan 30"
     ]
@@ -1114,7 +1104,7 @@
   {
     "objectID": "w04/index.html#common-visual-narrative-genres",
     "href": "w04/index.html#common-visual-narrative-genres",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Common visual narrative Genres",
     "text": "Common visual narrative Genres",
     "crumbs": [
@@ -1124,7 +1114,7 @@
   {
     "objectID": "w04/index.html#standard-infographics",
     "href": "w04/index.html#standard-infographics",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Standard Infographics",
     "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.",
     "crumbs": [
@@ -1134,7 +1124,7 @@
   {
     "objectID": "w04/index.html#data-infographics",
     "href": "w04/index.html#data-infographics",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Data Infographics",
     "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.",
     "crumbs": [
@@ -1144,7 +1134,7 @@
   {
     "objectID": "w04/index.html#research-posters",
     "href": "w04/index.html#research-posters",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Research posters",
     "text": "Research posters\n\nEven research poster construction requires a narrative flow!",
     "crumbs": [
@@ -1154,7 +1144,7 @@
   {
     "objectID": "w04/index.html#scientific-papers-structure",
     "href": "w04/index.html#scientific-papers-structure",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Scientific papers structure",
     "text": "Scientific papers structure",
     "crumbs": [
@@ -1164,7 +1154,7 @@
   {
     "objectID": "w04/index.html#developing-knowledge-content",
     "href": "w04/index.html#developing-knowledge-content",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Developing knowledge content",
     "text": "Developing knowledge content\n\n\n\n\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides",
     "crumbs": [
@@ -1174,7 +1164,7 @@
   {
     "objectID": "w04/index.html#primary-communication-tools",
     "href": "w04/index.html#primary-communication-tools",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Primary communication tools",
     "text": "Primary communication tools",
     "crumbs": [
@@ -1184,7 +1174,7 @@
   {
     "objectID": "w04/index.html#engagement-levels-1",
     "href": "w04/index.html#engagement-levels-1",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Engagement levels-1",
     "text": "Engagement levels-1",
     "crumbs": [
@@ -1194,7 +1184,7 @@
   {
     "objectID": "w04/index.html#engagement-levels-2",
     "href": "w04/index.html#engagement-levels-2",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Engagement levels-2",
     "text": "Engagement levels-2",
     "crumbs": [
@@ -1204,7 +1194,7 @@
   {
     "objectID": "w04/index.html#storytelling-tips",
     "href": "w04/index.html#storytelling-tips",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Storytelling tips",
     "text": "Storytelling tips",
     "crumbs": [
@@ -1214,7 +1204,7 @@
   {
     "objectID": "w04/index.html#author-vs-reader-driven",
     "href": "w04/index.html#author-vs-reader-driven",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Author vs reader driven",
     "text": "Author vs reader driven",
     "crumbs": [
@@ -1224,7 +1214,7 @@
   {
     "objectID": "w04/index.html#repetition-and-redundancy",
     "href": "w04/index.html#repetition-and-redundancy",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Repetition and Redundancy",
     "text": "Repetition and Redundancy\nThe old adage on how to present anything:\n\nTell them what you are going to tell them\nThen tell them\nThen tell them what you just told them",
     "crumbs": [
@@ -1234,7 +1224,7 @@
   {
     "objectID": "w04/index.html#awesome-data-driven-viz-narratives",
     "href": "w04/index.html#awesome-data-driven-viz-narratives",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Awesome data driven viz narratives",
     "text": "Awesome data driven viz narratives\n\nThe New York Times\nWall Stree Journal\nThe Washington Post\nFiveThirtyEight\nThe Economist\nFinancial Times\nThe Pudding",
     "crumbs": [
@@ -1244,7 +1234,7 @@
   {
     "objectID": "w04/index.html#the-puddings-process",
     "href": "w04/index.html#the-puddings-process",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "The Pudding’s process:",
     "text": "The Pudding’s process:\n\nBy Ilia Blinderman\n\nStorytelling is complicated\nWho is your audience\nFocus broadly or narrowly\nComplexity of the finding after analysis\nProgressing through the arguments\nArriving at the conclusion\n\n\n\n\nResources\nhttps://pudding.cool/process/how-to-make-dope-shit-part-1/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-2/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-3/",
     "crumbs": [
@@ -1254,7 +1244,7 @@
   {
     "objectID": "w04/index.html#scrollytelling-bill-shander",
     "href": "w04/index.html#scrollytelling-bill-shander",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Scrollytelling (Bill Shander)",
     "text": "Scrollytelling (Bill Shander)\nhttps://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003\nhttps://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964\nhttps://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67",
     "crumbs": [
@@ -1264,7 +1254,7 @@
   {
     "objectID": "w04/index.html#other-resources-and-examples",
     "href": "w04/index.html#other-resources-and-examples",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Other resources and examples",
     "text": "Other resources and examples\nhttps://opensourcelibs.com/lib/rolldown\nhttps://elementor.com/blog/guide-to-scrollytelling/\nhttps://www.visualstorytell.com/blog/what-is-visual-storytelling\nhttps://mathisonian.github.io/idyll/scaffolding-interactives/\nhttps://idl.cs.washington.edu/\nhttps://distill.pub/2020/communicating-with-interactive-articles/",
     "crumbs": [
@@ -1272,177 +1262,170 @@
     ]
   },
   {
-    "objectID": "w04/slides.html#motivation",
-    "href": "w04/slides.html#motivation",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Motivation",
-    "text": "Motivation\n\n\nGeneral workplace skills\n\nEmpathy\nCreativity\nProblem-solving\nVerbal communication\nWritten communication\nLeadership\nNegotiation\nTechnology\n\nsource\n\nData science skill\n\nFundamentals of Data Science\nStatistics\nProgramming and software engineering\nData Manipulation and Analysis\nData Visualization\nMachine Learning\nDeep Learning\nBig Data\nModel Deployment\nCommunication skills\nStorytelling Skills"
-  },
-  {
-    "objectID": "w04/slides.html#humans-are-wired-for-stories",
-    "href": "w04/slides.html#humans-are-wired-for-stories",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Humans are wired for stories",
-    "text": "Humans are wired for stories\n\n\nStories are a survival mechanism across generations"
-  },
-  {
-    "objectID": "w04/slides.html#data-storytelling-is-essential",
-    "href": "w04/slides.html#data-storytelling-is-essential",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Data storytelling is essential",
-    "text": "Data storytelling is essential\n\nOften, your jobs as a data-scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\nStories are up to 22 times more memorable than facts alone\nWhen in doubt, tell stories\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative."
+    "objectID": "w04/slides.html#storytelling-with-data",
+    "href": "w04/slides.html#storytelling-with-data",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling with Data",
+    "text": "Storytelling with Data\n\nOften, your jobs as a data scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative."
   },
   {
     "objectID": "w04/slides.html#what-is-data-storytelling",
     "href": "w04/slides.html#what-is-data-storytelling",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "What is data storytelling?",
-    "text": "What is data storytelling?\n\n\nhttps://venngage.com/blog/data-storytelling/"
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "What is Data Storytelling?",
+    "text": "What is Data Storytelling?\n\n\nhttps://venngage.com/blog/data-storytelling/"
   },
   {
     "objectID": "w04/slides.html#components-of-a-data-story",
     "href": "w04/slides.html#components-of-a-data-story",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Components of a data story",
     "text": "Components of a data story"
   },
   {
     "objectID": "w04/slides.html#storytelling-is-abstract",
     "href": "w04/slides.html#storytelling-is-abstract",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Storytelling is abstract",
     "text": "Storytelling is abstract\nIt is not merely:\n\na technical matter of creating an image\ndesigning the right chart\n\n\nRather it is:\n\nthe broader considerations that impact nearly every decision you make in the way you frame and present a project\n\n\n\nThe story is the culmination of distilling the information and insights gathered through the analytic process\nIt is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience"
   },
   {
     "objectID": "w04/slides.html#telling-your-data-story",
     "href": "w04/slides.html#telling-your-data-story",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Telling your data story",
-    "text": "Telling your data story\n\nKnow what you want to focus on\nDon’t ignore data that contradicts your story\nInvestigate the data\nDiscover what stories are in your data\n\n\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result"
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Telling Your Data Story",
+    "text": "Telling Your Data Story\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result"
   },
   {
     "objectID": "w04/slides.html#story-linearity",
     "href": "w04/slides.html#story-linearity",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Story linearity",
-    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\n\nEvery story has a beginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling."
+    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\nBeginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling."
   },
   {
-    "objectID": "w04/slides.html#traditional-vs-data-stories",
-    "href": "w04/slides.html#traditional-vs-data-stories",
-    "title": "Week 4: Storytelling and Visual Narratives",
-    "section": "Traditional vs data stories",
-    "text": "Traditional vs data stories\n\nsource"
+    "objectID": "w04/slides.html#traditional-vs.-data-stories",
+    "href": "w04/slides.html#traditional-vs.-data-stories",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Traditional vs. Data Stories",
+    "text": "Traditional vs. Data Stories\n\nsource"
+  },
+  {
+    "objectID": "w04/slides.html#aristotle-vs.-brecht",
+    "href": "w04/slides.html#aristotle-vs.-brecht",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Aristotle vs. Brecht",
+    "text": "Aristotle vs. Brecht\n\nSometimes you don’t want to “resolve” the tension!\nAristotelian drama: audience goes home “satisfied”\n\nThe story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)\n\nBrechtian drama: audience is left with discomfort, ambiguity, unresolved tension\n\nSounds like something you wouldn’t want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!"
   },
   {
     "objectID": "w04/slides.html#common-visual-narrative-genres",
     "href": "w04/slides.html#common-visual-narrative-genres",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Common visual narrative Genres",
     "text": "Common visual narrative Genres"
   },
   {
     "objectID": "w04/slides.html#standard-infographics",
     "href": "w04/slides.html#standard-infographics",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Standard Infographics",
     "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic."
   },
   {
     "objectID": "w04/slides.html#data-infographics",
     "href": "w04/slides.html#data-infographics",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Data Infographics",
     "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always."
   },
   {
     "objectID": "w04/slides.html#research-posters",
     "href": "w04/slides.html#research-posters",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Research posters",
     "text": "Research posters\n\nEven research poster construction requires a narrative flow!"
   },
   {
     "objectID": "w04/slides.html#scientific-papers-structure",
     "href": "w04/slides.html#scientific-papers-structure",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Scientific papers structure",
     "text": "Scientific papers structure"
   },
   {
     "objectID": "w04/slides.html#developing-knowledge-content",
     "href": "w04/slides.html#developing-knowledge-content",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Developing knowledge content",
     "text": "Developing knowledge content\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides"
   },
   {
     "objectID": "w04/slides.html#primary-communication-tools",
     "href": "w04/slides.html#primary-communication-tools",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Primary communication tools",
     "text": "Primary communication tools"
   },
   {
     "objectID": "w04/slides.html#engagement-levels-1",
     "href": "w04/slides.html#engagement-levels-1",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Engagement levels-1",
     "text": "Engagement levels-1"
   },
   {
     "objectID": "w04/slides.html#engagement-levels-2",
     "href": "w04/slides.html#engagement-levels-2",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Engagement levels-2",
     "text": "Engagement levels-2"
   },
   {
     "objectID": "w04/slides.html#storytelling-tips",
     "href": "w04/slides.html#storytelling-tips",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Storytelling tips",
     "text": "Storytelling tips"
   },
   {
     "objectID": "w04/slides.html#author-vs-reader-driven",
     "href": "w04/slides.html#author-vs-reader-driven",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Author vs reader driven",
     "text": "Author vs reader driven"
   },
   {
     "objectID": "w04/slides.html#repetition-and-redundancy",
     "href": "w04/slides.html#repetition-and-redundancy",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Repetition and Redundancy",
     "text": "Repetition and Redundancy\nThe old adage on how to present anything:\n\nTell them what you are going to tell them\nThen tell them\nThen tell them what you just told them"
   },
   {
     "objectID": "w04/slides.html#awesome-data-driven-viz-narratives",
     "href": "w04/slides.html#awesome-data-driven-viz-narratives",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Awesome data driven viz narratives",
     "text": "Awesome data driven viz narratives\n\nThe New York Times\nWall Stree Journal\nThe Washington Post\nFiveThirtyEight\nThe Economist\nFinancial Times\nThe Pudding"
   },
   {
     "objectID": "w04/slides.html#the-puddings-process",
     "href": "w04/slides.html#the-puddings-process",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "The Pudding’s process:",
     "text": "The Pudding’s process:\nBy Ilia Blinderman\n\nStorytelling is complicated\nWho is your audience\nFocus broadly or narrowly\nComplexity of the finding after analysis\nProgressing through the arguments\nArriving at the conclusion\n\n\n\nResources\nhttps://pudding.cool/process/how-to-make-dope-shit-part-1/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-2/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-3/"
   },
   {
     "objectID": "w04/slides.html#scrollytelling-bill-shander",
     "href": "w04/slides.html#scrollytelling-bill-shander",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Scrollytelling (Bill Shander)",
     "text": "Scrollytelling (Bill Shander)\nhttps://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003\nhttps://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964\nhttps://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67"
   },
   {
     "objectID": "w04/slides.html#other-resources-and-examples",
     "href": "w04/slides.html#other-resources-and-examples",
-    "title": "Week 4: Storytelling and Visual Narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
     "section": "Other resources and examples",
     "text": "Other resources and examples\nhttps://opensourcelibs.com/lib/rolldown\nhttps://elementor.com/blog/guide-to-scrollytelling/\nhttps://www.visualstorytell.com/blog/what-is-visual-storytelling\nhttps://mathisonian.github.io/idyll/scaffolding-interactives/\nhttps://idl.cs.washington.edu/\nhttps://distill.pub/2020/communicating-with-interactive-articles/"
   },

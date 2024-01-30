@@ -1,5 +1,5 @@
 ---
-title: "Week 4: Storytelling and Visual Narratives"
+title: "Lecture 4: Storytelling and Visual Narratives"
 subtitle: "*DSAN 5200-03: Advanced Data Visualization*"
 author:
   - "Abhijit Dasgupta"
@@ -46,59 +46,13 @@ format:
 
 :::
 
-## Motivation {.smaller}
+## {.smaller background-image="images/eggers.jpg" background-size="135vh"}
 
-:::: {.columns}
-::: {.column width="50%"}
-**General workplace skills**
+## Storytelling with Data {.smaller}
 
-  - Empathy 
-  - Creativity 
-  - Problem-solving 
-  - **Verbal communication** 
-  - **Written communication**
-  - Leadership 
-  - Negotiation 
-  - Technology
-
-<sup>[source](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/?sh=57934db852ad)<sup>
-:::
-::: {.column width="50%"}
-
-**Data science skill**
-
-1. Fundamentals of Data Science
-2. Statistics
-3. Programming and software engineering
-4. Data Manipulation and Analysis
-5. **Data Visualization**
-6. Machine Learning
-7. Deep Learning
-8. Big Data
-9. Model Deployment
-10. **Communication skills**
-11. **Storytelling Skills**   
-:::
-:::: 
-
-
-## Humans are wired for stories
-
-![](img/homer.png){fig-align="center"}
-
-::: {.center}
-Stories are a survival mechanism across generations
-:::
-
-## Data storytelling is essential {.smaller}
-
-* Often, your jobs as a data-scientist is to be an effective communicator
+* Often, your jobs as a data scientist is to be an effective communicator
 
 * There is more to communication than numbers on a paper
-
-* Stories are up to 22 times more memorable than facts alone
-
-* When in doubt, tell stories
 
 ::: {.column width="60%"}
 ![](img/story-graph.png){fig-align="center" height=300 width=600}
@@ -109,7 +63,7 @@ Stories are a survival mechanism across generations
 
 <!-- ## {background-image="https://venngage-wordpress.s3.amazonaws.com/uploads/2021/02/datastorytelling.jpeg" background-size="contain"} -->
 
-## What is data storytelling?
+## What is Data Storytelling?
 
 ![](img/2023-02-13-11-55-59.png){fig-align="center"}
 
@@ -144,14 +98,7 @@ intentional design choices based on your understanding of the data, the story an
 
 :::
 
-## Telling your data story {.smaller}
-
-- Know what you want to focus on
-- Don't ignore data that contradicts your story
-- Investigate the data
-- Discover what stories are in your data
-
-:::{.fragment}
+## Telling Your Data Story {.smaller}
 
 **Story components**
 
@@ -164,13 +111,11 @@ To tell a story you have to define a story
 3. Problem: a difficult goal for the protagonist to achieve
 4. Transformation - the "so what?": how the protagonist changes as a result
 
-:::
-
 ## Story linearity
 
 * Whether driven by time or logic, stories are typically is linear
 
-### Every story has a beginning, middle and end
+* Beginning, middle and end
 
 ::: {.r-stack}
 ![](img/story1.png){.fragment fig-align="center"}
@@ -187,7 +132,7 @@ equal time.
 Stories have pacing, which creates tension and interest, and makes the storytelling more compelling.
 :::
 
-## Traditional vs data stories
+## Traditional vs. Data Stories
 
 ![](img/2023-02-13-12-08-06.png){fig-align="center" width=500}      
 
@@ -195,20 +140,28 @@ Stories have pacing, which creates tension and interest, and makes the storytell
 
 <!-- ## {background-image="img/storytelling.png" background-size="contain"} -->
 
+## *A*ristotle vs. *B*recht
+
+* Sometimes you **don't want to** "resolve" the tension!
+* **Aristotelian** drama: audience goes home "satisfied"
+  * The story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)
+* **Brechtian** drama: audience is left with discomfort, ambiguity, unresolved tension
+  * Sounds like something you **wouldn't** want to do (and you don't, in many cases), but sometimes can be more effective for spurning people to action!
+
 ## Common visual narrative Genres
 
 ![](img/2023-02-13-12-23-04.png){fig-align="center"}
 
 <!-- ## {background-image="img/visual-genres.png" background-size="contain"} -->
 
-## Standard Infographics
+## Standard Infographics {.smaller .crunch-title}
 
 * An infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.   
 ![](img/2023-02-13-12-24-29.png){fig-align="center" width=800}
 
 <!-- ## {background-image="img/std-infograph.png" background-size="contain"} -->
 
-## Data Infographics {.smaller}
+## Data Infographics {.smaller .crunch-title}
 
 * Data infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.    
 ![](img/2023-02-13-12-26-29.png){fig-align="center" width=820}
