@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.4">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -164,6 +164,12 @@ div.csl-indent {
  <span class="menu-text">Week 4: Jan 30</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://gu-dsan.github.io/5200-spring-2024/slides/week-05.html#/title-slide" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5: Feb 6 <i class="bi bi-box-arrow-up-right ps-1"></i></span></a>
+  </div>
+</li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
@@ -187,9 +193,17 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#wilkinson-the-grammar-of-graphics-2006" id="toc-wilkinson-the-grammar-of-graphics-2006" class="nav-link active" data-scroll-target="#wilkinson-the-grammar-of-graphics-2006">Wilkinson, <em>The Grammar of Graphics</em> (2006)</a></li>
+  <li><a href="#week-5-observable-js-and-jquery" id="toc-week-5-observable-js-and-jquery" class="nav-link active" data-scroll-target="#week-5-observable-js-and-jquery">Week 5: Observable JS and jQuery</a>
+  <ul class="collapse">
+  <li><a href="#observablejs" id="toc-observablejs" class="nav-link" data-scroll-target="#observablejs">ObservableJS</a></li>
+  <li><a href="#jquery" id="toc-jquery" class="nav-link" data-scroll-target="#jquery">jQuery</a></li>
+  </ul></li>
+  <li><a href="#core-texts-weeks-1-4" id="toc-core-texts-weeks-1-4" class="nav-link" data-scroll-target="#core-texts-weeks-1-4">Core Texts, Weeks 1-4</a>
+  <ul class="collapse">
+  <li><a href="#wilkinson-the-grammar-of-graphics-2006" id="toc-wilkinson-the-grammar-of-graphics-2006" class="nav-link" data-scroll-target="#wilkinson-the-grammar-of-graphics-2006">Wilkinson, <em>The Grammar of Graphics</em> (2006)</a></li>
   <li><a href="#nathan-yau-visualize-this-2011-and-data-points-2013" id="toc-nathan-yau-visualize-this-2011-and-data-points-2013" class="nav-link" data-scroll-target="#nathan-yau-visualize-this-2011-and-data-points-2013">Nathan Yau, <em>Visualize This!</em> (2011) and <em>Data Points</em> (2013)</a></li>
   <li><a href="#edward-tufte-the-visual-display-of-quantitative-information-1983" id="toc-edward-tufte-the-visual-display-of-quantitative-information-1983" class="nav-link" data-scroll-target="#edward-tufte-the-visual-display-of-quantitative-information-1983">Edward Tufte, <em>The Visual Display of Quantitative Information</em> (1983)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -215,25 +229,48 @@ div.csl-indent {
 </header>
 
 
-<section id="wilkinson-the-grammar-of-graphics-2006" class="level2">
-<h2 class="anchored" data-anchor-id="wilkinson-the-grammar-of-graphics-2006">Wilkinson, <em>The Grammar of Graphics</em> (2006)</h2>
+<section id="week-5-observable-js-and-jquery" class="level2">
+<h2 class="anchored" data-anchor-id="week-5-observable-js-and-jquery">Week 5: Observable JS and jQuery</h2>
+<p>For Week 4 I spent some time on the chalkboard and showing demos in the browser, as “sidebars” to the main content in the slides, so I wanted to share some of this sidebar material here!</p>
+<section id="observablejs" class="level3">
+<h3 class="anchored" data-anchor-id="observablejs">ObservableJS</h3>
+<ul>
+<li>The <a href="https://observablehq.com/@jpowerj/cobb-douglas" target="_blank">ObservableJS demo I showed in class</a>, originally made for a microeconomics course I TAed back in the day but relevant to <strong>you</strong> as <strong>DSAN 5200</strong> students if you <strong>reveal the JS code</strong> “behind” each of the UI elements (the sliders in this case), and how changing some aspect of the <strong>data</strong> in these JS cells <strong>automatically updates the visualization</strong> to reflect these changes.</li>
+<li>(For more of my Observable examples—as in, examples where I can therefore walk you through exactly how they work!—feel free to look at some of the other notebooks in my ObservableHQ account from that same course, like <a href="https://observablehq.com/@jpowerj/exploitation-on-a-desert-island" target="_blank">this one</a>)</li>
+<li>More generally, though, ObservableHQ has a <a href="https://observablehq.com/tutorials" target="_blank">really rich set of tutorials</a> covering a bunch of different use cases! At the bottom of that page, for example, you’ll see some which are tailored specifically to Python and Matplotlib users.</li>
+<li>One resource I remember helping me a lot was the official set of Observable resources on how <strong>inputs</strong> (sliders, checkboxes, etc.) work in OJS. To me this subtopic is especially helpful/fundamental since, once you see how <strong>data from the input elements</strong> (like sliders or checkboxes) <strong>flows into all other code cells which use this data as inputs</strong>, the notion of “topological data flow” that I mentioned in class today will hopefully feel less abstract.</li>
+<li>Lastly, though, if you’re like me and the weirdness around ordering of code cells in OJS feels very bizarre at first, I think <a href="https://observablehq.com/@observablehq/how-observable-runs" target="_blank">this notebook</a> is really really helpful for clarifying that in a way I didn’t have time to walk through in detail today. I basically keep that link open in a tab whenever I work in OJS, so I can go back and reference it when I get confused about why one cell ran before/after another.</li>
+</ul>
+</section>
+<section id="jquery" class="level3">
+<h3 class="anchored" data-anchor-id="jquery">jQuery</h3>
+<ul>
+<li>The jQuery website has a “Learn” section <a href="https://learn.jquery.com/" target="_blank">here</a>. It’s probably overkill, though, since jQuery is so popular and widely-used (though, falling out of favor to some extent for various reasons) that you should be able to use Google and StackOverflow to find answers to most issues that will arise with learning the basics and then using it.</li>
+</ul>
+</section>
+</section>
+<section id="core-texts-weeks-1-4" class="level2">
+<h2 class="anchored" data-anchor-id="core-texts-weeks-1-4">Core Texts, Weeks 1-4</h2>
+<section id="wilkinson-the-grammar-of-graphics-2006" class="level3">
+<h3 class="anchored" data-anchor-id="wilkinson-the-grammar-of-graphics-2006">Wilkinson, <em>The Grammar of Graphics</em> (2006)</h3>
 <p>A key resource for the course, in terms of weaving many of the seemingly-disparate “strands” of the course together, is Leland Wilkinson’s book <em>The Grammar of Graphics</em> <span class="citation" data-cites="wilkinson_grammar_2006">(<a href="#ref-wilkinson_grammar_2006" role="doc-biblioref">Wilkinson 2006</a>)</span>. Since it’s extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a <a href="https://www.dropbox.com/scl/fi/5y1kyvbikedswxy3vgywp/Leland-Wilkinson-D.-Wills-D.-Rope-A.-Norton-R.-Dubbs-The-Grammar-of-Graphics.pdf?rlkey=wu63xjp4thninub8k17v5fk41&amp;dl=1" target="_blank">PDF of the book using this link</a>.</p>
 </section>
-<section id="nathan-yau-visualize-this-2011-and-data-points-2013" class="level2">
-<h2 class="anchored" data-anchor-id="nathan-yau-visualize-this-2011-and-data-points-2013">Nathan Yau, <em>Visualize This!</em> (2011) and <em>Data Points</em> (2013)</h2>
+<section id="nathan-yau-visualize-this-2011-and-data-points-2013" class="level3">
+<h3 class="anchored" data-anchor-id="nathan-yau-visualize-this-2011-and-data-points-2013">Nathan Yau, <em>Visualize This!</em> (2011) and <em>Data Points</em> (2013)</h3>
 <p>Another pair of resources that we’ll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online… But if your situation is anything like mine was when I was a grad student, and you’re living off approx. $0 per month of disposable income, here are EPUB copies of both books <em>(which I am <a href="https://jjacobs.me/dsan5450" target="_blank">ethically justifying</a> by reference to grad-student-Jeff’s experience of professors assigning 5 books/week without a sole PDF or EPUB in sight</em> 😵<em>, along with the fact that all 4 profs for the course are paid subscribers to Yau’s blog!)</em></p>
 <ul>
 <li><span class="citation" data-cites="yau_visualize_2011">Yau (<a href="#ref-yau_visualize_2011" role="doc-biblioref">2011</a>)</span>: <a href="https://www.dropbox.com/scl/fi/mm900nxq8kahg3xv8n6ty/yau-nathan-visualize-this.pdf?rlkey=8u4xe6nt74t8vi6r97m5i7rq8&amp;dl=1" target="_blank">PDF</a>, <a href="https://www.dropbox.com/scl/fi/5sfzzz7uv7d08oi17qg7p/yau-nathan-visualize-this.epub?rlkey=b353utpjp5fdvd1ijix5dh20s&amp;dl=1" target="_blank">EPUB</a></li>
 <li><span class="citation" data-cites="yau_data_2013">Yau (<a href="#ref-yau_data_2013" role="doc-biblioref">2013</a>)</span>: <a href="https://www.dropbox.com/scl/fi/veayaek4wqrprkuwrxqye/yau-nathan-data-points.pdf?rlkey=ps2lvbsach1opkkeo95lq5tuw&amp;dl=1" target="_blank">PDF</a>, <a href="https://www.dropbox.com/scl/fi/ueetu4ebmi3t88xxhsps4/yau-nathan-data-points.epub?rlkey=dh6m1bj9qb4ep34f7cika2clu&amp;dl=1" target="_blank">EPUB</a></li>
 </ul>
 </section>
-<section id="edward-tufte-the-visual-display-of-quantitative-information-1983" class="level2">
-<h2 class="anchored" data-anchor-id="edward-tufte-the-visual-display-of-quantitative-information-1983">Edward Tufte, <em>The Visual Display of Quantitative Information</em> (1983)</h2>
+<section id="edward-tufte-the-visual-display-of-quantitative-information-1983" class="level3">
+<h3 class="anchored" data-anchor-id="edward-tufte-the-visual-display-of-quantitative-information-1983">Edward Tufte, <em>The Visual Display of Quantitative Information</em> (1983)</h3>
 <p><span class="citation" data-cites="tufte_visual_1983">Tufte (<a href="#ref-tufte_visual_1983" role="doc-biblioref">1983</a>)</span> is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a <a href="https://www.dropbox.com/scl/fi/i130zosev7xr0lkwqh9xz/Edward-R.-Tufte-The-Visual-Display-of-Quantitative-Information.pdf?rlkey=ldbvvoel1vwdsgz216cjcy2ac&amp;dl=1" target="_blank">PDF of this one as well</a>.</p>
 <p><em>(Tufte also has more books than the previous two authors, and any of them are interesting and informative, so if you like this one you can go out and buy/obtain the others as well!)</em></p>
 
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">

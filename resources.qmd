@@ -6,18 +6,36 @@ format:
     df-print: kable
 ---
 
-## Wilkinson, *The Grammar of Graphics* (2006)
+## Week 5: Observable JS and jQuery
+
+For Week 4 I spent some time on the chalkboard and showing demos in the browser, as "sidebars" to the main content in the slides, so I wanted to share some of this sidebar material here!
+
+### ObservableJS
+
+* The <a href='https://observablehq.com/@jpowerj/cobb-douglas' target='_blank'>ObservableJS demo I showed in class</a>, originally made for a microeconomics course I TAed back in the day but relevant to **you** as **DSAN 5200** students if you **reveal the JS code** "behind" each of the UI elements (the sliders in this case), and how changing some aspect of the **data** in these JS cells **automatically updates the visualization** to reflect these changes.
+* (For more of my Observable examples---as in, examples where I can therefore walk you through exactly how they work!---feel free to look at some of the other notebooks in my ObservableHQ account from that same course, like <a href='https://observablehq.com/@jpowerj/exploitation-on-a-desert-island' target='_blank'>this one</a>)
+* More generally, though, ObservableHQ has a <a href='https://observablehq.com/tutorials' target='_blank'>really rich set of tutorials</a> covering a bunch of different use cases! At the bottom of that page, for example, you'll see some which are tailored specifically to Python and Matplotlib users.
+* One resource I remember helping me a lot was the official set of Observable resources on how **inputs** (sliders, checkboxes, etc.) work in OJS. To me this subtopic is especially helpful/fundamental since, once you see how **data from the input elements** (like sliders or checkboxes) **flows into all other code cells which use this data as inputs**, the notion of "topological data flow" that I mentioned in class today will hopefully feel less abstract.
+* Lastly, though, if you're like me and the weirdness around ordering of code cells in OJS feels very bizarre at first, I think <a href='https://observablehq.com/@observablehq/how-observable-runs' target='_blank'>this notebook</a> is really really helpful for clarifying that in a way I didn't have time to walk through in detail today. I basically keep that link open in a tab whenever I work in OJS, so I can go back and reference it when I get confused about why one cell ran before/after another.
+
+### jQuery
+
+* The jQuery website has a "Learn" section <a href='https://learn.jquery.com/' target='_blank'>here</a>. It's probably overkill, though, since jQuery is so popular and widely-used (though, falling out of favor to some extent for various reasons) that you should be able to use Google and StackOverflow to find answers to most issues that will arise with learning the basics and then using it.
+
+## Core Texts, Weeks 1-4
+
+### Wilkinson, *The Grammar of Graphics* (2006)
 
 A key resource for the course, in terms of weaving many of the seemingly-disparate "strands" of the course together, is Leland Wilkinson's book *The Grammar of Graphics* [@wilkinson_grammar_2006]. Since it's extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a <a href='https://www.dropbox.com/scl/fi/5y1kyvbikedswxy3vgywp/Leland-Wilkinson-D.-Wills-D.-Rope-A.-Norton-R.-Dubbs-The-Grammar-of-Graphics.pdf?rlkey=wu63xjp4thninub8k17v5fk41&dl=1' target='_blank'>PDF of the book using this link</a>.
 
-## Nathan Yau, *Visualize This!* (2011) and *Data Points* (2013)
+### Nathan Yau, *Visualize This!* (2011) and *Data Points* (2013)
 
 Another pair of resources that we'll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online... But if your situation is anything like mine was when I was a grad student, and you're living off approx. $0 per month of disposable income, here are EPUB copies of both books *(which I am <a href='https://jjacobs.me/dsan5450' target='_blank'>ethically justifying</a> by reference to grad-student-Jeff's experience of professors assigning 5 books/week without a sole PDF or EPUB in sight* 😵*, along with the fact that all 4 profs for the course are paid subscribers to Yau's blog!)*
 
 * @yau_visualize_2011: <a href='https://www.dropbox.com/scl/fi/mm900nxq8kahg3xv8n6ty/yau-nathan-visualize-this.pdf?rlkey=8u4xe6nt74t8vi6r97m5i7rq8&dl=1' target='_blank'>PDF</a>, <a href='https://www.dropbox.com/scl/fi/5sfzzz7uv7d08oi17qg7p/yau-nathan-visualize-this.epub?rlkey=b353utpjp5fdvd1ijix5dh20s&dl=1' target='_blank'>EPUB</a>
 * @yau_data_2013: <a href='https://www.dropbox.com/scl/fi/veayaek4wqrprkuwrxqye/yau-nathan-data-points.pdf?rlkey=ps2lvbsach1opkkeo95lq5tuw&dl=1' target='_blank'>PDF</a>, <a href='https://www.dropbox.com/scl/fi/ueetu4ebmi3t88xxhsps4/yau-nathan-data-points.epub?rlkey=dh6m1bj9qb4ep34f7cika2clu&dl=1' target='_blank'>EPUB</a>
 
-## Edward Tufte, *The Visual Display of Quantitative Information* (1983)
+### Edward Tufte, *The Visual Display of Quantitative Information* (1983)
 
 @tufte_visual_1983 is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a <a href='https://www.dropbox.com/scl/fi/i130zosev7xr0lkwqh9xz/Edward-R.-Tufte-The-Visual-Display-of-Quantitative-Information.pdf?rlkey=ldbvvoel1vwdsgz216cjcy2ac&dl=1' target='_blank'>PDF of this one as well</a>.
 
