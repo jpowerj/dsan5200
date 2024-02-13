@@ -1441,14 +1441,20 @@
     "href": "w06/index.html",
     "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
     "section": "",
-    "text": "Open slides in new window →"
+    "text": "Open slides in new window →",
+    "crumbs": [
+      "Week 6: Feb 13"
+    ]
   },
   {
     "objectID": "w06/index.html#agenda",
     "href": "w06/index.html#agenda",
     "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
     "section": "Agenda",
-    "text": "Agenda\n\nOJS Recap: Topological Data Flow \nProject Specifications\nGetting Plotly working (in both R and Python) on Posit.Cloud !\nVega, Vega-Lite, Altair Preview (Main course page )"
+    "text": "Agenda\n\nOJS Recap: Topological Data Flow \nProject Specifications\nGetting Plotly working (in both R and Python) on Posit.Cloud !\nVega, Vega-Lite, Altair Preview (Main course page )",
+    "crumbs": [
+      "Week 6: Feb 13"
+    ]
   },
   {
     "objectID": "w06/slides.html#agenda",
