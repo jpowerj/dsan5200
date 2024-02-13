@@ -6,6 +6,10 @@ format:
     df-print: kable
 ---
 
+## Week 6: Plotly
+
+* Here is a direct link to the <a href='../assets/lab5-starter.zip' target='_blank'>starter code</a> for Lab 5 that I began writing at the end of class today!
+
 ## Week 5: Observable JS and jQuery
 
 For Week 4 I spent some time on the chalkboard and showing demos in the browser, as "sidebars" to the main content in the slides, so I wanted to share some of this sidebar material here!
