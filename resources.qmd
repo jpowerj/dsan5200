@@ -8,7 +8,7 @@ format:
 
 ## Week 6: Plotly
 
-* Here is a direct link to the <a href='../assets/lab5-starter.zip' target='_blank'>starter code</a> for Lab 5 that I began writing at the end of class today!
+* Here is a direct link to the <a href='assets/lab5-starter.zip' target='_blank'>starter code</a> for Lab 5 that I began writing at the end of class today!
 
 ## Week 5: Observable JS and jQuery
 
