@@ -3,6 +3,7 @@ title: "Section Recordings"
 #author: "Jeff Jacobs"
 #institute: "<a href='mailto:jj1088@georgetown.edu' target='_blank'>jj1088@georgetown.edu</a>"
 format: html
+sidebar: mainnav
 listing:
   sort-ui: false
   filter-ui: false
