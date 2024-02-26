@@ -28,6 +28,8 @@ website:
         href: "https://gu-dsan.github.io/5200-spring-2024/slides/week-05.html#/title-slide"
       - text: "Week 6: Feb 13"
         href: "w06/index.qmd"
+      - text: "Week 7: Feb 20"
+        href: "https://marckvaisman.georgetown.domains/503/slides/W12-2023-time-series-ab/slides.html#/title-slide"
       - "---"
       - href: "https://gu-dsan.github.io/5200-spring-2024/"
         text: "Main Course Page <i class='bi bi-box-arrow-up-right ps-1'></i>"
