@@ -1,0 +1,202 @@
+---
+title: "Lecture 10: Visualizing Big Data"
+subtitle: "*DSAN 5200-03: Advanced Data Visualization*"
+author:
+  - "Abhijit Dasgupta"
+  - "Jeff Jacobs"
+  - "Anderson Monken"
+  - "Marck Vaisman"
+institute:
+  - "<a href='mailto:abhijit.dasgupta@georgetown.edu' target='_blank'>`abhijit.dasgupta`</a>"
+  - "<a href='mailto:jj1088@georgetown.edu' target='_blank'>`jj1088`</a>"
+  - "<a href='mailto:aem303@georgetown.edu' target='_blank'>`aem303`</a>"
+  - "<a href='mailto:marck.vaisman@georgetown.edu' target='_blank'>`marck.vaisman`</a>"
+date: 2024-01-30
+date-format: full
+lecnum: 10
+categories:
+  - "Class Sessions"
+bibliography: "../_DSAN5200.bib"
+format:
+  revealjs:
+    df-print: kable
+    output-file: slides.html
+    theme: ["../_jjslides.scss"]
+    footer: "DSAN 5200-03 Week 10: Visualizing Big Data"
+    echo: true
+    code-fold: show
+    scrollable: true
+    slide-number: true
+    html-math-method: mathjax
+    include-in-header:
+      text: "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous'><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css'>"
+    simplemenu:
+      flat: true
+      barhtml:
+        header: "<div class='menubar'><span style='position: absolute; left: 8; padding-left: 8px;'><a href='./index.html'>&larr; Return to Notes</a></span><ul class='menu'></ul></div>"
+      scale: 0.5
+    revealjs-plugins:
+      - simplemenu
+  html:
+    df-print: kable
+    output-file: "index.html"
+    echo: true
+    code-fold: show
+    html-math-method: mathjax
+---
+
+::: {.content-visible unless-format="revealjs"}
+
+<center>
+<a class="h2" href="./slides.html" target="_blank">Open slides in new window &rarr;</a>
+</center>
+
+:::
+
+## What Makes *Big Data* Visualization Different? {.crunch-title .smaller data-name="New Challenges"}
+
+*(...Let's brainstorm!)*
+
+![](images/new_foe.jpg){fig-align="center"}
+
+## *Memory* Issues $\leadsto$ *Computational* Issues {.title-09 .crunch-title .crunch-ul}
+
+* We've assumed one-to-one correspondence between (immediately-accessible) **data** and **visual encoding(s)**
+* When working with big data, however:
+  * Full dataset **may not fit** in the user's browser cache!
+  * Even if it does, **processing** (e.g., placing $N$ points on map) may be prohibitively slow
+* $\implies$ Some portion of data / some computations need to be handled **server side!**
+
+## Client-Side vs. Server-Side Computing {.crunch-title .crunch-ul}
+
+* Reliable estimates of **computing power** (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!
+* Back-of-envelope calculation:
+  * A given **server** (AWS, GCP) has 10-100x more computing power than our **laptops**
+  * Servers almost entirely devoted to **data processing**; laptops have to handle OS GUI, streaming video, conserving battery, etc.
+
+## Client-Side vs. Server-Side Memory {.crunch-title .crunch-ul}
+
+* In Chrome, check JS heap size (in GB) by running:
+
+    ```js
+    window.performance.memory.jsHeapSizeLimit / (10**9)
+    ```
+
+| | |
+| - | -:|
+| My Chrome JS Heap | 4.2947 GB |
+| <a href='https://www.arcgis.com/home/item.html?id=778bd6d573f54bf188753b0276c11d1c' target='_blank'>2020 US Census data</a> | 4.3487 GB |
+| <a href='https://d3.harvard.edu/platform-digit/submission/google-maps-the-most-expansive-data-machine/' target='_blank'>Google Maps</a> (2012) | 20 000 000.0000 GB |
+
+: {tbl-colwidths="50,50"}
+
+![](images/khaled.jpeg){fig-align="center"}
+
+## New *Opportunities* {.crunch-title .smaller .crunch-ul data-name="New Opportunities"}
+
+* Allow users to explore time series for **arbitrarily-long windows of time!**
+
+::: {#fig-uber}
+
+<center>
+
+{{< video images/BigData.mov height="500" >}}
+
+</center>
+
+From Shan He, <a href='https://www.youtube.com/watch?v=Z8E4_rOpbyw' target='_blank'>"Creating Beautiful and Meaningful Visualizations with Big Data"</a>
+
+:::
+
+## Helpful Even When Data *Does* Fit In Memory! {.smaller .title-12 .crunch-title .crunch-ul}
+
+* Can free user's CPU for things like **lighting computation**
+
+::: {#fig-lighting}
+
+<center>
+
+{{< video images/Light_and_Shadow.mp4 height="500" >}}
+
+</center>
+
+"<a href='https://medium.com/foursquare-direct/elevate-your-maps-with-foursquares-artistic-geospatial-tools-869e9d58f074' target='_blank'>Astronomically correct lighting</a> allows users to see how different buildings shade each other during different times of day and year."
+
+:::
+
+<!-- 
+{{< video images/vegetation.mp4 >}}
+
+* <a href='https://studio.foursquare.com/public/68f2fda7-8e47-4175-bdb6-dc523dfda342'>Global population density</a> -->
+
+## Is This Lighting Thing A Gimmick? {.smaller .crunch-title .crunch-ul}
+
+* ...or a **MILLION DOLLAR IDEA!!!** 🤑🤑🤑
+
+::: {#fig-radiance}
+
+<center>
+
+{{< video images/radiance.mp4 height="500" >}}
+
+</center>
+
+<a href='https://useradiance.com/' target='_blank'>Radiance: Determine your building's solar potential</a>
+
+:::
+
+# Achieving the Best of Both Worlds {data-stack-name="Implementation"}
+
+## The General Idea {.crunch-title .crunch-ul .smaller}
+
+* Ad hoc approach, figuring out what to do **server-side** vs. **client-side** "on the fly" ❌
+* Instead, we can use systems which **integrate** them, drawing on respective **strengths**!
+* **Data Visualization Management System** (**DVMS**)
+
+![](images/hashcubes.svg){fig-align="center"}
+
+## ZQL = SQL for Visualization {.smaller}
+
+* Input: Description of desired visualization
+* Output: SQL query
+
+| `x` | `y` | `constraints` | `viz` |
+| - | - | - | - |
+| `carrier` | `passengers` | `destination=="New York"` | `bar(y=sum(passengers))` |
+
+: {tbl-colwidths="[15,17,38,30]"}
+
+Produces
+
+```sql
+SELECT carrier, SUM(passengers)
+FROM flight delay
+GROUP BY carrier
+WHERE destination="New York";
+```
+
+* Maybe non-obvious, *a priori*, how this helps...
+* Advantages become clear when we start to **optimize!**
+
+## Precomputation
+
+* SQL **in general** needs to handle arbitrary queries...
+* But for **visualization**, certain queries will never be made, while others (counting, summing) will be made frequently
+* Hence we can **precompute**, on the **server side** many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at
+* This frees up processing power on the **client side**, which can be applied instead towards **speed**, **aesthetics**, **responsive interactivity**, etc.
+
+## The Power of Precomputation I
+
+{{< video images/vegetation.mp4 >}}
+
+## The Power of Precomputation II
+
+<center>
+
+{{< video images/heshan_cheri-firedamage.mp4 height="500" >}}
+
+</center>
+
+## Precomputation: Designing for an *Audience* {.crunch-title .smaller .title-12}
+
+![<a href='https://www.youtube.com/watch?v=Z8E4_rOpbyw&t=125s' target='_blank'>Open in new tab <i class='bi bi-box-arrow-up-right ps-1'></i></a>](images/uberpool.jpeg){fig-align="center"}
