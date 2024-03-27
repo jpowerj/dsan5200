@@ -89,6 +89,35 @@ div.csl-indent {
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="./jjcustom.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -211,7 +240,11 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-6-plotly" id="toc-week-6-plotly" class="nav-link active" data-scroll-target="#week-6-plotly">Week 6: Plotly</a></li>
+  <li><a href="#weeks-10-and-11-visualization-for-big-data-and-machine-learning" id="toc-weeks-10-and-11-visualization-for-big-data-and-machine-learning" class="nav-link active" data-scroll-target="#weeks-10-and-11-visualization-for-big-data-and-machine-learning">Weeks 10 and 11: Visualization for Big Data and Machine Learning</a>
+  <ul class="collapse">
+  <li><a href="#number-of-datapoints-vs.-number-of-dimensions" id="toc-number-of-datapoints-vs.-number-of-dimensions" class="nav-link" data-scroll-target="#number-of-datapoints-vs.-number-of-dimensions">Number of Datapoints vs.&nbsp;Number of Dimensions</a></li>
+  </ul></li>
+  <li><a href="#week-6-plotly" id="toc-week-6-plotly" class="nav-link" data-scroll-target="#week-6-plotly">Week 6: Plotly</a></li>
   <li><a href="#week-5-observable-js-and-jquery" id="toc-week-5-observable-js-and-jquery" class="nav-link" data-scroll-target="#week-5-observable-js-and-jquery">Week 5: Observable JS and jQuery</a>
   <ul class="collapse">
   <li><a href="#observablejs" id="toc-observablejs" class="nav-link" data-scroll-target="#observablejs">ObservableJS</a></li>
@@ -248,6 +281,19 @@ div.csl-indent {
 </header>
 
 
+<section id="weeks-10-and-11-visualization-for-big-data-and-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="weeks-10-and-11-visualization-for-big-data-and-machine-learning">Weeks 10 and 11: Visualization for Big Data and Machine Learning</h2>
+<p>In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:</p>
+<section id="number-of-datapoints-vs.-number-of-dimensions" class="level3">
+<h3 class="anchored" data-anchor-id="number-of-datapoints-vs.-number-of-dimensions">Number of Datapoints vs.&nbsp;Number of Dimensions</h3>
+<p>To “unify” the topics of Week 10 vs.&nbsp;Week 11 I talked about how, if <span class="math inline">\(n\)</span> is our number of datapoints (e.g., sample size) and <span class="math inline">\(p\)</span> is the dimensionality of our data (how many “pieces of information” we have about each of the <span class="math inline">\(n\)</span> datapoints), then</p>
+<ul>
+<li><strong>Classical statistical methods</strong> were developed to handle settings where <span class="math inline">\(n \gg p\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, so that we have a small number of <strong>parameters</strong> that we <strong>fit</strong> (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in <span class="math inline">\(n \gg 2\)</span> datapoints and estimate a <strong>line of best fit</strong>, where the line itself is characterized by its two parameters, slope and intercept (<span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(y = mx + b\)</span>).</li>
+<li>In modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely <strong>high-dimensional</strong> data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have <span class="math inline">\(p \gg n\)</span>. In the modern field of <strong>biostatistics</strong>, for example, we talked in class about how the human genome contains about <strong>6 billion</strong> nucleotide pairs, but researchers in the UK have mapped-out genomes for <strong>500,000</strong> people, so that now the number of <strong>dimensions</strong> we have for each person is <span class="math inline">\(\frac{\text{6 billion}}{500 000} = 12 000\)</span> times the number of people we have…</li>
+</ul>
+<p>For me, this notion of thinking about <span class="math inline">\(n \gg p\)</span> versus <span class="math inline">\(p \gg n\)</span> comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: <a href="https://hastie.su.domains/ElemStatLearn/" target="_blank">https://hastie.su.domains/ElemStatLearn/</a></p>
+</section>
+</section>
 <section id="week-6-plotly" class="level2">
 <h2 class="anchored" data-anchor-id="week-6-plotly">Week 6: Plotly</h2>
 <ul>
@@ -298,6 +344,7 @@ div.csl-indent {
 </section>
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-tufte_visual_1983" class="csl-entry" role="listitem">
 Tufte, Edward R. 1983. <em>The <span>Visual Display</span> of <span>Quantitative Information</span></em>. <span>Graphics Press</span>.
@@ -311,7 +358,12 @@ Yau, Nathan. 2011. <em>Visualize <span>This</span>: <span>The FlowingData Guide<
 <div id="ref-yau_data_2013" class="csl-entry" role="listitem">
 ———. 2013. <em>Data <span>Points</span>: <span>Visualization That Means Something</span></em>. <span>John Wiley &amp; Sons</span>.
 </div>
-</div></section></div></main> <!-- /main -->
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Here the <span class="math inline">\(\gg\)</span> symbol can be read as “much greater than” (by analogy to the standard <span class="math inline">\(&gt;\)</span> for “greater than”)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -6,6 +6,19 @@ format:
     df-print: kable
 ---
 
+## Weeks 10 and 11: Visualization for Big Data and Machine Learning
+
+In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:
+
+### Number of Datapoints vs. Number of Dimensions
+
+To "unify" the topics of Week 10 vs. Week 11 I talked about how, if $n$ is our number of datapoints (e.g., sample size) and $p$ is the dimensionality of our data (how many "pieces of information" we have about each of the $n$ datapoints), then
+
+* **Classical statistical methods** were developed to handle settings where $n \gg p$[^muchgreater], so that we have a small number of **parameters** that we **fit** (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in $n \gg 2$ datapoints and estimate a **line of best fit**, where the line itself is characterized by its two parameters, slope and intercept ($m$ and $b$ in $y = mx + b$).
+* In modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely **high-dimensional** data, where the problem was in a sense the "opposite" of the classical-statistics scenario: now we have $p \gg n$. In the modern field of **biostatistics**, for example, we talked in class about how the human genome contains about **6 billion** nucleotide pairs, but researchers in the UK have mapped-out genomes for **500,000** people, so that now the number of **dimensions** we have for each person is $\frac{\text{6 billion}}{500 000} = 12 000$ times the number of people we have...
+
+For me, this notion of thinking about $n \gg p$ versus $p \gg n$ comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: <a href='https://hastie.su.domains/ElemStatLearn/' target='_blank'>https://hastie.su.domains/ElemStatLearn/</a>
+
 ## Week 6: Plotly
 
 * Here is a direct link to the <a href='assets/lab5-starter.zip' target='_blank'>starter code</a> for Lab 5 that I began writing at the end of class today!
@@ -44,3 +57,5 @@ Another pair of resources that we'll be drawing on a lot throughout the semester
 @tufte_visual_1983 is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a <a href='https://www.dropbox.com/scl/fi/i130zosev7xr0lkwqh9xz/Edward-R.-Tufte-The-Visual-Display-of-Quantitative-Information.pdf?rlkey=ldbvvoel1vwdsgz216cjcy2ac&dl=1' target='_blank'>PDF of this one as well</a>.
 
 *(Tufte also has more books than the previous two authors, and any of them are interesting and informative, so if you like this one you can go out and buy/obtain the others as well!)*
+
+[^muchgreater]: Here the $\gg$ symbol can be read as "much greater than" (by analogy to the standard $>$ for "greater than")

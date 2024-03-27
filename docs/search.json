@@ -4,7 +4,17 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Here is a direct link to the starter code for Lab 5 that I began writing at the end of class today!",
+    "text": "In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:\n\n\nTo “unify” the topics of Week 10 vs. Week 11 I talked about how, if \\(n\\) is our number of datapoints (e.g., sample size) and \\(p\\) is the dimensionality of our data (how many “pieces of information” we have about each of the \\(n\\) datapoints), then\n\nClassical statistical methods were developed to handle settings where \\(n \\gg p\\)1, so that we have a small number of parameters that we fit (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in \\(n \\gg 2\\) datapoints and estimate a line of best fit, where the line itself is characterized by its two parameters, slope and intercept (\\(m\\) and \\(b\\) in \\(y = mx + b\\)).\nIn modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely high-dimensional data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have \\(p \\gg n\\). In the modern field of biostatistics, for example, we talked in class about how the human genome contains about 6 billion nucleotide pairs, but researchers in the UK have mapped-out genomes for 500,000 people, so that now the number of dimensions we have for each person is \\(\\frac{\\text{6 billion}}{500 000} = 12 000\\) times the number of people we have…\n\nFor me, this notion of thinking about \\(n \\gg p\\) versus \\(p \\gg n\\) comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: https://hastie.su.domains/ElemStatLearn/",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#weeks-10-and-11-visualization-for-big-data-and-machine-learning",
+    "href": "resources.html#weeks-10-and-11-visualization-for-big-data-and-machine-learning",
+    "title": "Resources",
+    "section": "",
+    "text": "In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:\n\n\nTo “unify” the topics of Week 10 vs. Week 11 I talked about how, if \\(n\\) is our number of datapoints (e.g., sample size) and \\(p\\) is the dimensionality of our data (how many “pieces of information” we have about each of the \\(n\\) datapoints), then\n\nClassical statistical methods were developed to handle settings where \\(n \\gg p\\)1, so that we have a small number of parameters that we fit (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in \\(n \\gg 2\\) datapoints and estimate a line of best fit, where the line itself is characterized by its two parameters, slope and intercept (\\(m\\) and \\(b\\) in \\(y = mx + b\\)).\nIn modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely high-dimensional data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have \\(p \\gg n\\). In the modern field of biostatistics, for example, we talked in class about how the human genome contains about 6 billion nucleotide pairs, but researchers in the UK have mapped-out genomes for 500,000 people, so that now the number of dimensions we have for each person is \\(\\frac{\\text{6 billion}}{500 000} = 12 000\\) times the number of people we have…\n\nFor me, this notion of thinking about \\(n \\gg p\\) versus \\(p \\gg n\\) comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: https://hastie.su.domains/ElemStatLearn/",
     "crumbs": [
       "Resources"
     ]
@@ -13,8 +23,8 @@
     "objectID": "resources.html#week-6-plotly",
     "href": "resources.html#week-6-plotly",
     "title": "Resources",
-    "section": "",
-    "text": "Here is a direct link to the starter code for Lab 5 that I began writing at the end of class today!",
+    "section": "Week 6: Plotly",
+    "text": "Week 6: Plotly\n\nHere is a direct link to the starter code for Lab 5 that I began writing at the end of class today!",
     "crumbs": [
       "Resources"
     ]
@@ -35,6 +45,16 @@
     "title": "Resources",
     "section": "Core Texts, Weeks 1-4",
     "text": "Core Texts, Weeks 1-4\n\nWilkinson, The Grammar of Graphics (2006)\nA key resource for the course, in terms of weaving many of the seemingly-disparate “strands” of the course together, is Leland Wilkinson’s book The Grammar of Graphics (Wilkinson 2006). Since it’s extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a PDF of the book using this link.\n\n\nNathan Yau, Visualize This! (2011) and Data Points (2013)\nAnother pair of resources that we’ll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online… But if your situation is anything like mine was when I was a grad student, and you’re living off approx. $0 per month of disposable income, here are EPUB copies of both books (which I am ethically justifying by reference to grad-student-Jeff’s experience of professors assigning 5 books/week without a sole PDF or EPUB in sight 😵, along with the fact that all 4 profs for the course are paid subscribers to Yau’s blog!)\n\nYau (2011): PDF, EPUB\nYau (2013): PDF, EPUB\n\n\n\nEdward Tufte, The Visual Display of Quantitative Information (1983)\nTufte (1983) is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a PDF of this one as well.\n(Tufte also has more books than the previous two authors, and any of them are interesting and informative, so if you like this one you can go out and buy/obtain the others as well!)",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#footnotes",
+    "href": "resources.html#footnotes",
+    "title": "Resources",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere the \\(\\gg\\) symbol can be read as “much greater than” (by analogy to the standard \\(&gt;\\) for “greater than”)↩︎",
     "crumbs": [
       "Resources"
     ]
