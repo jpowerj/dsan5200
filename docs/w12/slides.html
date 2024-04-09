@@ -8,16 +8,14 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.23">
 
   <meta name="author" content="Abhijit Dasgupta">
   <meta name="author" content="Jeff Jacobs">
   <meta name="author" content="Anderson Monken">
   <meta name="author" content="Marck Vaisman">
-  <title>Lecture 10: Visualizing Big Data</title>
+  <title>Lecture 12: Getting Visualizions onto the Web</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -35,71 +33,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -400,7 +333,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lecture 10: Visualizing Big Data</h1>
+  <h1 class="title">Lecture 12: Getting Visualizions onto the Web</h1>
   <p class="subtitle"><em>DSAN 5200-03: Advanced Data Visualization</em></p>
 
 <div class="quarto-title-authors">
@@ -438,219 +371,69 @@ Marck Vaisman
     </div>
 </div>
 
-  <p class="date">Tuesday, January 30, 2024</p>
-</section>
-<section id="what-makes-big-data-visualization-different" class="slide level2 crunch-title smaller" data-name="New Challenges">
-<h2>What Makes <em>Big Data</em> Visualization Different?</h2>
-<p><em>(…Let’s brainstorm!)</em></p>
-
-<img data-src="images/new_foe.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="memory-issues-leadsto-computational-issues" class="slide level2 title-09 crunch-title crunch-ul">
-<h2><em>Memory</em> Issues <span class="math inline">\(\leadsto\)</span> <em>Computational</em> Issues</h2>
-<ul>
-<li>We’ve assumed one-to-one correspondence between (immediately-accessible) <strong>data</strong> and <strong>visual encoding(s)</strong></li>
-<li>When working with big data, however:
-<ul>
-<li>Full dataset <strong>may not fit</strong> in the user’s browser cache!</li>
-<li>Even if it does, <strong>processing</strong> (e.g., placing <span class="math inline">\(N\)</span> points on map) may be prohibitively slow</li>
-</ul></li>
-<li><span class="math inline">\(\implies\)</span> Some portion of data / some computations need to be handled <strong>server side!</strong></li>
-</ul>
-</section>
-<section id="client-side-vs.-server-side-computing" class="slide level2 crunch-title crunch-ul">
-<h2>Client-Side vs.&nbsp;Server-Side Computing</h2>
-<ul>
-<li>Reliable estimates of <strong>computing power</strong> (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!</li>
-<li>Back-of-envelope calculation:
-<ul>
-<li>A given <strong>server</strong> (AWS, GCP) has 10-100x more computing power than our <strong>laptops</strong></li>
-<li>Servers almost entirely devoted to <strong>data processing</strong>; laptops have to handle OS GUI, streaming video, conserving battery, etc.</li>
-</ul></li>
-</ul>
-</section>
-<section id="client-side-vs.-server-side-memory" class="slide level2 crunch-title crunch-ul">
-<h2>Client-Side vs.&nbsp;Server-Side Memory</h2>
-<ul>
-<li><p>In Chrome, check JS heap size (in GB) by running:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a></a><span class="bu">window</span><span class="op">.</span><span class="at">performance</span><span class="op">.</span><span class="at">memory</span><span class="op">.</span><span class="at">jsHeapSizeLimit</span> <span class="op">/</span> (<span class="dv">10</span><span class="op">**</span><span class="dv">9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ul>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>My Chrome JS Heap</td>
-<td style="text-align: right;">4.2947 GB</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.arcgis.com/home/item.html?id=778bd6d573f54bf188753b0276c11d1c" target="_blank">2020 US Census data</a></td>
-<td style="text-align: right;">4.3487 GB</td>
-</tr>
-<tr class="odd">
-<td><a href="https://d3.harvard.edu/platform-digit/submission/google-maps-the-most-expansive-data-machine/" target="_blank">Google Maps</a> (2012)</td>
-<td style="text-align: right;">20 000 000.0000 GB</td>
-</tr>
-</tbody>
-</table>
-
-<img data-src="images/khaled.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="new-opportunities" class="slide level2 crunch-title smaller crunch-ul" data-name="New Opportunities">
-<h2>New <em>Opportunities</em></h2>
-<ul>
-<li>Allow users to explore time series for <strong>arbitrarily-long windows of time!</strong></li>
-</ul>
-<div id="fig-uber" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-uber-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<center>
-<video id="video_shortcode_videojs_video1" height="500" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="images/BigData.mov"></video>
-</center>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-uber-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: From Shan He, <a href="https://www.youtube.com/watch?v=Z8E4_rOpbyw" target="_blank">“Creating Beautiful and Meaningful Visualizations with Big Data”</a>
-</figcaption>
-</figure>
-</div>
-</section>
-<section id="helpful-even-when-data-does-fit-in-memory" class="slide level2 smaller title-12 crunch-title crunch-ul">
-<h2>Helpful Even When Data <em>Does</em> Fit In Memory!</h2>
-<ul>
-<li>Can free user’s CPU for things like <strong>lighting computation</strong></li>
-</ul>
-<div id="fig-lighting" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-lighting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<center>
-<video id="video_shortcode_videojs_video2" height="500" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="images/Light_and_Shadow.mp4"></video>
-</center>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lighting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: “<a href="https://medium.com/foursquare-direct/elevate-your-maps-with-foursquares-artistic-geospatial-tools-869e9d58f074" target="_blank">Astronomically correct lighting</a> allows users to see how different buildings shade each other during different times of day and year.”
-</figcaption>
-</figure>
-</div>
-<!-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* <a href='https://studio.foursquare.com/public/68f2fda7-8e47-4175-bdb6-dc523dfda342'>Global population density</a> -->
-</section>
-<section id="is-this-lighting-thing-a-gimmick" class="slide level2 smaller crunch-title crunch-ul">
-<h2>Is This Lighting Thing A Gimmick?</h2>
-<ul>
-<li>…or a <strong>MILLION DOLLAR IDEA!!!</strong> 🤑🤑🤑</li>
-</ul>
-<div id="fig-radiance" class="quarto-figure quarto-figure-center quarto-float">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-radiance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<center>
-<video id="video_shortcode_videojs_video4" height="500" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="images/radiance.mp4"></video>
-</center>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-radiance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: <a href="https://useradiance.com/" target="_blank">Radiance: Determine your building’s solar potential</a>
-</figcaption>
-</figure>
-</div>
+  <p class="date">Tuesday, April 9, 2024</p>
 </section>
 <section>
-<section id="achieving-the-best-of-both-worlds" class="title-slide slide level1 center" data-stack-name="Implementation">
-<h1>Achieving the Best of Both Worlds</h1>
+<section id="web-apps-without-rolling-your-own-server" class="title-slide slide level1 center" data-stack-name="Serverless">
+<h1>Web apps without rolling your own server</h1>
 
 </section>
-<section id="the-general-idea" class="slide level2 crunch-title crunch-ul smaller">
-<h2>The General Idea</h2>
+<section id="github-pages" class="slide level2">
+<h2>GitHub Pages</h2>
 <ul>
-<li>Ad hoc approach, figuring out what to do <strong>server-side</strong> vs.&nbsp;<strong>client-side</strong> “on the fly” ❌</li>
-<li>Instead, we can use systems which <strong>integrate</strong> them, drawing on respective <strong>strengths</strong>!</li>
-<li><strong>Data Visualization Management System</strong> (<strong>DVMS</strong>)</li>
+<li>Most basic: GitHub Pages (web app must be <em>rendered</em> to html, hence quarto)</li>
+</ul>
+</section>
+<section id="streamlit" class="slide level2">
+<h2>Streamlit</h2>
+<ul>
+<li>Streamlit map – benefits: write directly in Python without worrying about compilation to html via quarto; using GSheets as DB, but also many many drawbacks of streamlit</li>
+<li>Live coding: make the basics of the map app [sidebar, main window, sl.Map(), Geocoding API</li>
+</ul>
+</section>
+<section id="vercel" class="slide level2">
+<h2>Vercel</h2>
+<ul>
+<li>Vercel + Next.js: Marxdb, DailyAtrocity</li>
+<li><em>Pre-caching</em> all of the possible views – for example, if they’re visualizing 50 states, they can pre-render those 50, at urls like /al, /az, etc</li>
+</ul>
+</section></section>
+<section>
+<section id="cloud-functions" class="title-slide slide level1 center" data-stack-name="Cloud Functions">
+<h1>Cloud functions</h1>
+
+</section>
+<section id="halfway-between-web-apps-and-full-on-servers" class="slide level2">
+<h2>Halfway Between Web Apps and Full-On Servers</h2>
+<ul>
+<li>GCS: A quick-and-dirty “hack” for replacing actual storage space on server</li>
+</ul>
+</section></section>
+<section>
+<section id="web-apps-with-your-own-server" class="title-slide slide level1 center" data-stack-name="Web Servers and VMs">
+<h1>Web apps <em>with</em> your own server</h1>
+
+</section>
+<section id="flask" class="slide level2">
+<h2>Flask!</h2>
+<ul>
+<li>Bridges the gap between Cloud functions and… Apache</li>
+<li>Obvious disadvantage: cost (even worse than cloud functions)</li>
+<li>Advantages: Run anything at all, beyond just Python</li>
+<li>Multiple domains, subdomains, etc.</li>
+</ul>
+</section>
+<section id="flask-lab" class="slide level2">
+<h2>Flask Lab</h2>
+<ul>
+<li>Hello world but also with parameters; reasons to use GET vs POST</li>
+<li>How does it help with viz?</li>
+<li>Immediate answer: take an app with big big data file on HDD <span class="math inline">\(\rightarrow\)</span> load dynamically via GET request in Flask app!</li>
 </ul>
 
-<img data-src="images/hashcubes.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="zql-sql-for-visualization" class="slide level2 smaller">
-<h2>ZQL = SQL for Visualization</h2>
-<ul>
-<li>Input: Description of desired visualization</li>
-<li>Output: SQL query</li>
-</ul>
-<table>
-<colgroup>
-<col style="width: 15%">
-<col style="width: 17%">
-<col style="width: 38%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><code>x</code></th>
-<th><code>y</code></th>
-<th><code>constraints</code></th>
-<th><code>viz</code></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>carrier</code></td>
-<td><code>passengers</code></td>
-<td><code>destination=="New York"</code></td>
-<td><code>bar(y=sum(passengers))</code></td>
-</tr>
-</tbody>
-</table>
-<p>Produces</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource sql number-lines code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a></a><span class="kw">SELECT</span> carrier, <span class="fu">SUM</span>(passengers)</span>
-<span id="cb2-2"><a></a><span class="kw">FROM</span> flight delay</span>
-<span id="cb2-3"><a></a><span class="kw">GROUP</span> <span class="kw">BY</span> carrier</span>
-<span id="cb2-4"><a></a><span class="kw">WHERE</span> destination<span class="op">=</span><span class="ot">"New York"</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Maybe non-obvious, <em>a priori</em>, how this helps…</li>
-<li>Advantages become clear when we start to <strong>optimize!</strong></li>
-</ul>
-</section>
-<section id="precomputation" class="slide level2">
-<h2>Precomputation</h2>
-<ul>
-<li>SQL <strong>in general</strong> needs to handle arbitrary queries…</li>
-<li>But for <strong>visualization</strong>, certain queries will never be made, while others (counting, summing) will be made frequently</li>
-<li>Hence we can <strong>precompute</strong>, on the <strong>server side</strong> many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at</li>
-<li>This frees up processing power on the <strong>client side</strong>, which can be applied instead towards <strong>speed</strong>, <strong>aesthetics</strong>, <strong>responsive interactivity</strong>, etc.</li>
-</ul>
-</section>
-<section id="the-power-of-precomputation-i" class="slide level2">
-<h2>The Power of Precomputation I</h2>
-<video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/vegetation.mp4"></video>
-</section>
-<section id="the-power-of-precomputation-ii" class="slide level2">
-<h2>The Power of Precomputation II</h2>
-<center>
-<video id="video_shortcode_videojs_video6" height="500" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="images/heshan_cheri-firedamage.mp4"></video>
-</center>
-</section>
-<section id="precomputation-designing-for-an-audience" class="slide level2 crunch-title smaller title-12">
-<h2>Precomputation: Designing for an <em>Audience</em></h2>
-
-
-<img data-src="images/uberpool.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.youtube.com/watch?v=Z8E4_rOpbyw&amp;t=125s" target="_blank">Open in new tab <i class="bi bi-box-arrow-up-right ps-1"></i></a></p><div class="quarto-auto-generated-content">
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>DSAN 5200-03 Week 10: Visualizing Big Data</p>
+<p>DSAN 5200-03 Week 12: Visualization Backends</p>
 </div>
 </div>
 </section></section>
@@ -1042,12 +825,6 @@ Figure&nbsp;3: <a href="https://useradiance.com/" target="_blank">Radiance: Dete
       }
     });
     </script>
-    <script>videojs(video_shortcode_videojs_video1);</script>
-    <script>videojs(video_shortcode_videojs_video2);</script>
-    <script>videojs(video_shortcode_videojs_video3);</script>
-    <script>videojs(video_shortcode_videojs_video4);</script>
-    <script>videojs(video_shortcode_videojs_video5);</script>
-    <script>videojs(video_shortcode_videojs_video6);</script>
     
 
 </body></html>

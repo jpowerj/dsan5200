@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Abhijit Dasgupta">
+<meta name="author" content="Jeff Jacobs">
+<meta name="author" content="Anderson Monken">
+<meta name="author" content="Marck Vaisman">
 
-<title>Section Recordings</title>
+<title>Lecture 12: Getting Visualizions onto the Web</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +35,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../favicon.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-week','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
-      
-      searchColumns: ["listing-week","listing-title","listing-url","listing-date","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="../jjcustom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -142,7 +115,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../recordings/index.html">Recordings</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../w12/index.html">Week 12: Apr 9</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -181,7 +154,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../recordings/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../recordings/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recordings</span></a>
   </div>
 </li>
@@ -242,7 +215,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../w12/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../w12/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 12: Apr 9</span></a>
   </div>
 </li>
@@ -264,22 +237,89 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#web-apps-without-rolling-your-own-server" id="toc-web-apps-without-rolling-your-own-server" class="nav-link active" data-scroll-target="#web-apps-without-rolling-your-own-server">Web apps without rolling your own server</a>
+  <ul class="collapse">
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages">GitHub Pages</a></li>
+  <li><a href="#streamlit" id="toc-streamlit" class="nav-link" data-scroll-target="#streamlit">Streamlit</a></li>
+  <li><a href="#vercel" id="toc-vercel" class="nav-link" data-scroll-target="#vercel">Vercel</a></li>
+  </ul></li>
+  <li><a href="#cloud-functions" id="toc-cloud-functions" class="nav-link" data-scroll-target="#cloud-functions">Cloud functions</a>
+  <ul class="collapse">
+  <li><a href="#halfway-between-web-apps-and-full-on-servers" id="toc-halfway-between-web-apps-and-full-on-servers" class="nav-link" data-scroll-target="#halfway-between-web-apps-and-full-on-servers">Halfway Between Web Apps and Full-On Servers</a></li>
+  </ul></li>
+  <li><a href="#web-apps-with-your-own-server" id="toc-web-apps-with-your-own-server" class="nav-link" data-scroll-target="#web-apps-with-your-own-server">Web apps <em>with</em> your own server</a>
+  <ul class="collapse">
+  <li><a href="#flask" id="toc-flask" class="nav-link" data-scroll-target="#flask">Flask!</a></li>
+  <li><a href="#flask-lab" id="toc-flask-lab" class="nav-link" data-scroll-target="#flask-lab">Flask Lab</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Section Recordings</h1>
-</div>
+<h1 class="title">Lecture 12: Getting Visualizions onto the Web</h1>
+<p class="subtitle lead"><em>DSAN 5200-03: Advanced Data Visualization</em></p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Class Sessions</div>
+  </div>
+  </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Abhijit Dasgupta </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="mailto:abhijit.dasgupta@georgetown.edu" target="_blank"><code>abhijit.dasgupta</code></a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jeff Jacobs </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="mailto:jj1088@georgetown.edu" target="_blank"><code>jj1088</code></a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Anderson Monken </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="mailto:aem303@georgetown.edu" target="_blank"><code>aem303</code></a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Marck Vaisman </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="mailto:marck.vaisman@georgetown.edu" target="_blank"><code>marck.vaisman</code></a>
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Tuesday, April 9, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -289,92 +329,65 @@ window.Quarto = {
 </header>
 
 
+<center>
+<a class="h2" href="./slides.html" target="_blank">Open slides in new window →</a>
+</center>
+<section id="web-apps-without-rolling-your-own-server" class="level1" data-stack-name="Serverless">
+<h1 data-stack-name="Serverless">Web apps without rolling your own server</h1>
+<section id="github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="github-pages">GitHub Pages</h2>
+<ul>
+<li>Most basic: GitHub Pages (web app must be <em>rendered</em> to html, hence quarto)</li>
+</ul>
+</section>
+<section id="streamlit" class="level2">
+<h2 class="anchored" data-anchor-id="streamlit">Streamlit</h2>
+<ul>
+<li>Streamlit map – benefits: write directly in Python without worrying about compilation to html via quarto; using GSheets as DB, but also many many drawbacks of streamlit</li>
+<li>Live coding: make the basics of the map app [sidebar, main window, sl.Map(), Geocoding API</li>
+</ul>
+</section>
+<section id="vercel" class="level2">
+<h2 class="anchored" data-anchor-id="vercel">Vercel</h2>
+<ul>
+<li>Vercel + Next.js: Marxdb, DailyAtrocity</li>
+<li><em>Pre-caching</em> all of the possible views – for example, if they’re visualizing 50 states, they can pre-render those 50, at urls like /al, /az, etc</li>
+</ul>
+</section>
+</section>
+<section id="cloud-functions" class="level1" data-stack-name="Cloud Functions">
+<h1 data-stack-name="Cloud Functions">Cloud functions</h1>
+<section id="halfway-between-web-apps-and-full-on-servers" class="level2">
+<h2 class="anchored" data-anchor-id="halfway-between-web-apps-and-full-on-servers">Halfway Between Web Apps and Full-On Servers</h2>
+<ul>
+<li>GCS: A quick-and-dirty “hack” for replacing actual storage space on server</li>
+</ul>
+</section>
+</section>
+<section id="web-apps-with-your-own-server" class="level1" data-stack-name="Web Servers and VMs">
+<h1 data-stack-name="Web Servers and VMs">Web apps <em>with</em> your own server</h1>
+<section id="flask" class="level2">
+<h2 class="anchored" data-anchor-id="flask">Flask!</h2>
+<ul>
+<li>Bridges the gap between Cloud functions and… Apache</li>
+<li>Obvious disadvantage: cost (even worse than cloud functions)</li>
+<li>Advantages: Run anything at all, beyond just Python</li>
+<li>Multiple domains, subdomains, etc.</li>
+</ul>
+</section>
+<section id="flask-lab" class="level2">
+<h2 class="anchored" data-anchor-id="flask-lab">Flask Lab</h2>
+<ul>
+<li>Hello world but also with parameters; reasons to use GET vs POST</li>
+<li>How does it help with viz?</li>
+<li>Immediate answer: take an app with big big data file on HDD <span class="math inline">\(\rightarrow\)</span> load dynamically via GET request in Flask app!</li>
+</ul>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table table-hover">
-<thead>
-<tr>
-<th>
-Week
-</th>
-<th>
-Title
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Lecture Recordings" data-listing-date-sort="1710820800000" data-listing-title-sort="<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce03314-06ef-485c-97ac-b1380149a737' target='_blank'>Section 03 W10: Visualizing Big Data</a>" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-week">10</span>
-</td>
-<td>
-<span class="listing-title"><a href="https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce03314-06ef-485c-97ac-b1380149a737" target="_blank">Section 03 W10: Visualizing Big Data</a></span>
-</td>
-<td>
-<span class="listing-date">Tuesday Mar 19, 2024</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="Lecture Recordings" data-listing-date-sort="1710216000000" data-listing-title-sort="<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe2f44cc-e597-4517-9015-b131014c13e3' target='_blank'>Section 03 W09: Networks, Graphs, and Trees</a>" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-week">9</span>
-</td>
-<td>
-<span class="listing-title"><a href="https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe2f44cc-e597-4517-9015-b131014c13e3" target="_blank">Section 03 W09: Networks, Graphs, and Trees</a></span>
-</td>
-<td>
-<span class="listing-date">Tuesday Mar 12, 2024</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="Lecture Recordings" data-listing-date-sort="1709010000000" data-listing-title-sort="<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=083a8654-13c6-41b4-be69-b123014fad2b' target='_blank'>Section 03 W08: Spatio-Temporal Data (Lab Portion Only)</a>" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-week">8</span>
-</td>
-<td>
-<span class="listing-title"><a href="https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=083a8654-13c6-41b4-be69-b123014fad2b" target="_blank">Section 03 W08: Spatio-Temporal Data (Lab Portion Only)</a></span>
-</td>
-<td>
-<span class="listing-date">Tuesday Feb 27, 2024</span>
-</td>
-</tr>
-<tr data-index="3" data-categories="Lecture Recordings" data-listing-date-sort="1707800400000" data-listing-title-sort="<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6ccc3d80-b20c-45fc-9160-b1150160fd2a' target='_blank'>Section 03 W06: Observable JS and Plotly</a>" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-week">6</span>
-</td>
-<td>
-<span class="listing-title"><a href="https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6ccc3d80-b20c-45fc-9160-b1150160fd2a" target="_blank">Section 03 W06: Observable JS and Plotly</a></span>
-</td>
-<td>
-<span class="listing-date">Tuesday Feb 13, 2024</span>
-</td>
-</tr>
-<tr data-index="4" data-categories="Lecture Recordings" data-listing-date-sort="1705381200000" data-listing-title-sort="<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9b9b59d-4989-4532-84f8-b0f9015ccf44' target='_blank'>Section 03 W02: Visual Encodings and Color Theory</a>" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<span class="listing-week">2</span>
-</td>
-<td>
-<span class="listing-title"><a href="https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9b9b59d-4989-4532-84f8-b0f9015ccf44" target="_blank">Section 03 W02: Visual Encodings and Color Theory</a></span>
-</td>
-<td>
-<span class="listing-date">Tuesday Jan 16, 2024</span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
