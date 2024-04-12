@@ -1,15 +1,15 @@
 - week: 12
-  title: "<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=be4740c1-ebb9-4a1f-bcc3-b14d014e5578' target='_blank'>Section 03 W12: Getting Visualizations Onto the Web</a>"
+  title: "<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=be4740c1-ebb9-4a1f-bcc3-b14d014e5578' target='_blank'>Section 03 W12: {{< var w12.title >}}</a>"
   url: "https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=be4740c1-ebb9-4a1f-bcc3-b14d014e5578"
   date: 2024-04-09
   categories: ["Lecture Recordings"]
 - week: 11
-  title: "<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24ead3dc-41a8-4708-bb29-b13f01497179' target='_blank'>Section 03 W11: Visualization for Machine Learning</a>"
+  title: "<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24ead3dc-41a8-4708-bb29-b13f01497179' target='_blank'>Section 03 W11: {{< var w11.title >}}</a>"
   url: "https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=24ead3dc-41a8-4708-bb29-b13f01497179"
   date: 2024-03-26
   categories: ["Lecture Recordings"]
 - week: 10
-  title: "<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce03314-06ef-485c-97ac-b1380149a737' target='_blank'>Section 03 W10: Visualizing Big Data</a>"
+  title: "<a href='https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce03314-06ef-485c-97ac-b1380149a737' target='_blank'>Section 03 W10: {{< var w10.title >}}</a>"
   url: "https://georgetown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce03314-06ef-485c-97ac-b1380149a737"
   date: 2024-03-19
   categories: ["Lecture Recordings"]

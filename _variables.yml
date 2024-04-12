@@ -1,0 +1,48 @@
+w01:
+  weeknum: 1
+  title: "Course Intro and Data Science Toolbox"
+  date-md: "Jan 11"
+w02:
+  weeknum: 2
+  title: "Visual Encodings, Integrity, Color Theory"
+  date-md: "Jan 16"
+w03:
+  weeknum: 3
+  title: "Choosing the Right Visualization"
+  date-md: "Jan 23"
+w04:
+  weeknum: 4
+  date-md: "Jan 30"
+w05:
+  weeknum: 5
+  date-md: "Feb 6"
+w06:
+  weeknum: 6
+  date-md: "Feb 13"
+w07:
+  weeknum: 7
+  date-md: "Feb 20"
+w08:
+  weeknum: 8
+  date-md: "Feb 27"
+w09:
+  weeknum: 9
+  date-md: "Mar 12"
+w10:
+  weeknum: 10
+  title: "Visualizing Big Data"
+  date-md: "Mar 19"
+w11:
+  weeknum: 11
+  title: "Visualization for Machine Learning"
+  date-md: "Mar 26"
+w12:
+  weeknum: 12
+  title: "Getting Visualizations Onto the Web"
+  date-md: "Apr 9"
+w13:
+  weeknum: 13
+  date-md: "Apr 16"
+w14:
+  weeknum: 14
+  date-md: "Apr 23"
