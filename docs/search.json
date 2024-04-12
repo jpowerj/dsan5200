@@ -112,637 +112,529 @@
     ]
   },
   {
-    "objectID": "w01/index.html",
-    "href": "w01/index.html",
-    "title": "Lecture 1: Course Intro and Data Science Toolbox",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Week 1 was a combined meeting of all four sections of the course.",
+    "text": "In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:\n\n\nTo “unify” the topics of Week 10 vs. Week 11 I talked about how, if \\(n\\) is our number of datapoints (e.g., sample size) and \\(p\\) is the dimensionality of our data (how many “pieces of information” we have about each of the \\(n\\) datapoints), then\n\nClassical statistical methods were developed to handle settings where \\(n \\gg p\\)1, so that we have a small number of parameters that we fit (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in \\(n \\gg 2\\) datapoints and estimate a line of best fit, where the line itself is characterized by its two parameters, slope and intercept (\\(m\\) and \\(b\\) in \\(y = mx + b\\)).\nIn modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely high-dimensional data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have \\(p \\gg n\\). In the modern field of biostatistics, for example, we talked in class about how the human genome contains about 6 billion nucleotide pairs, but researchers in the UK have mapped-out genomes for 500,000 people, so that now the number of dimensions we have for each person is \\(\\frac{\\text{6 billion}}{500 000} = 12 000\\) times the number of people we have…\n\nFor me, this notion of thinking about \\(n \\gg p\\) versus \\(p \\gg n\\) comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: https://hastie.su.domains/ElemStatLearn/",
     "crumbs": [
-      "Week 1: Jan 11"
+      "Resources"
     ]
   },
   {
-    "objectID": "w10/slides.html#what-makes-big-data-visualization-different",
-    "href": "w10/slides.html#what-makes-big-data-visualization-different",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "What Makes Big Data Visualization Different?",
-    "text": "What Makes Big Data Visualization Different?\n(…Let’s brainstorm!)"
+    "objectID": "resources.html#weeks-10-and-11-visualization-for-big-data-and-machine-learning",
+    "href": "resources.html#weeks-10-and-11-visualization-for-big-data-and-machine-learning",
+    "title": "Resources",
+    "section": "",
+    "text": "In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:\n\n\nTo “unify” the topics of Week 10 vs. Week 11 I talked about how, if \\(n\\) is our number of datapoints (e.g., sample size) and \\(p\\) is the dimensionality of our data (how many “pieces of information” we have about each of the \\(n\\) datapoints), then\n\nClassical statistical methods were developed to handle settings where \\(n \\gg p\\)1, so that we have a small number of parameters that we fit (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in \\(n \\gg 2\\) datapoints and estimate a line of best fit, where the line itself is characterized by its two parameters, slope and intercept (\\(m\\) and \\(b\\) in \\(y = mx + b\\)).\nIn modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely high-dimensional data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have \\(p \\gg n\\). In the modern field of biostatistics, for example, we talked in class about how the human genome contains about 6 billion nucleotide pairs, but researchers in the UK have mapped-out genomes for 500,000 people, so that now the number of dimensions we have for each person is \\(\\frac{\\text{6 billion}}{500 000} = 12 000\\) times the number of people we have…\n\nFor me, this notion of thinking about \\(n \\gg p\\) versus \\(p \\gg n\\) comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: https://hastie.su.domains/ElemStatLearn/",
+    "crumbs": [
+      "Resources"
+    ]
   },
   {
-    "objectID": "w10/slides.html#memory-issues-leadsto-computational-issues",
-    "href": "w10/slides.html#memory-issues-leadsto-computational-issues",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Memory Issues \\(\\leadsto\\) Computational Issues",
-    "text": "Memory Issues \\(\\leadsto\\) Computational Issues\n\nWe’ve assumed one-to-one correspondence between (immediately-accessible) data and visual encoding(s)\nWhen working with big data, however:\n\nFull dataset may not fit in the user’s browser cache!\nEven if it does, processing (e.g., placing \\(N\\) points on map) may be prohibitively slow\n\n\\(\\implies\\) Some portion of data / some computations need to be handled server side!"
+    "objectID": "resources.html#week-6-plotly",
+    "href": "resources.html#week-6-plotly",
+    "title": "Resources",
+    "section": "Week 6: Plotly",
+    "text": "Week 6: Plotly\n\nHere is a direct link to the starter code for Lab 5 that I began writing at the end of class today!",
+    "crumbs": [
+      "Resources"
+    ]
   },
   {
-    "objectID": "w10/slides.html#client-side-vs.-server-side-computing",
-    "href": "w10/slides.html#client-side-vs.-server-side-computing",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Client-Side vs. Server-Side Computing",
-    "text": "Client-Side vs. Server-Side Computing\n\nReliable estimates of computing power (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!\nBack-of-envelope calculation:\n\nA given server (AWS, GCP) has 10-100x more computing power than our laptops\nServers almost entirely devoted to data processing; laptops have to handle OS GUI, streaming video, conserving battery, etc."
+    "objectID": "resources.html#week-5-observable-js-and-jquery",
+    "href": "resources.html#week-5-observable-js-and-jquery",
+    "title": "Resources",
+    "section": "Week 5: Observable JS and jQuery",
+    "text": "Week 5: Observable JS and jQuery\nFor Week 4 I spent some time on the chalkboard and showing demos in the browser, as “sidebars” to the main content in the slides, so I wanted to share some of this sidebar material here!\n\nObservableJS\n\nThe ObservableJS demo I showed in class, originally made for a microeconomics course I TAed back in the day but relevant to you as DSAN 5200 students if you reveal the JS code “behind” each of the UI elements (the sliders in this case), and how changing some aspect of the data in these JS cells automatically updates the visualization to reflect these changes.\n(For more of my Observable examples—as in, examples where I can therefore walk you through exactly how they work!—feel free to look at some of the other notebooks in my ObservableHQ account from that same course, like this one)\nMore generally, though, ObservableHQ has a really rich set of tutorials covering a bunch of different use cases! At the bottom of that page, for example, you’ll see some which are tailored specifically to Python and Matplotlib users.\nOne resource I remember helping me a lot was the official set of Observable resources on how inputs (sliders, checkboxes, etc.) work in OJS. To me this subtopic is especially helpful/fundamental since, once you see how data from the input elements (like sliders or checkboxes) flows into all other code cells which use this data as inputs, the notion of “topological data flow” that I mentioned in class today will hopefully feel less abstract.\nLastly, though, if you’re like me and the weirdness around ordering of code cells in OJS feels very bizarre at first, I think this notebook is really really helpful for clarifying that in a way I didn’t have time to walk through in detail today. I basically keep that link open in a tab whenever I work in OJS, so I can go back and reference it when I get confused about why one cell ran before/after another.\n\n\n\njQuery\n\nThe jQuery website has a “Learn” section here. It’s probably overkill, though, since jQuery is so popular and widely-used (though, falling out of favor to some extent for various reasons) that you should be able to use Google and StackOverflow to find answers to most issues that will arise with learning the basics and then using it.",
+    "crumbs": [
+      "Resources"
+    ]
   },
   {
-    "objectID": "w10/slides.html#client-side-vs.-server-side-memory",
-    "href": "w10/slides.html#client-side-vs.-server-side-memory",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Client-Side vs. Server-Side Memory",
-    "text": "Client-Side vs. Server-Side Memory\n\nIn Chrome, check JS heap size (in GB) by running:\nwindow.performance.memory.jsHeapSizeLimit / (10**9)\n\n\n\n\n\n\n\n\nMy Chrome JS Heap\n4.2947 GB\n\n\n2020 US Census data\n4.3487 GB\n\n\nGoogle Maps (2012)\n20 000 000.0000 GB"
+    "objectID": "resources.html#core-texts-weeks-1-4",
+    "href": "resources.html#core-texts-weeks-1-4",
+    "title": "Resources",
+    "section": "Core Texts, Weeks 1-4",
+    "text": "Core Texts, Weeks 1-4\n\nWilkinson, The Grammar of Graphics (2006)\nA key resource for the course, in terms of weaving many of the seemingly-disparate “strands” of the course together, is Leland Wilkinson’s book The Grammar of Graphics (Wilkinson 2006). Since it’s extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a PDF of the book using this link.\n\n\nNathan Yau, Visualize This! (2011) and Data Points (2013)\nAnother pair of resources that we’ll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online… But if your situation is anything like mine was when I was a grad student, and you’re living off approx. $0 per month of disposable income, here are EPUB copies of both books (which I am ethically justifying by reference to grad-student-Jeff’s experience of professors assigning 5 books/week without a sole PDF or EPUB in sight 😵, along with the fact that all 4 profs for the course are paid subscribers to Yau’s blog!)\n\nYau (2011): PDF, EPUB\nYau (2013): PDF, EPUB\n\n\n\nEdward Tufte, The Visual Display of Quantitative Information (1983)\nTufte (1983) is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a PDF of this one as well.\n(Tufte also has more books than the previous two authors, and any of them are interesting and informative, so if you like this one you can go out and buy/obtain the others as well!)",
+    "crumbs": [
+      "Resources"
+    ]
   },
   {
-    "objectID": "w10/slides.html#new-opportunities",
-    "href": "w10/slides.html#new-opportunities",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "New Opportunities",
-    "text": "New Opportunities\n\nAllow users to explore time series for arbitrarily-long windows of time!\n\n\n\n\n\n\n\n\n\nFigure 1: From Shan He, “Creating Beautiful and Meaningful Visualizations with Big Data”"
+    "objectID": "resources.html#footnotes",
+    "href": "resources.html#footnotes",
+    "title": "Resources",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere the \\(\\gg\\) symbol can be read as “much greater than” (by analogy to the standard \\(&gt;\\) for “greater than”)↩︎",
+    "crumbs": [
+      "Resources"
+    ]
   },
   {
-    "objectID": "w10/slides.html#helpful-even-when-data-does-fit-in-memory",
-    "href": "w10/slides.html#helpful-even-when-data-does-fit-in-memory",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Helpful Even When Data Does Fit In Memory!",
-    "text": "Helpful Even When Data Does Fit In Memory!\n\nCan free user’s CPU for things like lighting computation\n\n\n\n\n\n\n\n\n\nFigure 2: “Astronomically correct lighting allows users to see how different buildings shade each other during different times of day and year.”"
+    "objectID": "w06/slides.html#agenda",
+    "href": "w06/slides.html#agenda",
+    "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
+    "section": "Agenda",
+    "text": "Agenda\n\nOJS Recap: Topological Data Flow \nProject Specifications\nGetting Plotly working (in both R and Python) on Posit.Cloud !\nVega, Vega-Lite, Altair Preview (Main course page )\n\n\n\n\nDSAN 5200-03 Week 6: Multi-View Composition, Interactivity, Themes"
   },
   {
-    "objectID": "w10/slides.html#is-this-lighting-thing-a-gimmick",
-    "href": "w10/slides.html#is-this-lighting-thing-a-gimmick",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Is This Lighting Thing A Gimmick?",
-    "text": "Is This Lighting Thing A Gimmick?\n\n…or a MILLION DOLLAR IDEA!!! 🤑🤑🤑\n\n\n\n\n\n\n\n\n\nFigure 3: Radiance: Determine your building’s solar potential"
-  },
-  {
-    "objectID": "w10/slides.html#the-general-idea",
-    "href": "w10/slides.html#the-general-idea",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "The General Idea",
-    "text": "The General Idea\n\nAd hoc approach, figuring out what to do server-side vs. client-side “on the fly” ❌\nInstead, we can use systems which integrate them, drawing on respective strengths!\nData Visualization Management System (DVMS)"
-  },
-  {
-    "objectID": "w10/slides.html#zql-sql-for-visualization",
-    "href": "w10/slides.html#zql-sql-for-visualization",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "ZQL = SQL for Visualization",
-    "text": "ZQL = SQL for Visualization\n\nInput: Description of desired visualization\nOutput: SQL query\n\n\n\n\n\n\n\n\n\n\nx\ny\nconstraints\nviz\n\n\n\n\ncarrier\npassengers\ndestination==\"New York\"\nbar(y=sum(passengers))\n\n\n\nProduces\nSELECT carrier, SUM(passengers)\nFROM flight delay\nGROUP BY carrier\nWHERE destination=\"New York\";\n\nMaybe non-obvious, a priori, how this helps…\nAdvantages become clear when we start to optimize!"
-  },
-  {
-    "objectID": "w10/slides.html#precomputation",
-    "href": "w10/slides.html#precomputation",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Precomputation",
-    "text": "Precomputation\n\nSQL in general needs to handle arbitrary queries…\nBut for visualization, certain queries will never be made, while others (counting, summing) will be made frequently\nHence we can precompute, on the server side many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at\nThis frees up processing power on the client side, which can be applied instead towards speed, aesthetics, responsive interactivity, etc."
-  },
-  {
-    "objectID": "w10/slides.html#the-power-of-precomputation-i",
-    "href": "w10/slides.html#the-power-of-precomputation-i",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "The Power of Precomputation I",
-    "text": "The Power of Precomputation I"
-  },
-  {
-    "objectID": "w10/slides.html#the-power-of-precomputation-ii",
-    "href": "w10/slides.html#the-power-of-precomputation-ii",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "The Power of Precomputation II",
-    "text": "The Power of Precomputation II"
-  },
-  {
-    "objectID": "w10/slides.html#precomputation-designing-for-an-audience",
-    "href": "w10/slides.html#precomputation-designing-for-an-audience",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Precomputation: Designing for an Audience",
-    "text": "Precomputation: Designing for an Audience\n\n\nOpen in new tab \n\nDSAN 5200-03 Week 10: Visualizing Big Data"
-  },
-  {
-    "objectID": "w10/index.html",
-    "href": "w10/index.html",
-    "title": "Lecture 10: Visualizing Big Data",
+    "objectID": "w06/index.html",
+    "href": "w06/index.html",
+    "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
     "section": "",
     "text": "Open slides in new window →",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 6: Feb 13"
     ]
   },
   {
-    "objectID": "w10/index.html#what-makes-big-data-visualization-different",
-    "href": "w10/index.html#what-makes-big-data-visualization-different",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "What Makes Big Data Visualization Different?",
-    "text": "What Makes Big Data Visualization Different?\n(…Let’s brainstorm!)",
+    "objectID": "w06/index.html#agenda",
+    "href": "w06/index.html#agenda",
+    "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
+    "section": "Agenda",
+    "text": "Agenda\n\nOJS Recap: Topological Data Flow \nProject Specifications\nGetting Plotly working (in both R and Python) on Posit.Cloud !\nVega, Vega-Lite, Altair Preview (Main course page )",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 6: Feb 13"
     ]
   },
   {
-    "objectID": "w10/index.html#memory-issues-leadsto-computational-issues",
-    "href": "w10/index.html#memory-issues-leadsto-computational-issues",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Memory Issues \\(\\leadsto\\) Computational Issues",
-    "text": "Memory Issues \\(\\leadsto\\) Computational Issues\n\nWe’ve assumed one-to-one correspondence between (immediately-accessible) data and visual encoding(s)\nWhen working with big data, however:\n\nFull dataset may not fit in the user’s browser cache!\nEven if it does, processing (e.g., placing \\(N\\) points on map) may be prohibitively slow\n\n\\(\\implies\\) Some portion of data / some computations need to be handled server side!",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DSAN 5200: Advanced Data Visualization",
+    "section": "",
+    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\nLecture 4: Storytelling and Visual Narratives\n\n\nJanuary 30\n\n\n\n\nLecture 6: Multi-View Composition, Interactivity, Themes\n\n\nJanuary 30\n\n\n\n\nLecture 10: Visualizing Big Data\n\n\nJanuary 30\n\n\n\n\nLecture 12: Getting Visualizions onto the Web\n\n\nApril 9\n\n\n\n\n\nNo matching items",
     "crumbs": [
-      "week 10: Mar 19"
+      "<i class='bi bi-house pe-1'></i> Home"
     ]
   },
   {
-    "objectID": "w10/index.html#client-side-vs.-server-side-computing",
-    "href": "w10/index.html#client-side-vs.-server-side-computing",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Client-Side vs. Server-Side Computing",
-    "text": "Client-Side vs. Server-Side Computing\n\nReliable estimates of computing power (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!\nBack-of-envelope calculation:\n\nA given server (AWS, GCP) has 10-100x more computing power than our laptops\nServers almost entirely devoted to data processing; laptops have to handle OS GUI, streaming video, conserving battery, etc.",
+    "objectID": "recordings/index.html",
+    "href": "recordings/index.html",
+    "title": "Section Recordings",
+    "section": "",
+    "text": "Week\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\n12\n\n\nSection 03 W12: Getting Visualizations Onto the Web\n\n\nTuesday Apr 9, 2024\n\n\n\n\n11\n\n\nSection 03 W11: Visualization for Machine Learning\n\n\nTuesday Mar 26, 2024\n\n\n\n\n10\n\n\nSection 03 W10: Visualizing Big Data\n\n\nTuesday Mar 19, 2024\n\n\n\n\n9\n\n\nSection 03 W09: Networks, Graphs, and Trees\n\n\nTuesday Mar 12, 2024\n\n\n\n\n8\n\n\nSection 03 W08: Spatio-Temporal Data (Lab Portion Only)\n\n\nTuesday Feb 27, 2024\n\n\n\n\n6\n\n\nSection 03 W06: Observable JS and Plotly\n\n\nTuesday Feb 13, 2024\n\n\n\n\n2\n\n\nSection 03 W02: Visual Encodings and Color Theory\n\n\nTuesday Jan 16, 2024\n\n\n\n\n\nNo matching items",
     "crumbs": [
-      "week 10: Mar 19"
+      "Recordings"
     ]
   },
   {
-    "objectID": "w10/index.html#client-side-vs.-server-side-memory",
-    "href": "w10/index.html#client-side-vs.-server-side-memory",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Client-Side vs. Server-Side Memory",
-    "text": "Client-Side vs. Server-Side Memory\n\nIn Chrome, check JS heap size (in GB) by running:\nwindow.performance.memory.jsHeapSizeLimit / (10**9)\n\n\n\n\n\n\n\n\nMy Chrome JS Heap\n4.2947 GB\n\n\n2020 US Census data\n4.3487 GB\n\n\nGoogle Maps (2012)\n20 000 000.0000 GB",
+    "objectID": "w04/slides.html#storytelling-with-data",
+    "href": "w04/slides.html#storytelling-with-data",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling with Data",
+    "text": "Storytelling with Data\n\nOften, your jobs as a data scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative."
+  },
+  {
+    "objectID": "w04/slides.html#what-is-data-storytelling",
+    "href": "w04/slides.html#what-is-data-storytelling",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "What is Data Storytelling?",
+    "text": "What is Data Storytelling?\n\n\nhttps://venngage.com/blog/data-storytelling/"
+  },
+  {
+    "objectID": "w04/slides.html#components-of-a-data-story",
+    "href": "w04/slides.html#components-of-a-data-story",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Components of a data story",
+    "text": "Components of a data story"
+  },
+  {
+    "objectID": "w04/slides.html#storytelling-is-abstract",
+    "href": "w04/slides.html#storytelling-is-abstract",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling is abstract",
+    "text": "Storytelling is abstract\nIt is not merely:\n\na technical matter of creating an image\ndesigning the right chart\n\n\nRather it is:\n\nthe broader considerations that impact nearly every decision you make in the way you frame and present a project\n\n\n\nThe story is the culmination of distilling the information and insights gathered through the analytic process\nIt is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience"
+  },
+  {
+    "objectID": "w04/slides.html#telling-your-data-story",
+    "href": "w04/slides.html#telling-your-data-story",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Telling Your Data Story",
+    "text": "Telling Your Data Story\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result"
+  },
+  {
+    "objectID": "w04/slides.html#story-linearity",
+    "href": "w04/slides.html#story-linearity",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Story linearity",
+    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\nBeginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling."
+  },
+  {
+    "objectID": "w04/slides.html#traditional-vs.-data-stories",
+    "href": "w04/slides.html#traditional-vs.-data-stories",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Traditional vs. Data Stories",
+    "text": "Traditional vs. Data Stories\n\nsource"
+  },
+  {
+    "objectID": "w04/slides.html#aristotle-vs.-brecht",
+    "href": "w04/slides.html#aristotle-vs.-brecht",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Aristotle vs. Brecht",
+    "text": "Aristotle vs. Brecht\n\nSometimes you don’t want to “resolve” the tension!\nAristotelian drama: audience goes home “satisfied”\n\nThe story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)\n\nBrechtian drama: audience is left with discomfort, ambiguity, unresolved tension\n\nSounds like something you wouldn’t want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!"
+  },
+  {
+    "objectID": "w04/slides.html#common-visual-narrative-genres",
+    "href": "w04/slides.html#common-visual-narrative-genres",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Common visual narrative Genres",
+    "text": "Common visual narrative Genres"
+  },
+  {
+    "objectID": "w04/slides.html#standard-infographics",
+    "href": "w04/slides.html#standard-infographics",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Standard Infographics",
+    "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic."
+  },
+  {
+    "objectID": "w04/slides.html#data-infographics",
+    "href": "w04/slides.html#data-infographics",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Data Infographics",
+    "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always."
+  },
+  {
+    "objectID": "w04/slides.html#research-posters",
+    "href": "w04/slides.html#research-posters",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Research posters",
+    "text": "Research posters\n\nEven research poster construction requires a narrative flow!"
+  },
+  {
+    "objectID": "w04/slides.html#scientific-papers-structure",
+    "href": "w04/slides.html#scientific-papers-structure",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Scientific papers structure",
+    "text": "Scientific papers structure"
+  },
+  {
+    "objectID": "w04/slides.html#developing-knowledge-content",
+    "href": "w04/slides.html#developing-knowledge-content",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Developing knowledge content",
+    "text": "Developing knowledge content\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides"
+  },
+  {
+    "objectID": "w04/slides.html#primary-communication-tools",
+    "href": "w04/slides.html#primary-communication-tools",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Primary communication tools",
+    "text": "Primary communication tools"
+  },
+  {
+    "objectID": "w04/slides.html#engagement-levels-1",
+    "href": "w04/slides.html#engagement-levels-1",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Engagement levels-1",
+    "text": "Engagement levels-1"
+  },
+  {
+    "objectID": "w04/slides.html#engagement-levels-2",
+    "href": "w04/slides.html#engagement-levels-2",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Engagement levels-2",
+    "text": "Engagement levels-2"
+  },
+  {
+    "objectID": "w04/slides.html#storytelling-tips",
+    "href": "w04/slides.html#storytelling-tips",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling tips",
+    "text": "Storytelling tips"
+  },
+  {
+    "objectID": "w04/slides.html#author-vs-reader-driven",
+    "href": "w04/slides.html#author-vs-reader-driven",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Author vs reader driven",
+    "text": "Author vs reader driven"
+  },
+  {
+    "objectID": "w04/slides.html#repetition-and-redundancy",
+    "href": "w04/slides.html#repetition-and-redundancy",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Repetition and Redundancy",
+    "text": "Repetition and Redundancy\nThe old adage on how to present anything:\n\nTell them what you are going to tell them\nThen tell them\nThen tell them what you just told them"
+  },
+  {
+    "objectID": "w04/slides.html#awesome-data-driven-viz-narratives",
+    "href": "w04/slides.html#awesome-data-driven-viz-narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Awesome data driven viz narratives",
+    "text": "Awesome data driven viz narratives\n\nThe New York Times\nWall Stree Journal\nThe Washington Post\nFiveThirtyEight\nThe Economist\nFinancial Times\nThe Pudding"
+  },
+  {
+    "objectID": "w04/slides.html#the-puddings-process",
+    "href": "w04/slides.html#the-puddings-process",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "The Pudding’s process:",
+    "text": "The Pudding’s process:\nBy Ilia Blinderman\n\nStorytelling is complicated\nWho is your audience\nFocus broadly or narrowly\nComplexity of the finding after analysis\nProgressing through the arguments\nArriving at the conclusion\n\n\n\nResources\nhttps://pudding.cool/process/how-to-make-dope-shit-part-1/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-2/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-3/"
+  },
+  {
+    "objectID": "w04/slides.html#scrollytelling-bill-shander",
+    "href": "w04/slides.html#scrollytelling-bill-shander",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Scrollytelling (Bill Shander)",
+    "text": "Scrollytelling (Bill Shander)\nhttps://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003\nhttps://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964\nhttps://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67"
+  },
+  {
+    "objectID": "w04/slides.html#other-resources-and-examples",
+    "href": "w04/slides.html#other-resources-and-examples",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Other resources and examples",
+    "text": "Other resources and examples\nhttps://opensourcelibs.com/lib/rolldown\nhttps://elementor.com/blog/guide-to-scrollytelling/\nhttps://www.visualstorytell.com/blog/what-is-visual-storytelling\nhttps://mathisonian.github.io/idyll/scaffolding-interactives/\nhttps://idl.cs.washington.edu/\nhttps://distill.pub/2020/communicating-with-interactive-articles/"
+  },
+  {
+    "objectID": "w04/index.html",
+    "href": "w04/index.html",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "",
+    "text": "Open slides in new window →",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#new-opportunities",
-    "href": "w10/index.html#new-opportunities",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "New Opportunities",
-    "text": "New Opportunities\n\nAllow users to explore time series for arbitrarily-long windows of time!\n\n\n\n\n\n\n\n\n\nFigure 1: From Shan He, “Creating Beautiful and Meaningful Visualizations with Big Data”",
+    "objectID": "w04/index.html#storytelling-with-data",
+    "href": "w04/index.html#storytelling-with-data",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling with Data",
+    "text": "Storytelling with Data\n\nOften, your jobs as a data scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative.",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#helpful-even-when-data-does-fit-in-memory",
-    "href": "w10/index.html#helpful-even-when-data-does-fit-in-memory",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Helpful Even When Data Does Fit In Memory!",
-    "text": "Helpful Even When Data Does Fit In Memory!\n\nCan free user’s CPU for things like lighting computation\n\n\n\n\n\n\n\n\n\nFigure 2: “Astronomically correct lighting allows users to see how different buildings shade each other during different times of day and year.”",
+    "objectID": "w04/index.html#what-is-data-storytelling",
+    "href": "w04/index.html#what-is-data-storytelling",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "What is Data Storytelling?",
+    "text": "What is Data Storytelling?\n\n\n\n\n\n\nhttps://venngage.com/blog/data-storytelling/",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#is-this-lighting-thing-a-gimmick",
-    "href": "w10/index.html#is-this-lighting-thing-a-gimmick",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Is This Lighting Thing A Gimmick?",
-    "text": "Is This Lighting Thing A Gimmick?\n\n…or a MILLION DOLLAR IDEA!!! 🤑🤑🤑\n\n\n\n\n\n\n\n\n\nFigure 3: Radiance: Determine your building’s solar potential",
+    "objectID": "w04/index.html#components-of-a-data-story",
+    "href": "w04/index.html#components-of-a-data-story",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Components of a data story",
+    "text": "Components of a data story",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#the-general-idea",
-    "href": "w10/index.html#the-general-idea",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "The General Idea",
-    "text": "The General Idea\n\nAd hoc approach, figuring out what to do server-side vs. client-side “on the fly” ❌\nInstead, we can use systems which integrate them, drawing on respective strengths!\nData Visualization Management System (DVMS)",
+    "objectID": "w04/index.html#storytelling-is-abstract",
+    "href": "w04/index.html#storytelling-is-abstract",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling is abstract",
+    "text": "Storytelling is abstract\nIt is not merely:\n\na technical matter of creating an image\ndesigning the right chart\n\n\nRather it is:\n\nthe broader considerations that impact nearly every decision you make in the way you frame and present a project\n\n\n\nThe story is the culmination of distilling the information and insights gathered through the analytic process\nIt is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#zql-sql-for-visualization",
-    "href": "w10/index.html#zql-sql-for-visualization",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "ZQL = SQL for Visualization",
-    "text": "ZQL = SQL for Visualization\n\nInput: Description of desired visualization\nOutput: SQL query\n\n\n\n\n\n\n\n\n\n\nx\ny\nconstraints\nviz\n\n\n\n\ncarrier\npassengers\ndestination==\"New York\"\nbar(y=sum(passengers))\n\n\n\nProduces\nSELECT carrier, SUM(passengers)\nFROM flight delay\nGROUP BY carrier\nWHERE destination=\"New York\";\n\nMaybe non-obvious, a priori, how this helps…\nAdvantages become clear when we start to optimize!",
+    "objectID": "w04/index.html#telling-your-data-story",
+    "href": "w04/index.html#telling-your-data-story",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Telling Your Data Story",
+    "text": "Telling Your Data Story\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#precomputation",
-    "href": "w10/index.html#precomputation",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Precomputation",
-    "text": "Precomputation\n\nSQL in general needs to handle arbitrary queries…\nBut for visualization, certain queries will never be made, while others (counting, summing) will be made frequently\nHence we can precompute, on the server side many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at\nThis frees up processing power on the client side, which can be applied instead towards speed, aesthetics, responsive interactivity, etc.",
+    "objectID": "w04/index.html#story-linearity",
+    "href": "w04/index.html#story-linearity",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Story linearity",
+    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\nBeginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling.",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#the-power-of-precomputation-i",
-    "href": "w10/index.html#the-power-of-precomputation-i",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "The Power of Precomputation I",
-    "text": "The Power of Precomputation I",
+    "objectID": "w04/index.html#traditional-vs.-data-stories",
+    "href": "w04/index.html#traditional-vs.-data-stories",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Traditional vs. Data Stories",
+    "text": "Traditional vs. Data Stories\n\n\n\n\n\nsource",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#the-power-of-precomputation-ii",
-    "href": "w10/index.html#the-power-of-precomputation-ii",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "The Power of Precomputation II",
-    "text": "The Power of Precomputation II",
+    "objectID": "w04/index.html#aristotle-vs.-brecht",
+    "href": "w04/index.html#aristotle-vs.-brecht",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Aristotle vs. Brecht",
+    "text": "Aristotle vs. Brecht\n\nSometimes you don’t want to “resolve” the tension!\nAristotelian drama: audience goes home “satisfied”\n\nThe story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)\n\nBrechtian drama: audience is left with discomfort, ambiguity, unresolved tension\n\nSounds like something you wouldn’t want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w10/index.html#precomputation-designing-for-an-audience",
-    "href": "w10/index.html#precomputation-designing-for-an-audience",
-    "title": "Lecture 10: Visualizing Big Data",
-    "section": "Precomputation: Designing for an Audience",
-    "text": "Precomputation: Designing for an Audience\n\n\n\nOpen in new tab",
+    "objectID": "w04/index.html#common-visual-narrative-genres",
+    "href": "w04/index.html#common-visual-narrative-genres",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Common visual narrative Genres",
+    "text": "Common visual narrative Genres",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 4: Jan 30"
     ]
   },
   {
-    "objectID": "w02/slides.html#key-point-data-viz-neq-data-analysis",
-    "href": "w02/slides.html#key-point-data-viz-neq-data-analysis",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Key Point: Data Viz \\(\\neq\\) Data Analysis",
-    "text": "Key Point: Data Viz \\(\\neq\\) Data Analysis\n\nReaders haven’t gone through the process of developing and answering questions that you went through in developing the viz\nYour audience wants to know the story, result, and/or conclusions\nThey (usually) don’t want the messy details you trudged through when analyzing the data; that’s your job!"
+    "objectID": "w04/index.html#standard-infographics",
+    "href": "w04/index.html#standard-infographics",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Standard Infographics",
+    "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#different-approaches-for-different-audiences",
-    "href": "w02/slides.html#different-approaches-for-different-audiences",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Different Approaches for Different Audiences!",
-    "text": "Different Approaches for Different Audiences!\n\n\n\n\n\nVisualization for Analysis:\n\n\n“Internal” audience: You and your team (shared context)\nEfficient understanding and iteration to develop insights\nRough drafts: Can make changes/“polish” later\n\n\n\n\nVisualization for Presentation:\n\n\n“External” audience: Content is likely new to them; audience has no context\nDifferent info is useful to them vs. useful to your teammates\nTakes significantly more time to get to publication ready\n\n\n\n\n\n\n\nFrom Chaos Theory: The Glorious Unpredictability of Young Thug, Jayson Greene, Pitchfork, 28 September 2015"
+    "objectID": "w04/index.html#data-infographics",
+    "href": "w04/index.html#data-infographics",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Data Infographics",
+    "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#what-does-designing-for-an-audience-look-like",
-    "href": "w02/slides.html#what-does-designing-for-an-audience-look-like",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "What Does “Designing For An Audience” Look Like?",
-    "text": "What Does “Designing For An Audience” Look Like?\n\nExplain the encodings\nProvide context\nFocus on readability\nDevelop aesthetics\nYau (2013), Ch. 6: “Designing For An Audience”  (Georgtown Library Proxy Link)"
+    "objectID": "w04/index.html#research-posters",
+    "href": "w04/index.html#research-posters",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Research posters",
+    "text": "Research posters\n\nEven research poster construction requires a narrative flow!",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#explaining-encodings",
-    "href": "w02/slides.html#explaining-encodings",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Explaining Encodings",
-    "text": "Explaining Encodings\n\nWhat scale are you using? What does that color represent? Is this normal?\nBetter to err on the side of too much explanation than too little\nToo much? People can gloss over details (if designed well 😉)\nToo little? People unfamiliar with the visual encodings will get stuck\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: The Statistical Atlas of the United States, produced in the late 1800s by the Census Bureau, explained all of the encodings. For example, look at this bump chart from the 1880 atlas. It ranks cities by population."
+    "objectID": "w04/index.html#scientific-papers-structure",
+    "href": "w04/index.html#scientific-papers-structure",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Scientific papers structure",
+    "text": "Scientific papers structure",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain",
-    "href": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Explaining Things You Forgot You Need To Explain",
-    "text": "Explaining Things You Forgot You Need To Explain\n\nWhen you work with a dataset for a while, it’s easy to forget that others aren’t as familiar […] When you know all the intimate details, it’s hard to step back and remember what it was like when you first opened up a file or database—just a bunch of numbers (Yau 2013, 209)"
+    "objectID": "w04/index.html#developing-knowledge-content",
+    "href": "w04/index.html#developing-knowledge-content",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Developing knowledge content",
+    "text": "Developing knowledge content\n\n\n\n\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain-1",
-    "href": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain-1",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Explaining Things You Forgot You Need To Explain",
-    "text": "Explaining Things You Forgot You Need To Explain\n\n(If you know this video, don’t say anything!!)"
+    "objectID": "w04/index.html#primary-communication-tools",
+    "href": "w04/index.html#primary-communication-tools",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Primary communication tools",
+    "text": "Primary communication tools",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#provide-context",
-    "href": "w02/slides.html#provide-context",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Provide Context",
-    "text": "Provide Context\n\nWhen readers can decode the shapes, colors and geometries on your chart, you are more than half way there to producing an awesome chart.\nHowever, readers also need to understand the context of the data."
+    "objectID": "w04/index.html#engagement-levels-1",
+    "href": "w04/index.html#engagement-levels-1",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Engagement levels-1",
+    "text": "Engagement levels-1",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#but-how-much-context-do-i-need-to-provide",
-    "href": "w02/slides.html#but-how-much-context-do-i-need-to-provide",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "But How Much Context Do I Need To Provide?",
-    "text": "But How Much Context Do I Need To Provide?\n\nAn aside from the humanities (Gadamer 1960)"
+    "objectID": "w04/index.html#engagement-levels-2",
+    "href": "w04/index.html#engagement-levels-2",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Engagement levels-2",
+    "text": "Engagement levels-2",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#readability",
-    "href": "w02/slides.html#readability",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Readability",
-    "text": "Readability\n\nCharts should read like text! It should be obvious what the chart is about, how to interpret it"
+    "objectID": "w04/index.html#storytelling-tips",
+    "href": "w04/index.html#storytelling-tips",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Storytelling tips",
+    "text": "Storytelling tips",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#aesthetics",
-    "href": "w02/slides.html#aesthetics",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Aesthetics",
-    "text": "Aesthetics\n\nDefault settings in viz tools are generic and designed specifically to work with as many datasets and visualization types as possible\nThis \\(\\neq\\) best for your use cases!\nYou can (and should) develop aesthetics to make your charts less ugly\n(Note: In this context, aesthetics means a visual style. Do not confuse this with the aes() call in ggplot2.)"
+    "objectID": "w04/index.html#author-vs-reader-driven",
+    "href": "w04/index.html#author-vs-reader-driven",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Author vs reader driven",
+    "text": "Author vs reader driven",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#aesthetics-broad-umbrella-term",
-    "href": "w02/slides.html#aesthetics-broad-umbrella-term",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Aesthetics: Broad Umbrella Term",
-    "text": "Aesthetics: Broad Umbrella Term\n\nSomething like… the gestalt sum of visual design choices\n\n\nFrom Georgetown’s official color guide (but remember: color is only one of many factors that makes up an “aesthetic”)"
+    "objectID": "w04/index.html#repetition-and-redundancy",
+    "href": "w04/index.html#repetition-and-redundancy",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Repetition and Redundancy",
+    "text": "Repetition and Redundancy\nThe old adage on how to present anything:\n\nTell them what you are going to tell them\nThen tell them\nThen tell them what you just told them",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#aesthetics-broad-umbrella-term-1",
-    "href": "w02/slides.html#aesthetics-broad-umbrella-term-1",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Aesthetics: Broad Umbrella Term",
-    "text": "Aesthetics: Broad Umbrella Term\n\nFrom Nicholas Felton’s 2014 Annual Report"
+    "objectID": "w04/index.html#awesome-data-driven-viz-narratives",
+    "href": "w04/index.html#awesome-data-driven-viz-narratives",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Awesome data driven viz narratives",
+    "text": "Awesome data driven viz narratives\n\nThe New York Times\nWall Stree Journal\nThe Washington Post\nFiveThirtyEight\nThe Economist\nFinancial Times\nThe Pudding",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#guidelines-not-rules",
-    "href": "w02/slides.html#guidelines-not-rules",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Guidelines, Not Rules!",
-    "text": "Guidelines, Not Rules!\n\nThey’re more continuous than absolute. Your charts may need more or less explanations, more or less context, etc.\nDepends on your audience and the purpose behind your chart:\n\nIf your audience is a small group who has the same background as you, then you might not need to provide as much context for the data you show.\nIf your audience is already excited about a dataset, then you probably don’t need to make it too flashy.\nIf you make charts for a research paper, there are probably publisher guidelines that you need to follow, which limits what you can do (sometimes a good thing).\n\nThink of the above adjustments as continuous knobs that you can turn up or down. The more charts you make, the better you’ll get at deciding how much to turn."
+    "objectID": "w04/index.html#the-puddings-process",
+    "href": "w04/index.html#the-puddings-process",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "The Pudding’s process:",
+    "text": "The Pudding’s process:\n\nBy Ilia Blinderman\n\nStorytelling is complicated\nWho is your audience\nFocus broadly or narrowly\nComplexity of the finding after analysis\nProgressing through the arguments\nArriving at the conclusion\n\n\n\n\nResources\nhttps://pudding.cool/process/how-to-make-dope-shit-part-1/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-2/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-3/",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#pre-attentive-processing",
-    "href": "w02/slides.html#pre-attentive-processing",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Pre-Attentive Processing",
-    "text": "Pre-Attentive Processing\n\nThe ability of the visual system to effortlessly identify certain basic visual properties."
+    "objectID": "w04/index.html#scrollytelling-bill-shander",
+    "href": "w04/index.html#scrollytelling-bill-shander",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Scrollytelling (Bill Shander)",
+    "text": "Scrollytelling (Bill Shander)\nhttps://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003\nhttps://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964\nhttps://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
-    "objectID": "w02/slides.html#tamara-munzner",
-    "href": "w02/slides.html#tamara-munzner",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Tamara Munzner",
-    "text": "Tamara Munzner\n\n\n\n\nComputer scientist, info viz expert, and professor at University of British Columbia"
-  },
-  {
-    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner",
-    "href": "w02/slides.html#nested-model-analysis-framework-munzner",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Nested Model Analysis Framework (Munzner)",
-    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?"
-  },
-  {
-    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner-1",
-    "href": "w02/slides.html#nested-model-analysis-framework-munzner-1",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Nested Model Analysis Framework (Munzner)",
-    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?\n\nAbstraction: Translate from the domain specifics to the visualization vocabulary\n\nWhat is shown? → data abstraction\nWhy is the user looking at it? → task abstraction"
-  },
-  {
-    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner-2",
-    "href": "w02/slides.html#nested-model-analysis-framework-munzner-2",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Nested Model Analysis Framework (Munzner)",
-    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?\n\nAbstraction: Translate from the domain specifics to the visualization vocabulary\n\nWhat is shown? → data abstraction\nWhy is the user looking at it? → task abstraction\n\nIdiom: How is it shown?\n\nVisual encoding idiom → how to draw\nInteraction idiom → how to manipulate"
-  },
-  {
-    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner-3",
-    "href": "w02/slides.html#nested-model-analysis-framework-munzner-3",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Nested Model Analysis Framework (Munzner)",
-    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?\n\nAbstraction: Translate from the domain specifics to the visualization vocabulary\n\nWhat is shown? → data abstraction\nWhy is the user looking at it? → task abstraction\n\nIdiom: How is it shown?\n\nVisual encoding idiom → how to draw\nInteraction idiom → how to manipulate\n\nAlgorithm: Efficient computation"
-  },
-  {
-    "objectID": "w02/slides.html#the-what-abstracting-the-data",
-    "href": "w02/slides.html#the-what-abstracting-the-data",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "The What: Abstracting the Data",
-    "text": "The What: Abstracting the Data"
-  },
-  {
-    "objectID": "w02/slides.html#abstracting-the-data",
-    "href": "w02/slides.html#abstracting-the-data",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Abstracting the Data",
-    "text": "Abstracting the Data\n\nWhy abstract the data?\n\nDifferent attribute types different representations\nDifferent dataset types different idioms available\n\nWhat do you need to abstract?\n\nDataset type: (e.g. table, network, temporal, etc.)\nAttribute types: (e.g. categorical, ordinal, quantitative)\nOrdering direction: (e.g. sequential, diverging, cyclical)\nData availability: (e.g. dynamic, static)"
-  },
-  {
-    "objectID": "w02/slides.html#types-of-datasets",
-    "href": "w02/slides.html#types-of-datasets",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Types of Datasets",
-    "text": "Types of Datasets\n\n\n(Also temporal!)"
-  },
-  {
-    "objectID": "w02/slides.html#tables",
-    "href": "w02/slides.html#tables",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Tables",
-    "text": "Tables\n\nFrom Tidy data for efficiency, reproducibility, and collaboration, Julie Lowndes and Allison Horst, 12 October 2020"
-  },
-  {
-    "objectID": "w02/slides.html#types-of-attributes",
-    "href": "w02/slides.html#types-of-attributes",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Types of Attributes",
-    "text": "Types of Attributes\n\n\n\n\n\n\n\n\n\n\n\nCategorical: No order\n\nExample: names, countries, types\nMust be represented with visual channels that don’t convey order\n\nOrdered\n\nOrdinal: Has implicit order, but you can’t do arithmetic\n\nCan be numerical (but should be treated as categorical)\nExample: t-shirt sizes, grade in school, rankings\n\nQuantitative: Ordered, and you can do arithmetic\n\nCan be divergent or sequential\nExample: age, temperature, earnings"
-  },
-  {
-    "objectID": "w02/slides.html#ordering",
-    "href": "w02/slides.html#ordering",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Ordering",
-    "text": "Ordering\n\n\n\n\n\n\n\n\n\n\n\nSequential: Infinite range with clear minimum\n\nYou can perform arithmetic\nExample: age, number of goals, price\nMust be represented with visual channels that don’t convey order\n\nDiverging: Middle point + two opposite directions\n\nMiddle point not always zero\nExample: temperature, earnings, political affiliation index\n\nCyclic: Cycle in the values\n\nStarting point may not be obvious\nCan be repsented w/cyclical channels\nEx: days of the week, hours in the day"
-  },
-  {
-    "objectID": "w02/slides.html#the-why",
-    "href": "w02/slides.html#the-why",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "The Why?",
-    "text": "The Why?\n(More on this next week!)"
-  },
-  {
-    "objectID": "w02/slides.html#the-how",
-    "href": "w02/slides.html#the-how",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "The How?",
-    "text": "The How?"
-  },
-  {
-    "objectID": "w02/slides.html#marks-and-channels",
-    "href": "w02/slides.html#marks-and-channels",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Marks and Channels",
-    "text": "Marks and Channels\n\nMarks are geometric primitives:\n\n\n\n\n\n\n\nChannels (encodings) control the appearance of marks"
-  },
-  {
-    "objectID": "w02/slides.html#channel-encoding-types",
-    "href": "w02/slides.html#channel-encoding-types",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Channel (Encoding) Types",
-    "text": "Channel (Encoding) Types"
-  },
-  {
-    "objectID": "w02/slides.html#points",
-    "href": "w02/slides.html#points",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Points",
-    "text": "Points\n\n\n\n\n\n\n\n\n\n\n\nZero-dimensional\nConvey position only\nAdditionally, can be size and shape coded"
-  },
-  {
-    "objectID": "w02/slides.html#lines",
-    "href": "w02/slides.html#lines",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Lines",
-    "text": "Lines\n\n\n\n\n\n\n\n\n\n\n\nOne-dimensional\nConvey position and length\nCan only be width coded"
-  },
-  {
-    "objectID": "w02/slides.html#areas",
-    "href": "w02/slides.html#areas",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Areas",
-    "text": "Areas\n\n\n\n\n\n\n\n\n\n\n\nTwo dimensional\nFully constrained"
-  },
-  {
-    "objectID": "w02/slides.html#graphical-presentations-of-relational-information",
-    "href": "w02/slides.html#graphical-presentations-of-relational-information",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Graphical Presentations of Relational Information",
-    "text": "Graphical Presentations of Relational Information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Figures 14 and 15 in Mackinlay (1986)\n\n\n\n\nAlthough encoding is often undertaken without much intention or deeper consideration, it has significant impact on the ability of the visualization to communicate knowledge accurately and efficiently."
-  },
-  {
-    "objectID": "w02/slides.html#another-guide-illinsky",
-    "href": "w02/slides.html#another-guide-illinsky",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Another Guide (Illinsky)",
-    "text": "Another Guide (Illinsky)"
-  },
-  {
-    "objectID": "w02/slides.html#position-example-1",
-    "href": "w02/slides.html#position-example-1",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Position: Example 1",
-    "text": "Position: Example 1\nPosition allows you to compare values based on where they are placed with reference to a coordinate system.\n\n\n\nConsiderations:\n\nBe aware of the scales you are using (linear vs logarithmic)\nThe scale changes the interpretation of distance\nIt can also change the perceived patterns\n\n\n\n\n\nCode\nlibrary(tidyverse)\nset.seed(140)\nd &lt;-  data.frame(x = rgamma(15,1)) %&gt;% mutate(y = 3 + 2*x + 5*I(x^2) + rnorm(15,3,3))\nplt &lt;- ggplot(d, aes(x, y))+\n    geom_point(size=6) + \n    theme_bw() + \n    theme(axis.title=element_blank(), axis.text = element_blank(), \n          axis.ticks=element_blank())\nplt + annotate('text', x=0.5, y=60,label = \"Linear scales\", hjust=0, size=8 )\n\n\n\n\n\n\n\n\n\nCode\nplt + scale_y_log10() + scale_x_log10() +\n    annotate('text', x = 0.1, y = 50, label = \"Logarithmic scales\", hjust=0, size=8)"
-  },
-  {
-    "objectID": "w02/slides.html#position-example-2",
-    "href": "w02/slides.html#position-example-2",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Position: Example 2",
-    "text": "Position: Example 2\nPosition allows you to compare values based on where they are placed with reference to a coordinate system.\n\n\nConsiderations\n\nAvoid overplotting since many points can occupy the same space and obscure one another\n\nSolutions\n\nUse transparency so that overlapping points make darker areas\njitter (add noise so points no longer are on top of each other)\nUse binning to show aggregate data per pixel"
-  },
-  {
-    "objectID": "w02/slides.html#length",
-    "href": "w02/slides.html#length",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Length",
-    "text": "Length\n\nLength is most commonly used in the context of bar charts. The longer a bar is, the greater the value.\nDon’t truncate bar charts, use length in its entirety!"
-  },
-  {
-    "objectID": "w02/slides.html#angle",
-    "href": "w02/slides.html#angle",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Angle",
-    "text": "Angle\n\nAngles range from 0 to 360 degrees in a circle.\n\n\n\n\nConsiderations:\n\nAngles are most associated with pie charts. Pie chart is made up of parts that make up a whole.\nDon’t use too many categories (bar chart is better)\nThe sum of all percentages should equal 100%!"
-  },
-  {
-    "objectID": "w02/slides.html#pls-dont",
-    "href": "w02/slides.html#pls-dont",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Pls Don’t",
-    "text": "Pls Don’t"
-  },
-  {
-    "objectID": "w02/slides.html#slope",
-    "href": "w02/slides.html#slope",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Slope",
-    "text": "Slope\n\nSlope is similar to angle. Line charts are the most common use of slope to encode data.\nConsiderations:\n\nSlope magnitude: steeper = greater change, flatter = lesser change\nAspect ratio\nVisual change should match the context of the change\n\nCleveland, McGIll & McGill (1988) suggested that the average slope in a line chart should be 45°, in order to make neutral comparisons between lines (still a good rule of thumb)"
-  },
-  {
-    "objectID": "w02/slides.html#area",
-    "href": "w02/slides.html#area",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Area",
-    "text": "Area\n\n\n\n\nLike length, area can be used to represent data with size, but with two dimensions instead of one.\nConsiderations:\n\nWhile the encoding might not be as precise from a visual perception perspective, area can provide a more intuitive, less abstract view for some types of data\nMake sure you scale by area, not edge (remember, area gets squared per unit increase): This means you should encode the length of a side as \\(\\sqrt{x}\\)"
-  },
-  {
-    "objectID": "w02/slides.html#volume",
-    "href": "w02/slides.html#volume",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Volume",
-    "text": "Volume\n\n\n\n\nVolume can used in the same way as area (one more dimension)\nConsiderations:\n\nMake sure you scale by volume, not edge (remember, volume gets cubed per unit increase)\nThis means you would encode the side of a “box” as \\(x^{1/3} = \\sqrt[3]{x}\\)\n\nFor 3-D encodings, you need to take volume as proportional to the data"
-  },
-  {
-    "objectID": "w02/slides.html#color-society-meaning",
-    "href": "w02/slides.html#color-society-meaning",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Color + Society = Meaning",
-    "text": "Color + Society = Meaning\n\nColor is not “sortable” in the traditional sense\nHowever, color can convey implicit meaning!"
-  },
-  {
-    "objectID": "w02/slides.html#common-color-pitfalls",
-    "href": "w02/slides.html#common-color-pitfalls",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Common color pitfalls",
-    "text": "Common color pitfalls\n\nEncoding too much information or irrelevant information\nUsing nonmonotonic colors for data values\nFailure to design for color vision deficiency\nNot creating associations with color\nNot using contrasting colors to contrast information\nNot making the important information stand out\nUsing too many colors"
-  },
-  {
-    "objectID": "w02/slides.html#color-1",
-    "href": "w02/slides.html#color-1",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Color",
-    "text": "Color\n\nColor as a visual encoding can be split into two categories: hue and saturation.\nHue: what most people refer to as color (red, green, blue, etc.)\nSaturation: amount of hue in a color.\nQualitative: every color represents a distinct attribute (category)\nSequential: color represents a range (saturation) from low to high (or vice-versa)\nDiverging: multiple hues represent a point of inflection of the data"
-  },
-  {
-    "objectID": "w02/slides.html#sequential-scale-example-1",
-    "href": "w02/slides.html#sequential-scale-example-1",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Sequential Scale: Example 1",
-    "text": "Sequential Scale: Example 1"
-  },
-  {
-    "objectID": "w02/slides.html#sequential-scale-example-2",
-    "href": "w02/slides.html#sequential-scale-example-2",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Sequential Scale: Example 2",
-    "text": "Sequential Scale: Example 2"
-  },
-  {
-    "objectID": "w02/slides.html#divergent-scale-example",
-    "href": "w02/slides.html#divergent-scale-example",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Divergent Scale: Example",
-    "text": "Divergent Scale: Example"
-  },
-  {
-    "objectID": "w02/slides.html#common-palettes",
-    "href": "w02/slides.html#common-palettes",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Common Palettes",
-    "text": "Common Palettes\n\n\nMost of these palettes are available to both ggplot2 and matplotlib. For R, you may have to load packages like RColorBrewer or viridis."
-  },
-  {
-    "objectID": "w02/slides.html#colorblindness",
-    "href": "w02/slides.html#colorblindness",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Colorblindness",
-    "text": "Colorblindness"
-  },
-  {
-    "objectID": "w02/slides.html#in-8-people",
-    "href": "w02/slides.html#in-8-people",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "1 in 8 People!",
-    "text": "1 in 8 People!"
-  },
-  {
-    "objectID": "w02/slides.html#digital-screens-vs.-physical-printing",
-    "href": "w02/slides.html#digital-screens-vs.-physical-printing",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Digital Screens vs. Physical Printing",
-    "text": "Digital Screens vs. Physical Printing"
-  },
-  {
-    "objectID": "w02/slides.html#color-as-context",
-    "href": "w02/slides.html#color-as-context",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Color as Context",
-    "text": "Color as Context"
-  },
-  {
-    "objectID": "w02/slides.html#looking-forward-the-grammar-of-graphics-gg",
-    "href": "w02/slides.html#looking-forward-the-grammar-of-graphics-gg",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Looking Forward: The Grammar of Graphics (GG)",
-    "text": "Looking Forward: The Grammar of Graphics (GG)\n\nCleveland (1985) lists the “basic elements of graph construction” as: scales, captions, plotting symbols, reference lines, keys, labels, panels, and tick marks.\nWilkinson (2006) built on Bertin (1967), formally defining components of a graphic:\n\n\n\n\n\n\n\n\nStatement\nDescription\n\n\n\n\nDATA\nA set of data operations that create variables from datasets\n\n\nTRANS\nVariable transformation (e.g. rank)\n\n\nSCALE\nScale transformations (e.g. log)\n\n\nCOORD\nCoordinate system (e.g. polar)\n\n\nELEMENT\nGraphs (e.g. points) and their aesthetic attributes (e.g. color)\n\n\nGUIDE\nAxes, legends, etc.\n\n\n\n\nHadley Wickham implemented Wilkinson’s grammar in R via ggplot2 (more info)"
-  },
-  {
-    "objectID": "w02/slides.html#making-your-own-theme",
-    "href": "w02/slides.html#making-your-own-theme",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "Making Your Own Theme 😎",
-    "text": "Making Your Own Theme 😎\n\nOn GitHub"
-  },
-  {
-    "objectID": "w02/slides.html#references",
-    "href": "w02/slides.html#references",
-    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
-    "section": "References",
-    "text": "References\n\n\nBertin, Jacques. 1967. Semiology of Graphics: Diagrams, Networks, Maps. ESRI Press.\n\n\nCleveland, William S. 1985. The Elements of Graphing Data. CRC Press.\n\n\nGadamer, Hans-Georg. 1960. Truth and Method. New York: Crossroad.\n\n\nMackinlay, Jock. 1986. “Automating the Design of Graphical Presentations of Relational Information.” ACM Transactions on Graphics 5 (2): 110–41. https://doi.org/10.1145/22949.22950.\n\n\nWilkinson, Leland. 2006. The Grammar of Graphics. Springer Science & Business Media.\n\n\nYau, Nathan. 2013. Data Points: Visualization That Means Something. John Wiley & Sons.\n\n\n\n\n\nDSAN 5200-03 Week 2: Visual Encodings, Integrity, Colors"
+    "objectID": "w04/index.html#other-resources-and-examples",
+    "href": "w04/index.html#other-resources-and-examples",
+    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "section": "Other resources and examples",
+    "text": "Other resources and examples\nhttps://opensourcelibs.com/lib/rolldown\nhttps://elementor.com/blog/guide-to-scrollytelling/\nhttps://www.visualstorytell.com/blog/what-is-visual-storytelling\nhttps://mathisonian.github.io/idyll/scaffolding-interactives/\nhttps://idl.cs.washington.edu/\nhttps://distill.pub/2020/communicating-with-interactive-articles/",
+    "crumbs": [
+      "Week 4: Jan 30"
+    ]
   },
   {
     "objectID": "w02/index.html",
@@ -1315,528 +1207,643 @@
     ]
   },
   {
-    "objectID": "w04/index.html",
-    "href": "w04/index.html",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
+    "objectID": "w02/slides.html#key-point-data-viz-neq-data-analysis",
+    "href": "w02/slides.html#key-point-data-viz-neq-data-analysis",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Key Point: Data Viz \\(\\neq\\) Data Analysis",
+    "text": "Key Point: Data Viz \\(\\neq\\) Data Analysis\n\nReaders haven’t gone through the process of developing and answering questions that you went through in developing the viz\nYour audience wants to know the story, result, and/or conclusions\nThey (usually) don’t want the messy details you trudged through when analyzing the data; that’s your job!"
+  },
+  {
+    "objectID": "w02/slides.html#different-approaches-for-different-audiences",
+    "href": "w02/slides.html#different-approaches-for-different-audiences",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Different Approaches for Different Audiences!",
+    "text": "Different Approaches for Different Audiences!\n\n\n\n\n\nVisualization for Analysis:\n\n\n“Internal” audience: You and your team (shared context)\nEfficient understanding and iteration to develop insights\nRough drafts: Can make changes/“polish” later\n\n\n\n\nVisualization for Presentation:\n\n\n“External” audience: Content is likely new to them; audience has no context\nDifferent info is useful to them vs. useful to your teammates\nTakes significantly more time to get to publication ready\n\n\n\n\n\n\n\nFrom Chaos Theory: The Glorious Unpredictability of Young Thug, Jayson Greene, Pitchfork, 28 September 2015"
+  },
+  {
+    "objectID": "w02/slides.html#what-does-designing-for-an-audience-look-like",
+    "href": "w02/slides.html#what-does-designing-for-an-audience-look-like",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "What Does “Designing For An Audience” Look Like?",
+    "text": "What Does “Designing For An Audience” Look Like?\n\nExplain the encodings\nProvide context\nFocus on readability\nDevelop aesthetics\nYau (2013), Ch. 6: “Designing For An Audience”  (Georgtown Library Proxy Link)"
+  },
+  {
+    "objectID": "w02/slides.html#explaining-encodings",
+    "href": "w02/slides.html#explaining-encodings",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Explaining Encodings",
+    "text": "Explaining Encodings\n\nWhat scale are you using? What does that color represent? Is this normal?\nBetter to err on the side of too much explanation than too little\nToo much? People can gloss over details (if designed well 😉)\nToo little? People unfamiliar with the visual encodings will get stuck\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: The Statistical Atlas of the United States, produced in the late 1800s by the Census Bureau, explained all of the encodings. For example, look at this bump chart from the 1880 atlas. It ranks cities by population."
+  },
+  {
+    "objectID": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain",
+    "href": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Explaining Things You Forgot You Need To Explain",
+    "text": "Explaining Things You Forgot You Need To Explain\n\nWhen you work with a dataset for a while, it’s easy to forget that others aren’t as familiar […] When you know all the intimate details, it’s hard to step back and remember what it was like when you first opened up a file or database—just a bunch of numbers (Yau 2013, 209)"
+  },
+  {
+    "objectID": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain-1",
+    "href": "w02/slides.html#explaining-things-you-forgot-you-need-to-explain-1",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Explaining Things You Forgot You Need To Explain",
+    "text": "Explaining Things You Forgot You Need To Explain\n\n(If you know this video, don’t say anything!!)"
+  },
+  {
+    "objectID": "w02/slides.html#provide-context",
+    "href": "w02/slides.html#provide-context",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Provide Context",
+    "text": "Provide Context\n\nWhen readers can decode the shapes, colors and geometries on your chart, you are more than half way there to producing an awesome chart.\nHowever, readers also need to understand the context of the data."
+  },
+  {
+    "objectID": "w02/slides.html#but-how-much-context-do-i-need-to-provide",
+    "href": "w02/slides.html#but-how-much-context-do-i-need-to-provide",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "But How Much Context Do I Need To Provide?",
+    "text": "But How Much Context Do I Need To Provide?\n\nAn aside from the humanities (Gadamer 1960)"
+  },
+  {
+    "objectID": "w02/slides.html#readability",
+    "href": "w02/slides.html#readability",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Readability",
+    "text": "Readability\n\nCharts should read like text! It should be obvious what the chart is about, how to interpret it"
+  },
+  {
+    "objectID": "w02/slides.html#aesthetics",
+    "href": "w02/slides.html#aesthetics",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Aesthetics",
+    "text": "Aesthetics\n\nDefault settings in viz tools are generic and designed specifically to work with as many datasets and visualization types as possible\nThis \\(\\neq\\) best for your use cases!\nYou can (and should) develop aesthetics to make your charts less ugly\n(Note: In this context, aesthetics means a visual style. Do not confuse this with the aes() call in ggplot2.)"
+  },
+  {
+    "objectID": "w02/slides.html#aesthetics-broad-umbrella-term",
+    "href": "w02/slides.html#aesthetics-broad-umbrella-term",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Aesthetics: Broad Umbrella Term",
+    "text": "Aesthetics: Broad Umbrella Term\n\nSomething like… the gestalt sum of visual design choices\n\n\nFrom Georgetown’s official color guide (but remember: color is only one of many factors that makes up an “aesthetic”)"
+  },
+  {
+    "objectID": "w02/slides.html#aesthetics-broad-umbrella-term-1",
+    "href": "w02/slides.html#aesthetics-broad-umbrella-term-1",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Aesthetics: Broad Umbrella Term",
+    "text": "Aesthetics: Broad Umbrella Term\n\nFrom Nicholas Felton’s 2014 Annual Report"
+  },
+  {
+    "objectID": "w02/slides.html#guidelines-not-rules",
+    "href": "w02/slides.html#guidelines-not-rules",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Guidelines, Not Rules!",
+    "text": "Guidelines, Not Rules!\n\nThey’re more continuous than absolute. Your charts may need more or less explanations, more or less context, etc.\nDepends on your audience and the purpose behind your chart:\n\nIf your audience is a small group who has the same background as you, then you might not need to provide as much context for the data you show.\nIf your audience is already excited about a dataset, then you probably don’t need to make it too flashy.\nIf you make charts for a research paper, there are probably publisher guidelines that you need to follow, which limits what you can do (sometimes a good thing).\n\nThink of the above adjustments as continuous knobs that you can turn up or down. The more charts you make, the better you’ll get at deciding how much to turn."
+  },
+  {
+    "objectID": "w02/slides.html#pre-attentive-processing",
+    "href": "w02/slides.html#pre-attentive-processing",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Pre-Attentive Processing",
+    "text": "Pre-Attentive Processing\n\nThe ability of the visual system to effortlessly identify certain basic visual properties."
+  },
+  {
+    "objectID": "w02/slides.html#tamara-munzner",
+    "href": "w02/slides.html#tamara-munzner",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Tamara Munzner",
+    "text": "Tamara Munzner\n\n\n\n\nComputer scientist, info viz expert, and professor at University of British Columbia"
+  },
+  {
+    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner",
+    "href": "w02/slides.html#nested-model-analysis-framework-munzner",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Nested Model Analysis Framework (Munzner)",
+    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?"
+  },
+  {
+    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner-1",
+    "href": "w02/slides.html#nested-model-analysis-framework-munzner-1",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Nested Model Analysis Framework (Munzner)",
+    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?\n\nAbstraction: Translate from the domain specifics to the visualization vocabulary\n\nWhat is shown? → data abstraction\nWhy is the user looking at it? → task abstraction"
+  },
+  {
+    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner-2",
+    "href": "w02/slides.html#nested-model-analysis-framework-munzner-2",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Nested Model Analysis Framework (Munzner)",
+    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?\n\nAbstraction: Translate from the domain specifics to the visualization vocabulary\n\nWhat is shown? → data abstraction\nWhy is the user looking at it? → task abstraction\n\nIdiom: How is it shown?\n\nVisual encoding idiom → how to draw\nInteraction idiom → how to manipulate"
+  },
+  {
+    "objectID": "w02/slides.html#nested-model-analysis-framework-munzner-3",
+    "href": "w02/slides.html#nested-model-analysis-framework-munzner-3",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Nested Model Analysis Framework (Munzner)",
+    "text": "Nested Model Analysis Framework (Munzner)\nFour levels, three questions:\n\n\n\nDomain: Characterize the problems and data of a particular domain\n\nWho are the target users?\n\nAbstraction: Translate from the domain specifics to the visualization vocabulary\n\nWhat is shown? → data abstraction\nWhy is the user looking at it? → task abstraction\n\nIdiom: How is it shown?\n\nVisual encoding idiom → how to draw\nInteraction idiom → how to manipulate\n\nAlgorithm: Efficient computation"
+  },
+  {
+    "objectID": "w02/slides.html#the-what-abstracting-the-data",
+    "href": "w02/slides.html#the-what-abstracting-the-data",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "The What: Abstracting the Data",
+    "text": "The What: Abstracting the Data"
+  },
+  {
+    "objectID": "w02/slides.html#abstracting-the-data",
+    "href": "w02/slides.html#abstracting-the-data",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Abstracting the Data",
+    "text": "Abstracting the Data\n\nWhy abstract the data?\n\nDifferent attribute types different representations\nDifferent dataset types different idioms available\n\nWhat do you need to abstract?\n\nDataset type: (e.g. table, network, temporal, etc.)\nAttribute types: (e.g. categorical, ordinal, quantitative)\nOrdering direction: (e.g. sequential, diverging, cyclical)\nData availability: (e.g. dynamic, static)"
+  },
+  {
+    "objectID": "w02/slides.html#types-of-datasets",
+    "href": "w02/slides.html#types-of-datasets",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Types of Datasets",
+    "text": "Types of Datasets\n\n\n(Also temporal!)"
+  },
+  {
+    "objectID": "w02/slides.html#tables",
+    "href": "w02/slides.html#tables",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Tables",
+    "text": "Tables\n\nFrom Tidy data for efficiency, reproducibility, and collaboration, Julie Lowndes and Allison Horst, 12 October 2020"
+  },
+  {
+    "objectID": "w02/slides.html#types-of-attributes",
+    "href": "w02/slides.html#types-of-attributes",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Types of Attributes",
+    "text": "Types of Attributes\n\n\n\n\n\n\n\n\n\n\n\nCategorical: No order\n\nExample: names, countries, types\nMust be represented with visual channels that don’t convey order\n\nOrdered\n\nOrdinal: Has implicit order, but you can’t do arithmetic\n\nCan be numerical (but should be treated as categorical)\nExample: t-shirt sizes, grade in school, rankings\n\nQuantitative: Ordered, and you can do arithmetic\n\nCan be divergent or sequential\nExample: age, temperature, earnings"
+  },
+  {
+    "objectID": "w02/slides.html#ordering",
+    "href": "w02/slides.html#ordering",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Ordering",
+    "text": "Ordering\n\n\n\n\n\n\n\n\n\n\n\nSequential: Infinite range with clear minimum\n\nYou can perform arithmetic\nExample: age, number of goals, price\nMust be represented with visual channels that don’t convey order\n\nDiverging: Middle point + two opposite directions\n\nMiddle point not always zero\nExample: temperature, earnings, political affiliation index\n\nCyclic: Cycle in the values\n\nStarting point may not be obvious\nCan be repsented w/cyclical channels\nEx: days of the week, hours in the day"
+  },
+  {
+    "objectID": "w02/slides.html#the-why",
+    "href": "w02/slides.html#the-why",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "The Why?",
+    "text": "The Why?\n(More on this next week!)"
+  },
+  {
+    "objectID": "w02/slides.html#the-how",
+    "href": "w02/slides.html#the-how",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "The How?",
+    "text": "The How?"
+  },
+  {
+    "objectID": "w02/slides.html#marks-and-channels",
+    "href": "w02/slides.html#marks-and-channels",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Marks and Channels",
+    "text": "Marks and Channels\n\nMarks are geometric primitives:\n\n\n\n\n\n\n\nChannels (encodings) control the appearance of marks"
+  },
+  {
+    "objectID": "w02/slides.html#channel-encoding-types",
+    "href": "w02/slides.html#channel-encoding-types",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Channel (Encoding) Types",
+    "text": "Channel (Encoding) Types"
+  },
+  {
+    "objectID": "w02/slides.html#points",
+    "href": "w02/slides.html#points",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Points",
+    "text": "Points\n\n\n\n\n\n\n\n\n\n\n\nZero-dimensional\nConvey position only\nAdditionally, can be size and shape coded"
+  },
+  {
+    "objectID": "w02/slides.html#lines",
+    "href": "w02/slides.html#lines",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Lines",
+    "text": "Lines\n\n\n\n\n\n\n\n\n\n\n\nOne-dimensional\nConvey position and length\nCan only be width coded"
+  },
+  {
+    "objectID": "w02/slides.html#areas",
+    "href": "w02/slides.html#areas",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Areas",
+    "text": "Areas\n\n\n\n\n\n\n\n\n\n\n\nTwo dimensional\nFully constrained"
+  },
+  {
+    "objectID": "w02/slides.html#graphical-presentations-of-relational-information",
+    "href": "w02/slides.html#graphical-presentations-of-relational-information",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Graphical Presentations of Relational Information",
+    "text": "Graphical Presentations of Relational Information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Figures 14 and 15 in Mackinlay (1986)\n\n\n\n\nAlthough encoding is often undertaken without much intention or deeper consideration, it has significant impact on the ability of the visualization to communicate knowledge accurately and efficiently."
+  },
+  {
+    "objectID": "w02/slides.html#another-guide-illinsky",
+    "href": "w02/slides.html#another-guide-illinsky",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Another Guide (Illinsky)",
+    "text": "Another Guide (Illinsky)"
+  },
+  {
+    "objectID": "w02/slides.html#position-example-1",
+    "href": "w02/slides.html#position-example-1",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Position: Example 1",
+    "text": "Position: Example 1\nPosition allows you to compare values based on where they are placed with reference to a coordinate system.\n\n\n\nConsiderations:\n\nBe aware of the scales you are using (linear vs logarithmic)\nThe scale changes the interpretation of distance\nIt can also change the perceived patterns\n\n\n\n\n\nCode\nlibrary(tidyverse)\nset.seed(140)\nd &lt;-  data.frame(x = rgamma(15,1)) %&gt;% mutate(y = 3 + 2*x + 5*I(x^2) + rnorm(15,3,3))\nplt &lt;- ggplot(d, aes(x, y))+\n    geom_point(size=6) + \n    theme_bw() + \n    theme(axis.title=element_blank(), axis.text = element_blank(), \n          axis.ticks=element_blank())\nplt + annotate('text', x=0.5, y=60,label = \"Linear scales\", hjust=0, size=8 )\n\n\n\n\n\n\n\n\n\nCode\nplt + scale_y_log10() + scale_x_log10() +\n    annotate('text', x = 0.1, y = 50, label = \"Logarithmic scales\", hjust=0, size=8)"
+  },
+  {
+    "objectID": "w02/slides.html#position-example-2",
+    "href": "w02/slides.html#position-example-2",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Position: Example 2",
+    "text": "Position: Example 2\nPosition allows you to compare values based on where they are placed with reference to a coordinate system.\n\n\nConsiderations\n\nAvoid overplotting since many points can occupy the same space and obscure one another\n\nSolutions\n\nUse transparency so that overlapping points make darker areas\njitter (add noise so points no longer are on top of each other)\nUse binning to show aggregate data per pixel"
+  },
+  {
+    "objectID": "w02/slides.html#length",
+    "href": "w02/slides.html#length",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Length",
+    "text": "Length\n\nLength is most commonly used in the context of bar charts. The longer a bar is, the greater the value.\nDon’t truncate bar charts, use length in its entirety!"
+  },
+  {
+    "objectID": "w02/slides.html#angle",
+    "href": "w02/slides.html#angle",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Angle",
+    "text": "Angle\n\nAngles range from 0 to 360 degrees in a circle.\n\n\n\n\nConsiderations:\n\nAngles are most associated with pie charts. Pie chart is made up of parts that make up a whole.\nDon’t use too many categories (bar chart is better)\nThe sum of all percentages should equal 100%!"
+  },
+  {
+    "objectID": "w02/slides.html#pls-dont",
+    "href": "w02/slides.html#pls-dont",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Pls Don’t",
+    "text": "Pls Don’t"
+  },
+  {
+    "objectID": "w02/slides.html#slope",
+    "href": "w02/slides.html#slope",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Slope",
+    "text": "Slope\n\nSlope is similar to angle. Line charts are the most common use of slope to encode data.\nConsiderations:\n\nSlope magnitude: steeper = greater change, flatter = lesser change\nAspect ratio\nVisual change should match the context of the change\n\nCleveland, McGIll & McGill (1988) suggested that the average slope in a line chart should be 45°, in order to make neutral comparisons between lines (still a good rule of thumb)"
+  },
+  {
+    "objectID": "w02/slides.html#area",
+    "href": "w02/slides.html#area",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Area",
+    "text": "Area\n\n\n\n\nLike length, area can be used to represent data with size, but with two dimensions instead of one.\nConsiderations:\n\nWhile the encoding might not be as precise from a visual perception perspective, area can provide a more intuitive, less abstract view for some types of data\nMake sure you scale by area, not edge (remember, area gets squared per unit increase): This means you should encode the length of a side as \\(\\sqrt{x}\\)"
+  },
+  {
+    "objectID": "w02/slides.html#volume",
+    "href": "w02/slides.html#volume",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Volume",
+    "text": "Volume\n\n\n\n\nVolume can used in the same way as area (one more dimension)\nConsiderations:\n\nMake sure you scale by volume, not edge (remember, volume gets cubed per unit increase)\nThis means you would encode the side of a “box” as \\(x^{1/3} = \\sqrt[3]{x}\\)\n\nFor 3-D encodings, you need to take volume as proportional to the data"
+  },
+  {
+    "objectID": "w02/slides.html#color-society-meaning",
+    "href": "w02/slides.html#color-society-meaning",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Color + Society = Meaning",
+    "text": "Color + Society = Meaning\n\nColor is not “sortable” in the traditional sense\nHowever, color can convey implicit meaning!"
+  },
+  {
+    "objectID": "w02/slides.html#common-color-pitfalls",
+    "href": "w02/slides.html#common-color-pitfalls",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Common color pitfalls",
+    "text": "Common color pitfalls\n\nEncoding too much information or irrelevant information\nUsing nonmonotonic colors for data values\nFailure to design for color vision deficiency\nNot creating associations with color\nNot using contrasting colors to contrast information\nNot making the important information stand out\nUsing too many colors"
+  },
+  {
+    "objectID": "w02/slides.html#color-1",
+    "href": "w02/slides.html#color-1",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Color",
+    "text": "Color\n\nColor as a visual encoding can be split into two categories: hue and saturation.\nHue: what most people refer to as color (red, green, blue, etc.)\nSaturation: amount of hue in a color.\nQualitative: every color represents a distinct attribute (category)\nSequential: color represents a range (saturation) from low to high (or vice-versa)\nDiverging: multiple hues represent a point of inflection of the data"
+  },
+  {
+    "objectID": "w02/slides.html#sequential-scale-example-1",
+    "href": "w02/slides.html#sequential-scale-example-1",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Sequential Scale: Example 1",
+    "text": "Sequential Scale: Example 1"
+  },
+  {
+    "objectID": "w02/slides.html#sequential-scale-example-2",
+    "href": "w02/slides.html#sequential-scale-example-2",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Sequential Scale: Example 2",
+    "text": "Sequential Scale: Example 2"
+  },
+  {
+    "objectID": "w02/slides.html#divergent-scale-example",
+    "href": "w02/slides.html#divergent-scale-example",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Divergent Scale: Example",
+    "text": "Divergent Scale: Example"
+  },
+  {
+    "objectID": "w02/slides.html#common-palettes",
+    "href": "w02/slides.html#common-palettes",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Common Palettes",
+    "text": "Common Palettes\n\n\nMost of these palettes are available to both ggplot2 and matplotlib. For R, you may have to load packages like RColorBrewer or viridis."
+  },
+  {
+    "objectID": "w02/slides.html#colorblindness",
+    "href": "w02/slides.html#colorblindness",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Colorblindness",
+    "text": "Colorblindness"
+  },
+  {
+    "objectID": "w02/slides.html#in-8-people",
+    "href": "w02/slides.html#in-8-people",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "1 in 8 People!",
+    "text": "1 in 8 People!"
+  },
+  {
+    "objectID": "w02/slides.html#digital-screens-vs.-physical-printing",
+    "href": "w02/slides.html#digital-screens-vs.-physical-printing",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Digital Screens vs. Physical Printing",
+    "text": "Digital Screens vs. Physical Printing"
+  },
+  {
+    "objectID": "w02/slides.html#color-as-context",
+    "href": "w02/slides.html#color-as-context",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Color as Context",
+    "text": "Color as Context"
+  },
+  {
+    "objectID": "w02/slides.html#looking-forward-the-grammar-of-graphics-gg",
+    "href": "w02/slides.html#looking-forward-the-grammar-of-graphics-gg",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Looking Forward: The Grammar of Graphics (GG)",
+    "text": "Looking Forward: The Grammar of Graphics (GG)\n\nCleveland (1985) lists the “basic elements of graph construction” as: scales, captions, plotting symbols, reference lines, keys, labels, panels, and tick marks.\nWilkinson (2006) built on Bertin (1967), formally defining components of a graphic:\n\n\n\n\n\n\n\n\nStatement\nDescription\n\n\n\n\nDATA\nA set of data operations that create variables from datasets\n\n\nTRANS\nVariable transformation (e.g. rank)\n\n\nSCALE\nScale transformations (e.g. log)\n\n\nCOORD\nCoordinate system (e.g. polar)\n\n\nELEMENT\nGraphs (e.g. points) and their aesthetic attributes (e.g. color)\n\n\nGUIDE\nAxes, legends, etc.\n\n\n\n\nHadley Wickham implemented Wilkinson’s grammar in R via ggplot2 (more info)"
+  },
+  {
+    "objectID": "w02/slides.html#making-your-own-theme",
+    "href": "w02/slides.html#making-your-own-theme",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "Making Your Own Theme 😎",
+    "text": "Making Your Own Theme 😎\n\nOn GitHub"
+  },
+  {
+    "objectID": "w02/slides.html#references",
+    "href": "w02/slides.html#references",
+    "title": "Lecture 2: Visual Encodings, Integrity, Color Theory",
+    "section": "References",
+    "text": "References\n\n\nBertin, Jacques. 1967. Semiology of Graphics: Diagrams, Networks, Maps. ESRI Press.\n\n\nCleveland, William S. 1985. The Elements of Graphing Data. CRC Press.\n\n\nGadamer, Hans-Georg. 1960. Truth and Method. New York: Crossroad.\n\n\nMackinlay, Jock. 1986. “Automating the Design of Graphical Presentations of Relational Information.” ACM Transactions on Graphics 5 (2): 110–41. https://doi.org/10.1145/22949.22950.\n\n\nWilkinson, Leland. 2006. The Grammar of Graphics. Springer Science & Business Media.\n\n\nYau, Nathan. 2013. Data Points: Visualization That Means Something. John Wiley & Sons.\n\n\n\n\n\nDSAN 5200-03 Week 2: Visual Encodings, Integrity, Colors"
+  },
+  {
+    "objectID": "w10/index.html",
+    "href": "w10/index.html",
+    "title": "Lecture 10: Visualizing Big Data",
     "section": "",
     "text": "Open slides in new window →",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#storytelling-with-data",
-    "href": "w04/index.html#storytelling-with-data",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Storytelling with Data",
-    "text": "Storytelling with Data\n\nOften, your jobs as a data scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative.",
+    "objectID": "w10/index.html#what-makes-big-data-visualization-different",
+    "href": "w10/index.html#what-makes-big-data-visualization-different",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "What Makes Big Data Visualization Different?",
+    "text": "What Makes Big Data Visualization Different?\n(…Let’s brainstorm!)",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#what-is-data-storytelling",
-    "href": "w04/index.html#what-is-data-storytelling",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "What is Data Storytelling?",
-    "text": "What is Data Storytelling?\n\n\n\n\n\n\nhttps://venngage.com/blog/data-storytelling/",
+    "objectID": "w10/index.html#memory-issues-leadsto-computational-issues",
+    "href": "w10/index.html#memory-issues-leadsto-computational-issues",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Memory Issues \\(\\leadsto\\) Computational Issues",
+    "text": "Memory Issues \\(\\leadsto\\) Computational Issues\n\nWe’ve assumed one-to-one correspondence between (immediately-accessible) data and visual encoding(s)\nWhen working with big data, however:\n\nFull dataset may not fit in the user’s browser cache!\nEven if it does, processing (e.g., placing \\(N\\) points on map) may be prohibitively slow\n\n\\(\\implies\\) Some portion of data / some computations need to be handled server side!",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#components-of-a-data-story",
-    "href": "w04/index.html#components-of-a-data-story",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Components of a data story",
-    "text": "Components of a data story",
+    "objectID": "w10/index.html#client-side-vs.-server-side-computing",
+    "href": "w10/index.html#client-side-vs.-server-side-computing",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Client-Side vs. Server-Side Computing",
+    "text": "Client-Side vs. Server-Side Computing\n\nReliable estimates of computing power (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!\nBack-of-envelope calculation:\n\nA given server (AWS, GCP) has 10-100x more computing power than our laptops\nServers almost entirely devoted to data processing; laptops have to handle OS GUI, streaming video, conserving battery, etc.",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#storytelling-is-abstract",
-    "href": "w04/index.html#storytelling-is-abstract",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Storytelling is abstract",
-    "text": "Storytelling is abstract\nIt is not merely:\n\na technical matter of creating an image\ndesigning the right chart\n\n\nRather it is:\n\nthe broader considerations that impact nearly every decision you make in the way you frame and present a project\n\n\n\nThe story is the culmination of distilling the information and insights gathered through the analytic process\nIt is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience",
+    "objectID": "w10/index.html#client-side-vs.-server-side-memory",
+    "href": "w10/index.html#client-side-vs.-server-side-memory",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Client-Side vs. Server-Side Memory",
+    "text": "Client-Side vs. Server-Side Memory\n\nIn Chrome, check JS heap size (in GB) by running:\nwindow.performance.memory.jsHeapSizeLimit / (10**9)\n\n\n\n\n\n\n\n\nMy Chrome JS Heap\n4.2947 GB\n\n\n2020 US Census data\n4.3487 GB\n\n\nGoogle Maps (2012)\n20 000 000.0000 GB",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#telling-your-data-story",
-    "href": "w04/index.html#telling-your-data-story",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Telling Your Data Story",
-    "text": "Telling Your Data Story\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result",
+    "objectID": "w10/index.html#new-opportunities",
+    "href": "w10/index.html#new-opportunities",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "New Opportunities",
+    "text": "New Opportunities\n\nAllow users to explore time series for arbitrarily-long windows of time!\n\n\n\n\n\n\n\n\n\nFigure 1: From Shan He, “Creating Beautiful and Meaningful Visualizations with Big Data”",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#story-linearity",
-    "href": "w04/index.html#story-linearity",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Story linearity",
-    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\nBeginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling.",
+    "objectID": "w10/index.html#helpful-even-when-data-does-fit-in-memory",
+    "href": "w10/index.html#helpful-even-when-data-does-fit-in-memory",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Helpful Even When Data Does Fit In Memory!",
+    "text": "Helpful Even When Data Does Fit In Memory!\n\nCan free user’s CPU for things like lighting computation\n\n\n\n\n\n\n\n\n\nFigure 2: “Astronomically correct lighting allows users to see how different buildings shade each other during different times of day and year.”",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#traditional-vs.-data-stories",
-    "href": "w04/index.html#traditional-vs.-data-stories",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Traditional vs. Data Stories",
-    "text": "Traditional vs. Data Stories\n\n\n\n\n\nsource",
+    "objectID": "w10/index.html#is-this-lighting-thing-a-gimmick",
+    "href": "w10/index.html#is-this-lighting-thing-a-gimmick",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Is This Lighting Thing A Gimmick?",
+    "text": "Is This Lighting Thing A Gimmick?\n\n…or a MILLION DOLLAR IDEA!!! 🤑🤑🤑\n\n\n\n\n\n\n\n\n\nFigure 3: Radiance: Determine your building’s solar potential",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#aristotle-vs.-brecht",
-    "href": "w04/index.html#aristotle-vs.-brecht",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Aristotle vs. Brecht",
-    "text": "Aristotle vs. Brecht\n\nSometimes you don’t want to “resolve” the tension!\nAristotelian drama: audience goes home “satisfied”\n\nThe story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)\n\nBrechtian drama: audience is left with discomfort, ambiguity, unresolved tension\n\nSounds like something you wouldn’t want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!",
+    "objectID": "w10/index.html#the-general-idea",
+    "href": "w10/index.html#the-general-idea",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "The General Idea",
+    "text": "The General Idea\n\nAd hoc approach, figuring out what to do server-side vs. client-side “on the fly” ❌\nInstead, we can use systems which integrate them, drawing on respective strengths!\nData Visualization Management System (DVMS)",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#common-visual-narrative-genres",
-    "href": "w04/index.html#common-visual-narrative-genres",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Common visual narrative Genres",
-    "text": "Common visual narrative Genres",
+    "objectID": "w10/index.html#zql-sql-for-visualization",
+    "href": "w10/index.html#zql-sql-for-visualization",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "ZQL = SQL for Visualization",
+    "text": "ZQL = SQL for Visualization\n\nInput: Description of desired visualization\nOutput: SQL query\n\n\n\n\n\n\n\n\n\n\nx\ny\nconstraints\nviz\n\n\n\n\ncarrier\npassengers\ndestination==\"New York\"\nbar(y=sum(passengers))\n\n\n\nProduces\nSELECT carrier, SUM(passengers)\nFROM flight delay\nGROUP BY carrier\nWHERE destination=\"New York\";\n\nMaybe non-obvious, a priori, how this helps…\nAdvantages become clear when we start to optimize!",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#standard-infographics",
-    "href": "w04/index.html#standard-infographics",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Standard Infographics",
-    "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.",
+    "objectID": "w10/index.html#precomputation",
+    "href": "w10/index.html#precomputation",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Precomputation",
+    "text": "Precomputation\n\nSQL in general needs to handle arbitrary queries…\nBut for visualization, certain queries will never be made, while others (counting, summing) will be made frequently\nHence we can precompute, on the server side many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at\nThis frees up processing power on the client side, which can be applied instead towards speed, aesthetics, responsive interactivity, etc.",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#data-infographics",
-    "href": "w04/index.html#data-infographics",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Data Infographics",
-    "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.",
+    "objectID": "w10/index.html#the-power-of-precomputation-i",
+    "href": "w10/index.html#the-power-of-precomputation-i",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "The Power of Precomputation I",
+    "text": "The Power of Precomputation I",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#research-posters",
-    "href": "w04/index.html#research-posters",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Research posters",
-    "text": "Research posters\n\nEven research poster construction requires a narrative flow!",
+    "objectID": "w10/index.html#the-power-of-precomputation-ii",
+    "href": "w10/index.html#the-power-of-precomputation-ii",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "The Power of Precomputation II",
+    "text": "The Power of Precomputation II",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#scientific-papers-structure",
-    "href": "w04/index.html#scientific-papers-structure",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Scientific papers structure",
-    "text": "Scientific papers structure",
+    "objectID": "w10/index.html#precomputation-designing-for-an-audience",
+    "href": "w10/index.html#precomputation-designing-for-an-audience",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Precomputation: Designing for an Audience",
+    "text": "Precomputation: Designing for an Audience\n\n\n\nOpen in new tab",
     "crumbs": [
-      "Week 4: Jan 30"
+      "week 10: Mar 19"
     ]
   },
   {
-    "objectID": "w04/index.html#developing-knowledge-content",
-    "href": "w04/index.html#developing-knowledge-content",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Developing knowledge content",
-    "text": "Developing knowledge content\n\n\n\n\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#what-makes-big-data-visualization-different",
+    "href": "w10/slides.html#what-makes-big-data-visualization-different",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "What Makes Big Data Visualization Different?",
+    "text": "What Makes Big Data Visualization Different?\n(…Let’s brainstorm!)"
   },
   {
-    "objectID": "w04/index.html#primary-communication-tools",
-    "href": "w04/index.html#primary-communication-tools",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Primary communication tools",
-    "text": "Primary communication tools",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#memory-issues-leadsto-computational-issues",
+    "href": "w10/slides.html#memory-issues-leadsto-computational-issues",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Memory Issues \\(\\leadsto\\) Computational Issues",
+    "text": "Memory Issues \\(\\leadsto\\) Computational Issues\n\nWe’ve assumed one-to-one correspondence between (immediately-accessible) data and visual encoding(s)\nWhen working with big data, however:\n\nFull dataset may not fit in the user’s browser cache!\nEven if it does, processing (e.g., placing \\(N\\) points on map) may be prohibitively slow\n\n\\(\\implies\\) Some portion of data / some computations need to be handled server side!"
   },
   {
-    "objectID": "w04/index.html#engagement-levels-1",
-    "href": "w04/index.html#engagement-levels-1",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Engagement levels-1",
-    "text": "Engagement levels-1",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#client-side-vs.-server-side-computing",
+    "href": "w10/slides.html#client-side-vs.-server-side-computing",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Client-Side vs. Server-Side Computing",
+    "text": "Client-Side vs. Server-Side Computing\n\nReliable estimates of computing power (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!\nBack-of-envelope calculation:\n\nA given server (AWS, GCP) has 10-100x more computing power than our laptops\nServers almost entirely devoted to data processing; laptops have to handle OS GUI, streaming video, conserving battery, etc."
   },
   {
-    "objectID": "w04/index.html#engagement-levels-2",
-    "href": "w04/index.html#engagement-levels-2",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Engagement levels-2",
-    "text": "Engagement levels-2",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#client-side-vs.-server-side-memory",
+    "href": "w10/slides.html#client-side-vs.-server-side-memory",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Client-Side vs. Server-Side Memory",
+    "text": "Client-Side vs. Server-Side Memory\n\nIn Chrome, check JS heap size (in GB) by running:\nwindow.performance.memory.jsHeapSizeLimit / (10**9)\n\n\n\n\n\n\n\n\nMy Chrome JS Heap\n4.2947 GB\n\n\n2020 US Census data\n4.3487 GB\n\n\nGoogle Maps (2012)\n20 000 000.0000 GB"
   },
   {
-    "objectID": "w04/index.html#storytelling-tips",
-    "href": "w04/index.html#storytelling-tips",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Storytelling tips",
-    "text": "Storytelling tips",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#new-opportunities",
+    "href": "w10/slides.html#new-opportunities",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "New Opportunities",
+    "text": "New Opportunities\n\nAllow users to explore time series for arbitrarily-long windows of time!\n\n\n\n\n\n\n\n\n\nFigure 1: From Shan He, “Creating Beautiful and Meaningful Visualizations with Big Data”"
   },
   {
-    "objectID": "w04/index.html#author-vs-reader-driven",
-    "href": "w04/index.html#author-vs-reader-driven",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Author vs reader driven",
-    "text": "Author vs reader driven",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#helpful-even-when-data-does-fit-in-memory",
+    "href": "w10/slides.html#helpful-even-when-data-does-fit-in-memory",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Helpful Even When Data Does Fit In Memory!",
+    "text": "Helpful Even When Data Does Fit In Memory!\n\nCan free user’s CPU for things like lighting computation\n\n\n\n\n\n\n\n\n\nFigure 2: “Astronomically correct lighting allows users to see how different buildings shade each other during different times of day and year.”"
   },
   {
-    "objectID": "w04/index.html#repetition-and-redundancy",
-    "href": "w04/index.html#repetition-and-redundancy",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Repetition and Redundancy",
-    "text": "Repetition and Redundancy\nThe old adage on how to present anything:\n\nTell them what you are going to tell them\nThen tell them\nThen tell them what you just told them",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#is-this-lighting-thing-a-gimmick",
+    "href": "w10/slides.html#is-this-lighting-thing-a-gimmick",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Is This Lighting Thing A Gimmick?",
+    "text": "Is This Lighting Thing A Gimmick?\n\n…or a MILLION DOLLAR IDEA!!! 🤑🤑🤑\n\n\n\n\n\n\n\n\n\nFigure 3: Radiance: Determine your building’s solar potential"
   },
   {
-    "objectID": "w04/index.html#awesome-data-driven-viz-narratives",
-    "href": "w04/index.html#awesome-data-driven-viz-narratives",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Awesome data driven viz narratives",
-    "text": "Awesome data driven viz narratives\n\nThe New York Times\nWall Stree Journal\nThe Washington Post\nFiveThirtyEight\nThe Economist\nFinancial Times\nThe Pudding",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#the-general-idea",
+    "href": "w10/slides.html#the-general-idea",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "The General Idea",
+    "text": "The General Idea\n\nAd hoc approach, figuring out what to do server-side vs. client-side “on the fly” ❌\nInstead, we can use systems which integrate them, drawing on respective strengths!\nData Visualization Management System (DVMS)"
   },
   {
-    "objectID": "w04/index.html#the-puddings-process",
-    "href": "w04/index.html#the-puddings-process",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "The Pudding’s process:",
-    "text": "The Pudding’s process:\n\nBy Ilia Blinderman\n\nStorytelling is complicated\nWho is your audience\nFocus broadly or narrowly\nComplexity of the finding after analysis\nProgressing through the arguments\nArriving at the conclusion\n\n\n\n\nResources\nhttps://pudding.cool/process/how-to-make-dope-shit-part-1/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-2/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-3/",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#zql-sql-for-visualization",
+    "href": "w10/slides.html#zql-sql-for-visualization",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "ZQL = SQL for Visualization",
+    "text": "ZQL = SQL for Visualization\n\nInput: Description of desired visualization\nOutput: SQL query\n\n\n\n\n\n\n\n\n\n\nx\ny\nconstraints\nviz\n\n\n\n\ncarrier\npassengers\ndestination==\"New York\"\nbar(y=sum(passengers))\n\n\n\nProduces\nSELECT carrier, SUM(passengers)\nFROM flight delay\nGROUP BY carrier\nWHERE destination=\"New York\";\n\nMaybe non-obvious, a priori, how this helps…\nAdvantages become clear when we start to optimize!"
   },
   {
-    "objectID": "w04/index.html#scrollytelling-bill-shander",
-    "href": "w04/index.html#scrollytelling-bill-shander",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Scrollytelling (Bill Shander)",
-    "text": "Scrollytelling (Bill Shander)\nhttps://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003\nhttps://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964\nhttps://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#precomputation",
+    "href": "w10/slides.html#precomputation",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Precomputation",
+    "text": "Precomputation\n\nSQL in general needs to handle arbitrary queries…\nBut for visualization, certain queries will never be made, while others (counting, summing) will be made frequently\nHence we can precompute, on the server side many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at\nThis frees up processing power on the client side, which can be applied instead towards speed, aesthetics, responsive interactivity, etc."
   },
   {
-    "objectID": "w04/index.html#other-resources-and-examples",
-    "href": "w04/index.html#other-resources-and-examples",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Other resources and examples",
-    "text": "Other resources and examples\nhttps://opensourcelibs.com/lib/rolldown\nhttps://elementor.com/blog/guide-to-scrollytelling/\nhttps://www.visualstorytell.com/blog/what-is-visual-storytelling\nhttps://mathisonian.github.io/idyll/scaffolding-interactives/\nhttps://idl.cs.washington.edu/\nhttps://distill.pub/2020/communicating-with-interactive-articles/",
-    "crumbs": [
-      "Week 4: Jan 30"
-    ]
+    "objectID": "w10/slides.html#the-power-of-precomputation-i",
+    "href": "w10/slides.html#the-power-of-precomputation-i",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "The Power of Precomputation I",
+    "text": "The Power of Precomputation I"
   },
   {
-    "objectID": "w04/slides.html#storytelling-with-data",
-    "href": "w04/slides.html#storytelling-with-data",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Storytelling with Data",
-    "text": "Storytelling with Data\n\nOften, your jobs as a data scientist is to be an effective communicator\nThere is more to communication than numbers on a paper\n\n\n\n\n\n\n\n\n\n\nData stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative."
+    "objectID": "w10/slides.html#the-power-of-precomputation-ii",
+    "href": "w10/slides.html#the-power-of-precomputation-ii",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "The Power of Precomputation II",
+    "text": "The Power of Precomputation II"
   },
   {
-    "objectID": "w04/slides.html#what-is-data-storytelling",
-    "href": "w04/slides.html#what-is-data-storytelling",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "What is Data Storytelling?",
-    "text": "What is Data Storytelling?\n\n\nhttps://venngage.com/blog/data-storytelling/"
+    "objectID": "w10/slides.html#precomputation-designing-for-an-audience",
+    "href": "w10/slides.html#precomputation-designing-for-an-audience",
+    "title": "Lecture 10: Visualizing Big Data",
+    "section": "Precomputation: Designing for an Audience",
+    "text": "Precomputation: Designing for an Audience\n\n\nOpen in new tab \n\nDSAN 5200-03 Week 10: Visualizing Big Data"
   },
   {
-    "objectID": "w04/slides.html#components-of-a-data-story",
-    "href": "w04/slides.html#components-of-a-data-story",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Components of a data story",
-    "text": "Components of a data story"
-  },
-  {
-    "objectID": "w04/slides.html#storytelling-is-abstract",
-    "href": "w04/slides.html#storytelling-is-abstract",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Storytelling is abstract",
-    "text": "Storytelling is abstract\nIt is not merely:\n\na technical matter of creating an image\ndesigning the right chart\n\n\nRather it is:\n\nthe broader considerations that impact nearly every decision you make in the way you frame and present a project\n\n\n\nThe story is the culmination of distilling the information and insights gathered through the analytic process\nIt is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience"
-  },
-  {
-    "objectID": "w04/slides.html#telling-your-data-story",
-    "href": "w04/slides.html#telling-your-data-story",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Telling Your Data Story",
-    "text": "Telling Your Data Story\nStory components\nTo tell a story you have to define a story\n\nA story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result\n\n\nPlot: how the story unfolds\nProtagonist: the main character\nProblem: a difficult goal for the protagonist to achieve\nTransformation - the “so what?”: how the protagonist changes as a result"
-  },
-  {
-    "objectID": "w04/slides.html#story-linearity",
-    "href": "w04/slides.html#story-linearity",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Story linearity",
-    "text": "Story linearity\n\nWhether driven by time or logic, stories are typically is linear\nBeginning, middle and end\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvery story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.\nStories have pacing, which creates tension and interest, and makes the storytelling more compelling."
-  },
-  {
-    "objectID": "w04/slides.html#traditional-vs.-data-stories",
-    "href": "w04/slides.html#traditional-vs.-data-stories",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Traditional vs. Data Stories",
-    "text": "Traditional vs. Data Stories\n\nsource"
-  },
-  {
-    "objectID": "w04/slides.html#aristotle-vs.-brecht",
-    "href": "w04/slides.html#aristotle-vs.-brecht",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Aristotle vs. Brecht",
-    "text": "Aristotle vs. Brecht\n\nSometimes you don’t want to “resolve” the tension!\nAristotelian drama: audience goes home “satisfied”\n\nThe story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)\n\nBrechtian drama: audience is left with discomfort, ambiguity, unresolved tension\n\nSounds like something you wouldn’t want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!"
-  },
-  {
-    "objectID": "w04/slides.html#common-visual-narrative-genres",
-    "href": "w04/slides.html#common-visual-narrative-genres",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Common visual narrative Genres",
-    "text": "Common visual narrative Genres"
-  },
-  {
-    "objectID": "w04/slides.html#standard-infographics",
-    "href": "w04/slides.html#standard-infographics",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Standard Infographics",
-    "text": "Standard Infographics\n\nAn infographic is a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic."
-  },
-  {
-    "objectID": "w04/slides.html#data-infographics",
-    "href": "w04/slides.html#data-infographics",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Data Infographics",
-    "text": "Data Infographics\n\nData infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always."
-  },
-  {
-    "objectID": "w04/slides.html#research-posters",
-    "href": "w04/slides.html#research-posters",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Research posters",
-    "text": "Research posters\n\nEven research poster construction requires a narrative flow!"
-  },
-  {
-    "objectID": "w04/slides.html#scientific-papers-structure",
-    "href": "w04/slides.html#scientific-papers-structure",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Scientific papers structure",
-    "text": "Scientific papers structure"
-  },
-  {
-    "objectID": "w04/slides.html#developing-knowledge-content",
-    "href": "w04/slides.html#developing-knowledge-content",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Developing knowledge content",
-    "text": "Developing knowledge content\n\n\n\nBill Shander talks about different levels of content engagement. We’ll describe these in the next few slides"
-  },
-  {
-    "objectID": "w04/slides.html#primary-communication-tools",
-    "href": "w04/slides.html#primary-communication-tools",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Primary communication tools",
-    "text": "Primary communication tools"
-  },
-  {
-    "objectID": "w04/slides.html#engagement-levels-1",
-    "href": "w04/slides.html#engagement-levels-1",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Engagement levels-1",
-    "text": "Engagement levels-1"
-  },
-  {
-    "objectID": "w04/slides.html#engagement-levels-2",
-    "href": "w04/slides.html#engagement-levels-2",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Engagement levels-2",
-    "text": "Engagement levels-2"
-  },
-  {
-    "objectID": "w04/slides.html#storytelling-tips",
-    "href": "w04/slides.html#storytelling-tips",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Storytelling tips",
-    "text": "Storytelling tips"
-  },
-  {
-    "objectID": "w04/slides.html#author-vs-reader-driven",
-    "href": "w04/slides.html#author-vs-reader-driven",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Author vs reader driven",
-    "text": "Author vs reader driven"
-  },
-  {
-    "objectID": "w04/slides.html#repetition-and-redundancy",
-    "href": "w04/slides.html#repetition-and-redundancy",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Repetition and Redundancy",
-    "text": "Repetition and Redundancy\nThe old adage on how to present anything:\n\nTell them what you are going to tell them\nThen tell them\nThen tell them what you just told them"
-  },
-  {
-    "objectID": "w04/slides.html#awesome-data-driven-viz-narratives",
-    "href": "w04/slides.html#awesome-data-driven-viz-narratives",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Awesome data driven viz narratives",
-    "text": "Awesome data driven viz narratives\n\nThe New York Times\nWall Stree Journal\nThe Washington Post\nFiveThirtyEight\nThe Economist\nFinancial Times\nThe Pudding"
-  },
-  {
-    "objectID": "w04/slides.html#the-puddings-process",
-    "href": "w04/slides.html#the-puddings-process",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "The Pudding’s process:",
-    "text": "The Pudding’s process:\nBy Ilia Blinderman\n\nStorytelling is complicated\nWho is your audience\nFocus broadly or narrowly\nComplexity of the finding after analysis\nProgressing through the arguments\nArriving at the conclusion\n\n\n\nResources\nhttps://pudding.cool/process/how-to-make-dope-shit-part-1/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-2/\nhttps://pudding.cool/process/how-to-make-dope-shit-part-3/"
-  },
-  {
-    "objectID": "w04/slides.html#scrollytelling-bill-shander",
-    "href": "w04/slides.html#scrollytelling-bill-shander",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Scrollytelling (Bill Shander)",
-    "text": "Scrollytelling (Bill Shander)\nhttps://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003\nhttps://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964\nhttps://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67"
-  },
-  {
-    "objectID": "w04/slides.html#other-resources-and-examples",
-    "href": "w04/slides.html#other-resources-and-examples",
-    "title": "Lecture 4: Storytelling and Visual Narratives",
-    "section": "Other resources and examples",
-    "text": "Other resources and examples\nhttps://opensourcelibs.com/lib/rolldown\nhttps://elementor.com/blog/guide-to-scrollytelling/\nhttps://www.visualstorytell.com/blog/what-is-visual-storytelling\nhttps://mathisonian.github.io/idyll/scaffolding-interactives/\nhttps://idl.cs.washington.edu/\nhttps://distill.pub/2020/communicating-with-interactive-articles/"
-  },
-  {
-    "objectID": "recordings/index.html",
-    "href": "recordings/index.html",
-    "title": "Section Recordings",
+    "objectID": "w01/index.html",
+    "href": "w01/index.html",
+    "title": "Lecture 1: Course Intro and Data Science Toolbox",
     "section": "",
-    "text": "Week\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\n10\n\n\nSection 03 W10: Visualizing Big Data\n\n\nTuesday Mar 19, 2024\n\n\n\n\n9\n\n\nSection 03 W09: Networks, Graphs, and Trees\n\n\nTuesday Mar 12, 2024\n\n\n\n\n8\n\n\nSection 03 W08: Spatio-Temporal Data (Lab Portion Only)\n\n\nTuesday Feb 27, 2024\n\n\n\n\n6\n\n\nSection 03 W06: Observable JS and Plotly\n\n\nTuesday Feb 13, 2024\n\n\n\n\n2\n\n\nSection 03 W02: Visual Encodings and Color Theory\n\n\nTuesday Jan 16, 2024\n\n\n\n\n\nNo matching items",
+    "text": "Week 1 was a combined meeting of all four sections of the course.",
     "crumbs": [
-      "Recordings"
+      "Week 1: Jan 11"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DSAN 5200: Advanced Data Visualization",
+    "objectID": "w12/scratch.html",
+    "href": "w12/scratch.html",
+    "title": "My Dashboard",
     "section": "",
-    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\nLecture 4: Storytelling and Visual Narratives\n\n\nJanuary 30\n\n\n\n\nLecture 6: Multi-View Composition, Interactivity, Themes\n\n\nJanuary 30\n\n\n\n\nLecture 10: Visualizing Big Data\n\n\nJanuary 30\n\n\n\n\nLecture 12: Getting Visualizions onto the Web\n\n\nApril 9\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "<i class='bi bi-house pe-1'></i> Home"
-    ]
-  },
-  {
-    "objectID": "w06/index.html",
-    "href": "w06/index.html",
-    "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
-    "section": "",
-    "text": "Open slides in new window →",
-    "crumbs": [
-      "Week 6: Feb 13"
-    ]
-  },
-  {
-    "objectID": "w06/index.html#agenda",
-    "href": "w06/index.html#agenda",
-    "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
-    "section": "Agenda",
-    "text": "Agenda\n\nOJS Recap: Topological Data Flow \nProject Specifications\nGetting Plotly working (in both R and Python) on Posit.Cloud !\nVega, Vega-Lite, Altair Preview (Main course page )",
-    "crumbs": [
-      "Week 6: Feb 13"
-    ]
-  },
-  {
-    "objectID": "w06/slides.html#agenda",
-    "href": "w06/slides.html#agenda",
-    "title": "Lecture 6: Multi-View Composition, Interactivity, Themes",
-    "section": "Agenda",
-    "text": "Agenda\n\nOJS Recap: Topological Data Flow \nProject Specifications\nGetting Plotly working (in both R and Python) on Posit.Cloud !\nVega, Vega-Lite, Altair Preview (Main course page )\n\n\n\n\nDSAN 5200-03 Week 6: Multi-View Composition, Interactivity, Themes"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:\n\n\nTo “unify” the topics of Week 10 vs. Week 11 I talked about how, if \\(n\\) is our number of datapoints (e.g., sample size) and \\(p\\) is the dimensionality of our data (how many “pieces of information” we have about each of the \\(n\\) datapoints), then\n\nClassical statistical methods were developed to handle settings where \\(n \\gg p\\)1, so that we have a small number of parameters that we fit (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in \\(n \\gg 2\\) datapoints and estimate a line of best fit, where the line itself is characterized by its two parameters, slope and intercept (\\(m\\) and \\(b\\) in \\(y = mx + b\\)).\nIn modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely high-dimensional data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have \\(p \\gg n\\). In the modern field of biostatistics, for example, we talked in class about how the human genome contains about 6 billion nucleotide pairs, but researchers in the UK have mapped-out genomes for 500,000 people, so that now the number of dimensions we have for each person is \\(\\frac{\\text{6 billion}}{500 000} = 12 000\\) times the number of people we have…\n\nFor me, this notion of thinking about \\(n \\gg p\\) versus \\(p \\gg n\\) comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: https://hastie.su.domains/ElemStatLearn/",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#weeks-10-and-11-visualization-for-big-data-and-machine-learning",
-    "href": "resources.html#weeks-10-and-11-visualization-for-big-data-and-machine-learning",
-    "title": "Resources",
-    "section": "",
-    "text": "In class during Week 11 I mentioned two resources, and added a third via email after class, so I wanted to collect them all in one place here:\n\n\nTo “unify” the topics of Week 10 vs. Week 11 I talked about how, if \\(n\\) is our number of datapoints (e.g., sample size) and \\(p\\) is the dimensionality of our data (how many “pieces of information” we have about each of the \\(n\\) datapoints), then\n\nClassical statistical methods were developed to handle settings where \\(n \\gg p\\)1, so that we have a small number of parameters that we fit (estimate) using a high number of datapoints. Basic two-variable linear regression models, for example, can take in \\(n \\gg 2\\) datapoints and estimate a line of best fit, where the line itself is characterized by its two parameters, slope and intercept (\\(m\\) and \\(b\\) in \\(y = mx + b\\)).\nIn modern machine learning, however, scientists began to wrestle with an additional problem, that of extremely high-dimensional data, where the problem was in a sense the “opposite” of the classical-statistics scenario: now we have \\(p \\gg n\\). In the modern field of biostatistics, for example, we talked in class about how the human genome contains about 6 billion nucleotide pairs, but researchers in the UK have mapped-out genomes for 500,000 people, so that now the number of dimensions we have for each person is \\(\\frac{\\text{6 billion}}{500 000} = 12 000\\) times the number of people we have…\n\nFor me, this notion of thinking about \\(n \\gg p\\) versus \\(p \\gg n\\) comes from learning statistics through an awesome textbook that is freely available in PDF format (legally!) here: https://hastie.su.domains/ElemStatLearn/",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#week-6-plotly",
-    "href": "resources.html#week-6-plotly",
-    "title": "Resources",
-    "section": "Week 6: Plotly",
-    "text": "Week 6: Plotly\n\nHere is a direct link to the starter code for Lab 5 that I began writing at the end of class today!",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#week-5-observable-js-and-jquery",
-    "href": "resources.html#week-5-observable-js-and-jquery",
-    "title": "Resources",
-    "section": "Week 5: Observable JS and jQuery",
-    "text": "Week 5: Observable JS and jQuery\nFor Week 4 I spent some time on the chalkboard and showing demos in the browser, as “sidebars” to the main content in the slides, so I wanted to share some of this sidebar material here!\n\nObservableJS\n\nThe ObservableJS demo I showed in class, originally made for a microeconomics course I TAed back in the day but relevant to you as DSAN 5200 students if you reveal the JS code “behind” each of the UI elements (the sliders in this case), and how changing some aspect of the data in these JS cells automatically updates the visualization to reflect these changes.\n(For more of my Observable examples—as in, examples where I can therefore walk you through exactly how they work!—feel free to look at some of the other notebooks in my ObservableHQ account from that same course, like this one)\nMore generally, though, ObservableHQ has a really rich set of tutorials covering a bunch of different use cases! At the bottom of that page, for example, you’ll see some which are tailored specifically to Python and Matplotlib users.\nOne resource I remember helping me a lot was the official set of Observable resources on how inputs (sliders, checkboxes, etc.) work in OJS. To me this subtopic is especially helpful/fundamental since, once you see how data from the input elements (like sliders or checkboxes) flows into all other code cells which use this data as inputs, the notion of “topological data flow” that I mentioned in class today will hopefully feel less abstract.\nLastly, though, if you’re like me and the weirdness around ordering of code cells in OJS feels very bizarre at first, I think this notebook is really really helpful for clarifying that in a way I didn’t have time to walk through in detail today. I basically keep that link open in a tab whenever I work in OJS, so I can go back and reference it when I get confused about why one cell ran before/after another.\n\n\n\njQuery\n\nThe jQuery website has a “Learn” section here. It’s probably overkill, though, since jQuery is so popular and widely-used (though, falling out of favor to some extent for various reasons) that you should be able to use Google and StackOverflow to find answers to most issues that will arise with learning the basics and then using it.",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#core-texts-weeks-1-4",
-    "href": "resources.html#core-texts-weeks-1-4",
-    "title": "Resources",
-    "section": "Core Texts, Weeks 1-4",
-    "text": "Core Texts, Weeks 1-4\n\nWilkinson, The Grammar of Graphics (2006)\nA key resource for the course, in terms of weaving many of the seemingly-disparate “strands” of the course together, is Leland Wilkinson’s book The Grammar of Graphics (Wilkinson 2006). Since it’s extremely hard to find in bookstores and extremely large and difficult to carry around even if you do find it, for educational purposes you can access a PDF of the book using this link.\n\n\nNathan Yau, Visualize This! (2011) and Data Points (2013)\nAnother pair of resources that we’ll be drawing on a lot throughout the semester! Way less technical than Wilkinson, and way easier/cheaper to find at bookstores or online, so I feel much less good posting this one online… But if your situation is anything like mine was when I was a grad student, and you’re living off approx. $0 per month of disposable income, here are EPUB copies of both books (which I am ethically justifying by reference to grad-student-Jeff’s experience of professors assigning 5 books/week without a sole PDF or EPUB in sight 😵, along with the fact that all 4 profs for the course are paid subscribers to Yau’s blog!)\n\nYau (2011): PDF, EPUB\nYau (2013): PDF, EPUB\n\n\n\nEdward Tufte, The Visual Display of Quantitative Information (1983)\nTufte (1983) is (in my experience, at least) much easier to find than any of the books above, but in varying conditions of used-ness, so here is a PDF of this one as well.\n(Tufte also has more books than the previous two authors, and any of them are interesting and informative, so if you like this one you can go out and buy/obtain the others as well!)",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#footnotes",
-    "href": "resources.html#footnotes",
-    "title": "Resources",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nHere the \\(\\gg\\) symbol can be read as “much greater than” (by analogy to the standard \\(&gt;\\) for “greater than”)↩︎",
-    "crumbs": [
-      "Resources"
-    ]
+    "text": "print(\"Dropdown menu here\")\n\n[1] \"Dropdown menu here\"\n\n\n\nprint(\"Viz here\")\n\nViz here"
   }
 ]
