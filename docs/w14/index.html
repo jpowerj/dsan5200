@@ -11,7 +11,7 @@
 <meta name="author" content="Anderson Monken">
 <meta name="author" content="Marck Vaisman">
 
-<title>Lecture 4: Storytelling and Visual Narratives</title>
+<title>Lecture 14: Dashboards (Flexdash)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="../jjcustom.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -86,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../w04/index.html">Week 4: Jan 30</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../w14/index.html">Week 14: Apr 23</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../w04/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../w04/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 4: Jan 30</span></a>
   </div>
 </li>
@@ -210,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../w14/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../w14/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 14: Apr 23</span></a>
   </div>
 </li>
@@ -237,36 +266,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#storytelling-with-data" id="toc-storytelling-with-data" class="nav-link" data-scroll-target="#storytelling-with-data">Storytelling with Data</a></li>
-  <li><a href="#what-is-data-storytelling" id="toc-what-is-data-storytelling" class="nav-link" data-scroll-target="#what-is-data-storytelling">What is Data Storytelling?</a></li>
-  <li><a href="#components-of-a-data-story" id="toc-components-of-a-data-story" class="nav-link" data-scroll-target="#components-of-a-data-story">Components of a data story</a></li>
-  <li><a href="#storytelling-is-abstract" id="toc-storytelling-is-abstract" class="nav-link" data-scroll-target="#storytelling-is-abstract">Storytelling is abstract</a></li>
-  <li><a href="#telling-your-data-story" id="toc-telling-your-data-story" class="nav-link" data-scroll-target="#telling-your-data-story">Telling Your Data Story</a></li>
-  <li><a href="#story-linearity" id="toc-story-linearity" class="nav-link" data-scroll-target="#story-linearity">Story linearity</a></li>
-  <li><a href="#traditional-vs.-data-stories" id="toc-traditional-vs.-data-stories" class="nav-link" data-scroll-target="#traditional-vs.-data-stories">Traditional vs.&nbsp;Data Stories</a></li>
-  <li><a href="#aristotle-vs.-brecht" id="toc-aristotle-vs.-brecht" class="nav-link" data-scroll-target="#aristotle-vs.-brecht"><em>A</em>ristotle vs.&nbsp;<em>B</em>recht</a></li>
-  <li><a href="#common-visual-narrative-genres" id="toc-common-visual-narrative-genres" class="nav-link" data-scroll-target="#common-visual-narrative-genres">Common visual narrative Genres</a></li>
-  <li><a href="#standard-infographics" id="toc-standard-infographics" class="nav-link" data-scroll-target="#standard-infographics">Standard Infographics</a></li>
-  <li><a href="#data-infographics" id="toc-data-infographics" class="nav-link" data-scroll-target="#data-infographics">Data Infographics</a></li>
-  <li><a href="#research-posters" id="toc-research-posters" class="nav-link" data-scroll-target="#research-posters">Research posters</a></li>
-  <li><a href="#scientific-papers-structure" id="toc-scientific-papers-structure" class="nav-link" data-scroll-target="#scientific-papers-structure">Scientific papers structure</a></li>
-  <li><a href="#developing-knowledge-content" id="toc-developing-knowledge-content" class="nav-link" data-scroll-target="#developing-knowledge-content">Developing knowledge content</a></li>
-  <li><a href="#primary-communication-tools" id="toc-primary-communication-tools" class="nav-link" data-scroll-target="#primary-communication-tools">Primary communication tools</a></li>
-  <li><a href="#engagement-levels-1" id="toc-engagement-levels-1" class="nav-link" data-scroll-target="#engagement-levels-1">Engagement levels-1</a></li>
-  <li><a href="#engagement-levels-2" id="toc-engagement-levels-2" class="nav-link" data-scroll-target="#engagement-levels-2">Engagement levels-2</a></li>
-  <li><a href="#storytelling-tips" id="toc-storytelling-tips" class="nav-link" data-scroll-target="#storytelling-tips">Storytelling tips</a></li>
-  <li><a href="#author-vs-reader-driven" id="toc-author-vs-reader-driven" class="nav-link" data-scroll-target="#author-vs-reader-driven">Author vs reader driven</a></li>
-  <li><a href="#repetition-and-redundancy" id="toc-repetition-and-redundancy" class="nav-link" data-scroll-target="#repetition-and-redundancy">Repetition and Redundancy</a></li>
-  <li><a href="#awesome-data-driven-viz-narratives" id="toc-awesome-data-driven-viz-narratives" class="nav-link" data-scroll-target="#awesome-data-driven-viz-narratives">Awesome data driven viz narratives</a></li>
-  <li><a href="#the-puddings-process" id="toc-the-puddings-process" class="nav-link" data-scroll-target="#the-puddings-process">The Pudding’s process:</a>
+  <li><a href="#administrative-details" id="toc-administrative-details" class="nav-link active" data-scroll-target="#administrative-details">Administrative Details</a>
   <ul class="collapse">
-  <li><a href="#by-ilia-blinderman" id="toc-by-ilia-blinderman" class="nav-link" data-scroll-target="#by-ilia-blinderman">By Ilia Blinderman</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#compartmentalize" id="toc-compartmentalize" class="nav-link" data-scroll-target="#compartmentalize">Compartmentalize!</a></li>
+  <li><a href="#tableau-the-final-missing-piece" id="toc-tableau-the-final-missing-piece" class="nav-link" data-scroll-target="#tableau-the-final-missing-piece">Tableau: The Final Missing Piece</a></li>
   </ul></li>
-  <li><a href="#scrollytelling-bill-shander" id="toc-scrollytelling-bill-shander" class="nav-link" data-scroll-target="#scrollytelling-bill-shander">Scrollytelling (Bill Shander)</a></li>
-  <li><a href="#other-resources-and-examples" id="toc-other-resources-and-examples" class="nav-link" data-scroll-target="#other-resources-and-examples">Other resources and examples</a></li>
-  <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
+  <li><a href="#dashboards-1.0" id="toc-dashboards-1.0" class="nav-link" data-scroll-target="#dashboards-1.0">Dashboards 1.0</a>
+  <ul class="collapse">
+  <li><a href="#flexdashboard" id="toc-flexdashboard" class="nav-link" data-scroll-target="#flexdashboard">Flexdashboard</a></li>
+  <li><a href="#shiny" id="toc-shiny" class="nav-link" data-scroll-target="#shiny">Shiny</a></li>
+  </ul></li>
+  <li><a href="#dashboards-2.0" id="toc-dashboards-2.0" class="nav-link" data-scroll-target="#dashboards-2.0">Dashboards 2.0</a>
+  <ul class="collapse">
+  <li><a href="#quarto-dashboards" id="toc-quarto-dashboards" class="nav-link" data-scroll-target="#quarto-dashboards">Quarto Dashboards!</a></li>
+  </ul></li>
+  <li><a href="#development-vs.-production" id="toc-development-vs.-production" class="nav-link" data-scroll-target="#development-vs.-production">Development vs.&nbsp;Production</a>
+  <ul class="collapse">
+  <li><a href="#placeholders-plz-use-them" id="toc-placeholders-plz-use-them" class="nav-link" data-scroll-target="#placeholders-plz-use-them">Placeholders (Plz Use Them)</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
@@ -275,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 4: Storytelling and Visual Narratives</h1>
+<h1 class="title">Lecture 14: Dashboards (Flexdash)</h1>
 <p class="subtitle lead"><em>DSAN 5200-03: Advanced Data Visualization</em></p>
   <div class="quarto-categories">
     <div class="quarto-category">Class Sessions</div>
@@ -327,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Tuesday, January 30, 2024</p>
+      <p class="date">Tuesday, April 23, 2024</p>
     </div>
   </div>
   
@@ -342,298 +359,82 @@ ul.task-list li input[type="checkbox"] {
 <center>
 <a class="h2" href="./slides.html" target="_blank">Open slides in new window →</a>
 </center>
-<section id="section" class="level2 smaller" data-background-image="images/eggers.jpg" data-background-size="135vh">
-<h2 class="smaller anchored" data-background-image="images/eggers.jpg" data-background-size="135vh" data-anchor-id="section"></h2>
-</section>
-<section id="storytelling-with-data" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="storytelling-with-data">Storytelling with Data</h2>
-<ul>
-<li><p>Often, your jobs as a data scientist is to be an effective communicator</p></li>
-<li><p>There is more to communication than numbers on a paper</p></li>
-</ul>
-<div class="column" style="width:60%;">
+<section id="administrative-details" class="level1" data-stack-name="Admin">
+<h1 data-stack-name="Admin">Administrative Details</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/story-graph.png" class="quarto-figure quarto-figure-center figure-img" width="600" height="300"></p>
+<p><img src="images/breakfast.jpg" class="img-fluid figure-img"></p>
+<figcaption><a href="https://www.rottentomatoes.com/m/dogs_breakfast" target="_blank">86% Audience Score</a> on Rotten Tomatoes!!! Pic <a href="https://www.youtube.com/watch?v=mdeo7Q2E5cE" target="_blank">unrelated</a></figcaption>
 </figure>
 </div>
-</div>
-<div class="column" style="width:37%;">
-<blockquote class="blockquote">
-<p>Data stories appear to be most effective when they have constrained interaction at various checkpoints within a narrative, allowing the user to explore the data without veering too far from the intended narrative.</p>
-</blockquote>
-</div>
-<!-- ## {background-image="https://venngage-wordpress.s3.amazonaws.com/uploads/2021/02/datastorytelling.jpeg" background-size="contain"} -->
-</section>
-<section id="what-is-data-storytelling" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-data-storytelling">What is Data Storytelling?</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-11-55-59.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<div class="notes">
-<p>https://venngage.com/blog/data-storytelling/</p>
-</div>
-</section>
-<section id="components-of-a-data-story" class="level2">
-<h2 class="anchored" data-anchor-id="components-of-a-data-story">Components of a data story</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-00-56.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="storytelling-is-abstract" class="level2">
-<h2 class="anchored" data-anchor-id="storytelling-is-abstract">Storytelling is abstract</h2>
-<p>It is <strong>not</strong> merely:</p>
+<section id="compartmentalize" class="level2">
+<h2 class="anchored" data-anchor-id="compartmentalize">Compartmentalize!</h2>
 <ul>
-<li><p>a technical matter of creating an image</p></li>
-<li><p>designing the right chart</p></li>
-</ul>
-<div class="fragment">
-<p>Rather it is:</p>
+<li>Division of labor <span class="math inline">\(\longleftrightarrow\)</span> <code>.qmd</code> files!</li>
+<li>Then, literally:
 <ul>
-<li>the broader considerations that impact nearly every decision you make in the way you frame and present a project</li>
-</ul>
-</div>
-<div class="notes">
-<p>The story is the culmination of distilling the information and insights gathered through the analytic process</p>
-<p>It is often represented by a series of well chosen and developed visualization, but these visualizations reflect intentional design choices based on your understanding of the data, the story and your audience</p>
-</div>
-</section>
-<section id="telling-your-data-story" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="telling-your-data-story">Telling Your Data Story</h2>
-<p><strong>Story components</strong></p>
-<p>To tell a story you have to define a story</p>
-<blockquote class="blockquote">
-<p>A story is how what happens affects someone who is trying to achieve what turns out to be a difficult goal, and how they change as a result</p>
-</blockquote>
-<ol type="1">
-<li>Plot: how the story unfolds</li>
-<li>Protagonist: the main character</li>
-<li>Problem: a difficult goal for the protagonist to achieve</li>
-<li>Transformation - the “so what?”: how the protagonist changes as a result</li>
-</ol>
-</section>
-<section id="story-linearity" class="level2">
-<h2 class="anchored" data-anchor-id="story-linearity">Story linearity</h2>
-<ul>
-<li><p>Whether driven by time or logic, stories are typically is linear</p></li>
-<li><p>Beginning, middle and end</p></li>
-</ul>
-<div class="r-stack">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/story1.png" class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/story2.png" class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/story3.png" class="fragment img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="notes">
-<p>Every story is linear, with a well-defined beginning, middle and end. However, those pieces don’t have to take equal time.</p>
-<p>Stories have pacing, which creates tension and interest, and makes the storytelling more compelling.</p>
-</div>
-</section>
-<section id="traditional-vs.-data-stories" class="level2">
-<h2 class="anchored" data-anchor-id="traditional-vs.-data-stories">Traditional vs.&nbsp;Data Stories</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-08-06.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
-</figure>
-</div>
-<p><sup><sup><a href="https://bluemoondigital.co/our-blog/5-elements-storytelling-data/">source</a></sup></sup></p>
-<!-- ## {background-image="img/storytelling.png" background-size="contain"} -->
-</section>
-<section id="aristotle-vs.-brecht" class="level2">
-<h2 class="anchored" data-anchor-id="aristotle-vs.-brecht"><em>A</em>ristotle vs.&nbsp;<em>B</em>recht</h2>
-<ul>
-<li>Sometimes you <strong>don’t want to</strong> “resolve” the tension!</li>
-<li><strong>Aristotelian</strong> drama: audience goes home “satisfied”
-<ul>
-<li>The story is wrapped up, all of the loose ends are tied up, and everything resolves (whether in a happy or sad ending)</li>
-</ul></li>
-<li><strong>Brechtian</strong> drama: audience is left with discomfort, ambiguity, unresolved tension
-<ul>
-<li>Sounds like something you <strong>wouldn’t</strong> want to do (and you don’t, in many cases), but sometimes can be more effective for spurning people to action!</li>
+<li><a href="https://quarto.org/docs/websites/" target="_blank"><strong>Website</strong></a> is one possible combination of <code>.qmd</code> files</li>
+<li><a href="https://quarto.org/docs/dashboards/" target="_blank"><strong>Poster</strong></a> is another possible combination of <code>.qmd</code> files (more on this later)</li>
+<li><a href="https://quarto.org/docs/manuscripts/" target="_blank"><strong>Manuscript</strong></a> is a third possible combination of <code>.qmd</code> files</li>
+<li><a href="https://quarto.org/docs/output-formats/pdf-basics.html" target="_blank"><strong>PDF</strong></a> is a fourth possible combination of <code>.qmd</code> files</li>
+<li>…and so on!</li>
 </ul></li>
 </ul>
 </section>
-<section id="common-visual-narrative-genres" class="level2">
-<h2 class="anchored" data-anchor-id="common-visual-narrative-genres">Common visual narrative Genres</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-23-04.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/visual-genres.png" background-size="contain"} -->
-</section>
-<section id="standard-infographics" class="level2 smaller crunch-title">
-<h2 class="smaller crunch-title anchored" data-anchor-id="standard-infographics">Standard Infographics</h2>
-<ul>
-<li>An infographic is&nbsp;a collection of imagery, data visualizations, and minimal text that gives an easy-to-understand overview of a topic.<br>
-<img src="img/2023-02-13-12-24-29.png" class="img-fluid quarto-figure quarto-figure-center" width="800"></li>
-</ul>
-<!-- ## {background-image="img/std-infograph.png" background-size="contain"} -->
-</section>
-<section id="data-infographics" class="level2 smaller crunch-title">
-<h2 class="smaller crunch-title anchored" data-anchor-id="data-infographics">Data Infographics</h2>
-<ul>
-<li>Data infographics are infographics that rely entirely or mostly on numbers to tell the story. This often includes data viz, such as charts and graphs, but not always.<br>
-<img src="img/2023-02-13-12-26-29.png" class="img-fluid quarto-figure quarto-figure-center" width="820"></li>
-</ul>
-<!-- ## {background-image="img/data-infograph.png" background-size="contain"} -->
-</section>
-<section id="research-posters" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="research-posters">Research posters</h2>
-<ul>
-<li>Even research poster construction requires a narrative flow!</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-40-29.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/posters.png" background-size="contain"} -->
-</section>
-<section id="scientific-papers-structure" class="level2">
-<h2 class="anchored" data-anchor-id="scientific-papers-structure">Scientific papers structure</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-30-52.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/papers.png" background-size="contain"} -->
-</section>
-<section id="developing-knowledge-content" class="level2">
-<h2 class="anchored" data-anchor-id="developing-knowledge-content">Developing knowledge content</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-42-28.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/shander.png" background-size="contain"} -->
-<div class="notes">
-<p>Bill Shander talks about different levels of content engagement. We’ll describe these in the next few slides</p>
-</div>
-</section>
-<section id="primary-communication-tools" class="level2">
-<h2 class="anchored" data-anchor-id="primary-communication-tools">Primary communication tools</h2>
-<p><img src="img/2023-02-13-12-47-23.png" class="img-fluid quarto-figure quarto-figure-center" width="850"> <!-- ## {background-image="img/communication-tools.png" background-size="contain"} --></p>
-</section>
-<section id="engagement-levels-1" class="level2">
-<h2 class="anchored" data-anchor-id="engagement-levels-1">Engagement levels-1</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-35-29.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="900"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/engagement1.png" background-size="contain"} -->
-</section>
-<section id="engagement-levels-2" class="level2">
-<h2 class="anchored" data-anchor-id="engagement-levels-2">Engagement levels-2</h2>
-<!-- ## {background-image="img/engagement2.png" background-size="contain"} -->
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-35-52.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/tips.png" background-size="contain"} -->
-</section>
-<section id="storytelling-tips" class="level2">
-<h2 class="anchored" data-anchor-id="storytelling-tips">Storytelling tips</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-36-51.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="author-vs-reader-driven" class="level2">
-<h2 class="anchored" data-anchor-id="author-vs-reader-driven">Author vs reader driven</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-02-13-12-38-42.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<!-- ## {background-image="img/driven.png" background-size="contain"} -->
-</section>
-<section id="repetition-and-redundancy" class="level2">
-<h2 class="anchored" data-anchor-id="repetition-and-redundancy">Repetition and Redundancy</h2>
-<p>The old adage on how to present anything:</p>
-<ul>
-<li>Tell them what you are going to tell them</li>
-<li>Then tell them</li>
-<li>Then tell them what you just told them</li>
-</ul>
-</section>
-<section id="awesome-data-driven-viz-narratives" class="level2">
-<h2 class="anchored" data-anchor-id="awesome-data-driven-viz-narratives">Awesome data driven viz narratives</h2>
-<ul>
-<li>The New York Times</li>
-<li>Wall Stree Journal</li>
-<li>The Washington Post</li>
-<li>FiveThirtyEight</li>
-<li>The Economist</li>
-<li><a href="https://www.ft.com/visual-and-data-journalism">Financial Times</a></li>
-<li><a href="https://pudding.cool/">The Pudding</a></li>
-</ul>
-</section>
-<section id="the-puddings-process" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="the-puddings-process">The Pudding’s process:</h2>
-<section id="by-ilia-blinderman" class="level3">
-<h3 class="anchored" data-anchor-id="by-ilia-blinderman">By Ilia Blinderman</h3>
+<section id="tableau-the-final-missing-piece" class="level2">
+<h2 class="anchored" data-anchor-id="tableau-the-final-missing-piece">Tableau: The Final Missing Piece</h2>
 <ol type="1">
-<li>Storytelling is complicated</li>
-<li>Who is your audience</li>
-<li>Focus broadly or narrowly</li>
-<li>Complexity of the finding after analysis</li>
-<li>Progressing through the arguments</li>
-<li>Arriving at the conclusion</li>
+<li>Everything we did last week</li>
+<li>Right click on <strong>“Cluster”</strong></li>
+<li><strong>Compute Using → Zipcode</strong></li>
+<li>Profit 💰🤑📈</li>
 </ol>
 </section>
-<div class="fragment">
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">Resources</h3>
-<p><a href="https://pudding.cool/process/how-to-make-dope-shit-part-1/" class="uri">https://pudding.cool/process/how-to-make-dope-shit-part-1/</a></p>
-<p><a href="https://pudding.cool/process/how-to-make-dope-shit-part-2/" class="uri">https://pudding.cool/process/how-to-make-dope-shit-part-2/</a></p>
-<p><a href="https://pudding.cool/process/how-to-make-dope-shit-part-3/" class="uri">https://pudding.cool/process/how-to-make-dope-shit-part-3/</a></p>
 </section>
-</div>
+<section id="dashboards-1.0" class="level1" data-stack-name="Dashboards 1.0">
+<h1 data-stack-name="Dashboards 1.0">Dashboards 1.0</h1>
+<ul>
+<li>Flexdashboard</li>
+<li>Shiny</li>
+</ul>
+<section id="flexdashboard" class="level2">
+<h2 class="anchored" data-anchor-id="flexdashboard">Flexdashboard</h2>
+<ul>
+<li>The <a href="https://pkgs.rstudio.com/flexdashboard/articles/using.html" target="_blank">most important article</a>!</li>
+</ul>
 </section>
-<section id="scrollytelling-bill-shander" class="level2">
-<h2 class="anchored" data-anchor-id="scrollytelling-bill-shander">Scrollytelling (<a href="https://billshander.com">Bill Shander</a>)</h2>
-<p><a href="https://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003" class="uri">https://medium.com/nightingale/the-past-present-and-future-of-scrollytelling-10dd37dc1003</a></p>
-<p><a href="https://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964" class="uri">https://medium.com/nightingale/from-storytelling-to-scrollytelling-a-short-introduction-and-beyond-fbda32066964</a></p>
-<p><a href="https://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67" class="uri">https://medium.com/@billshander/how-to-tell-stories-and-weave-a-cohesive-narrative-with-data-a56dea3d1d67</a></p>
+<section id="shiny" class="level2">
+<h2 class="anchored" data-anchor-id="shiny">Shiny</h2>
+<ul>
+<li>Flexdashboard <a href="https://pkgs.rstudio.com/flexdashboard/articles/shiny.html" target="_blank">+ Interactivity</a></li>
+</ul>
 </section>
-<section id="other-resources-and-examples" class="level2">
-<h2 class="anchored" data-anchor-id="other-resources-and-examples">Other resources and examples</h2>
-<p><a href="https://opensourcelibs.com/lib/rolldown" class="uri">https://opensourcelibs.com/lib/rolldown</a></p>
-<p><a href="https://elementor.com/blog/guide-to-scrollytelling/" class="uri">https://elementor.com/blog/guide-to-scrollytelling/</a></p>
-<p><a href="https://www.visualstorytell.com/blog/what-is-visual-storytelling" class="uri">https://www.visualstorytell.com/blog/what-is-visual-storytelling</a></p>
-<p><a href="https://mathisonian.github.io/idyll/scaffolding-interactives/" class="uri">https://mathisonian.github.io/idyll/scaffolding-interactives/</a></p>
-<p><a href="https://idl.cs.washington.edu/" class="uri">https://idl.cs.washington.edu/</a></p>
-<p><a href="https://distill.pub/2020/communicating-with-interactive-articles/" class="uri">https://distill.pub/2020/communicating-with-interactive-articles/</a></p>
 </section>
-<section id="break" class="level1">
-<h1>Break</h1>
-<p>Let’s take a 10 minute break before moving onto the lab.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/2023-01-11-15-32-08.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
-</figure>
-</div>
+<section id="dashboards-2.0" class="level1" data-stack-name="Dashboards 2.0">
+<h1 data-stack-name="Dashboards 2.0">Dashboards 2.0</h1>
+<section id="quarto-dashboards" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-dashboards">Quarto Dashboards!</h2>
+<ul>
+<li>See <a href="https://quarto.org/docs/dashboards/" target="_blank">here</a> for full details</li>
+<li>The core idea, however, is just: <strong>Compartmentalize!</strong></li>
+</ul>
+</section>
+</section>
+<section id="development-vs.-production" class="level1" data-stack-name="Dev vs. Production">
+<h1 data-stack-name="Dev vs. Production">Development vs.&nbsp;Production</h1>
+<section id="placeholders-plz-use-them" class="level2">
+<h2 class="anchored" data-anchor-id="placeholders-plz-use-them">Placeholders (Plz Use Them)</h2>
+<ul>
+<li>Lorem Ipsum is sometimes helpful but…</li>
+<li><code>print("Student data table here")</code> is more helpful!</li>
+<li>You will run out of usable brain cells if you try to <strong>design</strong> the projects while <strong>coding</strong> their functionality
+<ul>
+<li>(plz plz I beg you, pretty please)</li>
+</ul></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
