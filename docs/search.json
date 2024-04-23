@@ -2,49 +2,49 @@
   {
     "objectID": "w14/slides.html#compartmentalize",
     "href": "w14/slides.html#compartmentalize",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Compartmentalize!",
     "text": "Compartmentalize!\n\nDivision of labor \\(\\longleftrightarrow\\) .qmd files!\nThen, literally:\n\nWebsite is one possible combination of .qmd files\nPoster is another possible combination of .qmd files (more on this later)\nManuscript is a third possible combination of .qmd files\nPDF is a fourth possible combination of .qmd files\n…and so on!"
   },
   {
     "objectID": "w14/slides.html#tableau-the-final-missing-piece",
     "href": "w14/slides.html#tableau-the-final-missing-piece",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Tableau: The Final Missing Piece",
     "text": "Tableau: The Final Missing Piece\n\nEverything we did last week\nRight click on “Cluster”\nCompute Using → Zipcode\nProfit 💰🤑📈"
   },
   {
     "objectID": "w14/slides.html#flexdashboard",
     "href": "w14/slides.html#flexdashboard",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Flexdashboard",
     "text": "Flexdashboard\n\nThe most important article!"
   },
   {
     "objectID": "w14/slides.html#shiny",
     "href": "w14/slides.html#shiny",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Shiny",
     "text": "Shiny\n\nFlexdashboard + Interactivity"
   },
   {
     "objectID": "w14/slides.html#quarto-dashboards",
     "href": "w14/slides.html#quarto-dashboards",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Quarto Dashboards!",
     "text": "Quarto Dashboards!\n\nSee here for full details\nThe core idea, however, is just: Compartmentalize!"
   },
   {
     "objectID": "w14/slides.html#placeholders-plz-use-them",
     "href": "w14/slides.html#placeholders-plz-use-them",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Placeholders (Plz Use Them)",
     "text": "Placeholders (Plz Use Them)\n\nLorem Ipsum is sometimes helpful but…\nprint(\"Student data table here\") is more helpful!\nYou will run out of usable brain cells if you try to design the projects while coding their functionality\n\n(plz plz I beg you, pretty please)\n\n\n\n\n\nDSAN 5200-03 Week 14: UX, Shiny, Quarto Dashboards"
   },
   {
     "objectID": "w14/index.html",
     "href": "w14/index.html",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "",
     "text": "Open slides in new window →",
     "crumbs": [
@@ -54,7 +54,7 @@
   {
     "objectID": "w14/index.html#compartmentalize",
     "href": "w14/index.html#compartmentalize",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Compartmentalize!",
     "text": "Compartmentalize!\n\nDivision of labor \\(\\longleftrightarrow\\) .qmd files!\nThen, literally:\n\nWebsite is one possible combination of .qmd files\nPoster is another possible combination of .qmd files (more on this later)\nManuscript is a third possible combination of .qmd files\nPDF is a fourth possible combination of .qmd files\n…and so on!",
     "crumbs": [
@@ -64,7 +64,7 @@
   {
     "objectID": "w14/index.html#tableau-the-final-missing-piece",
     "href": "w14/index.html#tableau-the-final-missing-piece",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Tableau: The Final Missing Piece",
     "text": "Tableau: The Final Missing Piece\n\nEverything we did last week\nRight click on “Cluster”\nCompute Using → Zipcode\nProfit 💰🤑📈",
     "crumbs": [
@@ -74,7 +74,7 @@
   {
     "objectID": "w14/index.html#flexdashboard",
     "href": "w14/index.html#flexdashboard",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Flexdashboard",
     "text": "Flexdashboard\n\nThe most important article!",
     "crumbs": [
@@ -84,7 +84,7 @@
   {
     "objectID": "w14/index.html#shiny",
     "href": "w14/index.html#shiny",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Shiny",
     "text": "Shiny\n\nFlexdashboard + Interactivity",
     "crumbs": [
@@ -94,7 +94,7 @@
   {
     "objectID": "w14/index.html#quarto-dashboards",
     "href": "w14/index.html#quarto-dashboards",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Quarto Dashboards!",
     "text": "Quarto Dashboards!\n\nSee here for full details\nThe core idea, however, is just: Compartmentalize!",
     "crumbs": [
@@ -104,7 +104,7 @@
   {
     "objectID": "w14/index.html#placeholders-plz-use-them",
     "href": "w14/index.html#placeholders-plz-use-them",
-    "title": "Lecture 14: Dashboards (Flexdash)",
+    "title": "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)",
     "section": "Placeholders (Plz Use Them)",
     "text": "Placeholders (Plz Use Them)\n\nLorem Ipsum is sometimes helpful but…\nprint(\"Student data table here\") is more helpful!\nYou will run out of usable brain cells if you try to design the projects while coding their functionality\n\n(plz plz I beg you, pretty please)",
     "crumbs": [
@@ -1754,7 +1754,7 @@
     "href": "index.html",
     "title": "DSAN 5200: Advanced Data Visualization",
     "section": "",
-    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\nLecture 4: Storytelling and Visual Narratives\n\n\nJanuary 30\n\n\n\n\nLecture 6: Multi-View Composition, Interactivity, Themes\n\n\nJanuary 30\n\n\n\n\nLecture 10: Visualizing Big Data\n\n\nJanuary 30\n\n\n\n\nLecture 12: Getting Visualizions onto the Web\n\n\nApril 9\n\n\n\n\nLecture 14: Dashboards (Flexdash)\n\n\nApril 23\n\n\n\n\n\nNo matching items",
+    "text": "This page hosts Prof. Jeff’s slides for Section 03 of DSAN 5200-03: Advanced Data Visualization, Georgetown University, Spring 2024. The section takes place on Tuesdays from 12:30pm to 3:00pm in Car Barn, Room 309. All other materials for the course can be found on the main course webpage!\n\n\n\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 1: Course Intro and Data Science Toolbox\n\n\nJanuary 11\n\n\n\n\nLecture 2: Visual Encodings, Integrity, Color Theory\n\n\nJanuary 16\n\n\n\n\nLecture 4: Storytelling and Visual Narratives\n\n\nJanuary 30\n\n\n\n\nLecture 6: Multi-View Composition, Interactivity, Themes\n\n\nJanuary 30\n\n\n\n\nLecture 10: Visualizing Big Data\n\n\nJanuary 30\n\n\n\n\nLecture 12: Getting Visualizions onto the Web\n\n\nApril 9\n\n\n\n\nLecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)\n\n\nApril 23\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "<i class='bi bi-house pe-1'></i> Home"
     ]

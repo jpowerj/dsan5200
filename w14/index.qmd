@@ -1,5 +1,5 @@
 ---
-title: "Lecture 14: Dashboards (Flexdash)"
+title: "Lecture 14: Dashboards (Flexdash, Shiny, Quarto Dashboards)"
 subtitle: "*DSAN 5200-03: Advanced Data Visualization*"
 author:
   - "Abhijit Dasgupta"
