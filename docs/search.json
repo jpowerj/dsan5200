@@ -226,7 +226,7 @@
     "section": "",
     "text": "Open slides in new window →",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -236,7 +236,7 @@
     "section": "What Makes Big Data Visualization Different?",
     "text": "What Makes Big Data Visualization Different?\n(…Let’s brainstorm!)",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -246,7 +246,7 @@
     "section": "Memory Issues \\(\\leadsto\\) Computational Issues",
     "text": "Memory Issues \\(\\leadsto\\) Computational Issues\n\nWe’ve assumed one-to-one correspondence between (immediately-accessible) data and visual encoding(s)\nWhen working with big data, however:\n\nFull dataset may not fit in the user’s browser cache!\nEven if it does, processing (e.g., placing \\(N\\) points on map) may be prohibitively slow\n\n\\(\\implies\\) Some portion of data / some computations need to be handled server side!",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -256,7 +256,7 @@
     "section": "Client-Side vs. Server-Side Computing",
     "text": "Client-Side vs. Server-Side Computing\n\nReliable estimates of computing power (in FLOPS = Floating-Point Operations Per Second) hard to come by in a world of distributed cloud computing!\nBack-of-envelope calculation:\n\nA given server (AWS, GCP) has 10-100x more computing power than our laptops\nServers almost entirely devoted to data processing; laptops have to handle OS GUI, streaming video, conserving battery, etc.",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -266,7 +266,7 @@
     "section": "Client-Side vs. Server-Side Memory",
     "text": "Client-Side vs. Server-Side Memory\n\nIn Chrome, check JS heap size (in GB) by running:\nwindow.performance.memory.jsHeapSizeLimit / (10**9)\n\n\n\n\n\n\n\n\nMy Chrome JS Heap\n4.2947 GB\n\n\n2020 US Census data\n4.3487 GB\n\n\nGoogle Maps (2012)\n20 000 000.0000 GB",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -276,7 +276,7 @@
     "section": "New Opportunities",
     "text": "New Opportunities\n\nAllow users to explore time series for arbitrarily-long windows of time!\n\n\n\n\n\n\n\n\n\nFigure 1: From Shan He, “Creating Beautiful and Meaningful Visualizations with Big Data”",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -286,7 +286,7 @@
     "section": "Helpful Even When Data Does Fit In Memory!",
     "text": "Helpful Even When Data Does Fit In Memory!\n\nCan free user’s CPU for things like lighting computation\n\n\n\n\n\n\n\n\n\nFigure 2: “Astronomically correct lighting allows users to see how different buildings shade each other during different times of day and year.”",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -296,7 +296,7 @@
     "section": "Is This Lighting Thing A Gimmick?",
     "text": "Is This Lighting Thing A Gimmick?\n\n…or a MILLION DOLLAR IDEA!!! 🤑🤑🤑\n\n\n\n\n\n\n\n\n\nFigure 3: Radiance: Determine your building’s solar potential",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -306,7 +306,7 @@
     "section": "The General Idea",
     "text": "The General Idea\n\nAd hoc approach, figuring out what to do server-side vs. client-side “on the fly” ❌\nInstead, we can use systems which integrate them, drawing on respective strengths!\nData Visualization Management System (DVMS)",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -316,7 +316,7 @@
     "section": "ZQL = SQL for Visualization",
     "text": "ZQL = SQL for Visualization\n\nInput: Description of desired visualization\nOutput: SQL query\n\n\n\n\n\n\n\n\n\n\nx\ny\nconstraints\nviz\n\n\n\n\ncarrier\npassengers\ndestination==\"New York\"\nbar(y=sum(passengers))\n\n\n\nProduces\nSELECT carrier, SUM(passengers)\nFROM flight delay\nGROUP BY carrier\nWHERE destination=\"New York\";\n\nMaybe non-obvious, a priori, how this helps…\nAdvantages become clear when we start to optimize!",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -326,7 +326,7 @@
     "section": "Precomputation",
     "text": "Precomputation\n\nSQL in general needs to handle arbitrary queries…\nBut for visualization, certain queries will never be made, while others (counting, summing) will be made frequently\nHence we can precompute, on the server side many (most?) of the statistics for layers / levels of aggregation that the users will feasibly want to look at\nThis frees up processing power on the client side, which can be applied instead towards speed, aesthetics, responsive interactivity, etc.",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -336,7 +336,7 @@
     "section": "The Power of Precomputation I",
     "text": "The Power of Precomputation I",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -346,7 +346,7 @@
     "section": "The Power of Precomputation II",
     "text": "The Power of Precomputation II",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
@@ -356,7 +356,7 @@
     "section": "Precomputation: Designing for an Audience",
     "text": "Precomputation: Designing for an Audience\n\n\n\nOpen in new tab",
     "crumbs": [
-      "week 10: Mar 19"
+      "Week 10: Mar 19"
     ]
   },
   {
