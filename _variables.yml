@@ -43,8 +43,10 @@ w12:
 w13:
   weeknum: 13
   title: "Tableau x Python / R"
+  footer: "Tableau x Python / R"
   date-md: "Apr 16"
 w14:
   weeknum: 14
+  title: "Dashboards"
   footer: "Dashboards"
   date-md: "Apr 23"
